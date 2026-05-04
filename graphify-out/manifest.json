@@ -1,0 +1,98 @@
+{
+  "/Users/barsat/weightBench/prompt.md": {
+    "mtime": 1777908837.1905499,
+    "hash": "2a2383259072a04cd0e2f5374891737b"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/AssymetryOfLora.pdf": {
+    "mtime": 1777908837.196209,
+    "hash": "de9a2df1658e14406a8b7b51cd1457a2"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/TaskArthimeticInTangentSpace.pdf": {
+    "mtime": 1777908837.3014824,
+    "hash": "479ebeba9ed20c317b949a0df78a8fad"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/AdaLORA.pdf": {
+    "mtime": 1777908837.192836,
+    "hash": "5f75e2e14b0f40b57c3122c76f19c2e7"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/EquivariantDeepWeightSpaces.pdf": {
+    "mtime": 1777908837.2377126,
+    "hash": "307ec8a4df693b9d714e14f7a5398b30"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/DragAndDropLLMS.pdf": {
+    "mtime": 1777908837.2156258,
+    "hash": "0bb231400b7401d9d9729827e4f5c025"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/SurveyOfWeightSpaceLearning.pdf": {
+    "mtime": 1777908837.2924666,
+    "hash": "4423f7103cdc4c7273eae697664c1859"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/TIESMerginh.pdf": {
+    "mtime": 1777908837.294243,
+    "hash": "3ad4df1d0aa5f76be2215c99dbc33d77"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/GraphMetaNetworks.pdf": {
+    "mtime": 1777908837.244184,
+    "hash": "ce9f07d844c5ccdcf4eeaab78d91f607"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/ICMLOra.pdf": {
+    "mtime": 1777908837.2472584,
+    "hash": "b1a2eb628e097e98e83a7155ec7e5fb0"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/TowardsScalableAndVersatileWeightSpaceLearning.pdf": {
+    "mtime": 1777908837.306821,
+    "hash": "7c18cc4763b6cbe2a26738f47a471554"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/WeightSpaceRepresentationLearningViaNeuralFieldAdaption.pdf": {
+    "mtime": 1777908837.3256598,
+    "hash": "098fbc8250d7b6ca002853f5827d9a46"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf": {
+    "mtime": 1777908837.224965,
+    "hash": "a369f0f1b9f48e35762de345730471e2"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/weight2weight.pdf": {
+    "mtime": 1777908837.384197,
+    "hash": "a424e4604cc198e6e2998e9134bf7b6f"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf": {
+    "mtime": 1777908837.2755914,
+    "hash": "a8959ea3ec68f133bd506b1cffffe9a3"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf": {
+    "mtime": 1777908837.253687,
+    "hash": "3165c9195161d21b84daeaae487d215b"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/DWSNets.pdf": {
+    "mtime": 1777908837.2137628,
+    "hash": "307ec8a4df693b9d714e14f7a5398b30"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf": {
+    "mtime": 1777908837.282383,
+    "hash": "a9ce6249ceaafdfc66e08668e874078b"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf": {
+    "mtime": 1777908837.2480142,
+    "hash": "3b9a6858f60c3a94538c8268d12fb653"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf": {
+    "mtime": 1777908837.290202,
+    "hash": "86488aa57368b080245b6e7d10b38702"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf": {
+    "mtime": 1777908837.2652702,
+    "hash": "feb17505bd7add285354c5a90a51f73b"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf": {
+    "mtime": 1777908837.2568033,
+    "hash": "6071803f93e4573eb7e0fb2c4e65976a"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf": {
+    "mtime": 1777908837.2741632,
+    "hash": "8da3fcff12eb2898848f8a2eb1a5e2c5"
+  },
+  "/Users/barsat/weightBench/relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf": {
+    "mtime": 1777908837.285134,
+    "hash": "44a19d2b8ae348ad6154b871df6ad38f"
+  }
+}

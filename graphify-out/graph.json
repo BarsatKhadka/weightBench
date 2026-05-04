@@ -1,0 +1,2440 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "hyperedge_lora_weight_space_methods",
+        "label": "LoRA Weight Space Methods",
+        "nodes": [
+          "lora_asymmetry",
+          "adalora",
+          "weight_space_via_neural_field",
+          "icm_lora",
+          "drag_and_drop_llms"
+        ],
+        "relation": "all_study_lora_parameter_space_structure",
+        "properties": {
+          "description": "These papers collectively characterize the structure of LoRA weight space: asymmetry (B vs A), adaptive rank allocation (SVD), multiplicative adaptation (mLoRA), generative models (CVAE, hyper-convolutional). Together they inform the choice of weight-space coordinate system for WeightBench.",
+          "relevance_to_research": "Component 3 of WeightBench: choosing the right LoRA representation"
+        }
+      },
+      {
+        "id": "hyperedge_equivariant_metanetworks",
+        "label": "Equivariant Metanetworks for Weight Spaces",
+        "nodes": [
+          "equivariant_deep_weight_spaces",
+          "graph_meta_networks",
+          "concept_dwsnets",
+          "concept_permutation_symmetry"
+        ],
+        "relation": "solve_permutation_symmetry_for_weight_space_learning",
+        "properties": {
+          "description": "DEEP-ALIGN, GMNs, and DWSNets all address the fundamental challenge of permutation symmetry in weight spaces. DEEP-ALIGN learns equivariant alignment; GMNs use graph automorphisms; DWSNets use equivariant linear layers. These are the primary tools for symmetry-aware weight-space analysis.",
+          "relevance_to_research": "Critical for Experiment 2 (cross-model comparison) in WeightBench where weight-space distances must be symmetry-aware"
+        }
+      },
+      {
+        "id": "hyperedge_model_merging_ecosystem",
+        "label": "Model Merging Methods",
+        "nodes": [
+          "task_arithmetic_tangent",
+          "ties_merging",
+          "equivariant_deep_weight_spaces",
+          "concept_model_merging",
+          "concept_task_vector"
+        ],
+        "relation": "constitute_model_merging_ecosystem",
+        "properties": {
+          "description": "Task Arithmetic defines task vectors and simple merging; TIES-Merging adds sign election to resolve interference; DEEP-ALIGN adds equivariant alignment before merging. Together they form a progression of increasingly sophisticated merging methods. WeightBench could use merging compatibility as downstream prediction target.",
+          "relevance_to_research": "Downstream predictive demonstration in WeightBench (Component 5)"
+        }
+      },
+      {
+        "id": "hyperedge_scalable_weight_representations",
+        "label": "Scalable Weight Space Representations",
+        "nodes": [
+          "sane_weight_space",
+          "graph_meta_networks",
+          "survey_weight_space_learning"
+        ],
+        "relation": "provide_scalable_cross_architecture_weight_representations",
+        "properties": {
+          "description": "SANE (sequential autoencoder) and GMNs (graph-based) both enable cross-architecture model comparison. The survey provides the taxonomy. Together they address the hardest open question in WeightBench: cross-model methodology for Experiment 2.",
+          "relevance_to_research": "Key tools for Experiment 2 (cross-model setting) in WeightBench"
+        }
+      },
+      {
+        "id": "hyperedge_parameter_generation",
+        "label": "LoRA Parameter Generation Methods",
+        "nodes": [
+          "drag_and_drop_llms",
+          "icm_lora",
+          "concept_hypernetwork"
+        ],
+        "relation": "generate_lora_parameters_from_task_descriptions",
+        "properties": {
+          "description": "DnD (hyper-convolutional) and ICM-LoRA (CVAE) both generate LoRA parameters conditioned on task descriptions without per-task fine-tuning. Both show that task descriptions and LoRA parameters are meaningfully linked in a learnable latent space.",
+          "relevance_to_research": "Could be used to synthesize LoRA populations for WeightBench experiments; demonstrate that behavioral signal (task description) predicts weight-space coordinates"
+        }
+      },
+      {
+        "id": "hyperedge_dual_signal_evidence",
+        "label": "Evidence for Dual-Signal Hypothesis",
+        "nodes": [
+          "task_arithmetic_tangent",
+          "concept_weight_disentanglement",
+          "icm_lora",
+          "weight_space_via_neural_field",
+          "concept_dual_signal"
+        ],
+        "relation": "provide_empirical_and_theoretical_evidence_for_weight_behavior_correlation",
+        "properties": {
+          "description": "Weight disentanglement (Task Arithmetic paper) shows weight space has task-localized structure. ICM-LoRA's t-SNE shows task clustering in LoRA hidden space. mLoRA paper shows semantic structure in constrained LoRA weights. Together these support the WeightBench hypothesis that weight-space and behavioral coordinates are complementary, not redundant.",
+          "relevance_to_research": "Core theoretical motivation for WeightBench dual-signal framing"
+        }
+      },
+      {
+        "id": "hyperedge_lora_generation_methods",
+        "label": "LoRA Parameter Generation Paradigm",
+        "nodes": [
+          "oral_conditional_recurrent_diffusion",
+          "structureawarelorgen_lorangen",
+          "weight2weight_w2w_space",
+          "oral_parameter_generation"
+        ],
+        "relation": "implement",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf"
+      },
+      {
+        "id": "hyperedge_weight_space_structure",
+        "label": "Weight Space Structure and Geometry",
+        "nodes": [
+          "knowledgeinweightspace_weight_region",
+          "knowledgeinweightspace_linear_connectivity",
+          "dwsnets_permutation_symmetry",
+          "dwsnets_weight_alignment",
+          "selfsupervisedweightlearning_permutation_augmentation"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf"
+      },
+      {
+        "id": "hyperedge_lora_rank_hypothesis",
+        "label": "Low-Rank Hypothesis for Fine-Tuning",
+        "nodes": [
+          "intrinsicdimensionality_intrinsic_dimension",
+          "loraoriginal_rank_deficiency",
+          "loraoriginal_low_rank_adaptation",
+          "loralearnlessforgetless_high_rank_perturbation"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 0.95,
+        "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "WeightBench Research Vision",
+      "file_type": "research_document",
+      "properties": {
+        "title": "Weight-Space and Behavioral Benchmark Joint Analysis of Fine-Tuned LLMs",
+        "venue_target": "NeurIPS Workshop",
+        "source_file": "prompt.md",
+        "core_framing": "dual-signal: weight-space coordinates + behavioral coordinates for fine-tuned LLM populations",
+        "experiment_1": "within-model: population of LoRAs from one base model, fixed parameterization, multiple tasks and seeds",
+        "experiment_2": "cross-model: two base models, same task families, testing whether similar benchmark scores mask structural differences",
+        "components": [
+          "LoRA training pipeline",
+          "benchmark evaluation pipeline",
+          "weight-space representation (raw \u0394W / learned encoding / functional probes)",
+          "analysis tooling (distance computations, visualizations, statistical tests)",
+          "predictive demonstration (merging compatibility, transfer prediction, OOD generalization)"
+        ],
+        "open_questions": [
+          "unit of weight-space analysis (raw \u0394W vs layer-wise statistics vs functional probes vs learned encoding)",
+          "cross-model methodology (hardest open question)",
+          "downstream demonstration choice"
+        ]
+      },
+      "id": "prompt_md",
+      "community": 0,
+      "norm_label": "weightbench research vision"
+    },
+    {
+      "label": "LoRA Asymmetry (Zhu et al. 2024)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2402.16842",
+        "source_file": "AssymetryOfLora.pdf",
+        "year": 2024,
+        "key_claim": "In LoRA (\u0394W = BA), B and A have asymmetric roles: A extracts r features from input, B projects to desired output",
+        "theorem_4_3": "Freezing A to random orthogonal matrix yields better or equal performance vs freezing B",
+        "lemma_4_5": "Tuning only B gives tighter generalization bound than tuning both (fewer parameters)",
+        "practical_insight": "B-only training with larger rank rB gives more expressive power for same parameter budget",
+        "models_tested": [
+          "RoBERTa on GLUE",
+          "BART-Large on XSum and CNN/DailyMail",
+          "LLaMA-2 on MMLU",
+          "ViT on DomainBed"
+        ]
+      },
+      "id": "lora_asymmetry",
+      "community": 0,
+      "norm_label": "lora asymmetry (zhu et al. 2024)"
+    },
+    {
+      "label": "Task Arithmetic in Tangent Space (Ortiz-Jimenez et al., NeurIPS 2023)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2305.12827",
+        "source_file": "TaskArthimeticInTangentSpace.pdf",
+        "year": 2023,
+        "venue": "NeurIPS 2023",
+        "task_vector_formula": "\u03c4_t = \u03b8*_t \u2212 \u03b8_0; task arithmetic = \u03b8_0 + \u03a3 \u03b1_t \u03c4_t",
+        "weight_disentanglement": "function decomposes as sum of spatially-localized components, one per task support (Property 3)",
+        "key_finding": "task arithmetic in CLIP models does NOT stem from NTK/linear fine-tuning",
+        "linearized_finetuning": "fine-tuning in tangent space amplifies weight disentanglement \u2192 better task arithmetic",
+        "emergent_property": "weight disentanglement is emergent from pre-training, not present at random init",
+        "ntk_localization": "CLIP NTK eigenfunctions are localized on training data domains",
+        "improvements": "up to 5.8 pts more in task addition, 13.1 pts more in task negation vs non-linear FT"
+      },
+      "id": "task_arithmetic_tangent",
+      "community": 3,
+      "norm_label": "task arithmetic in tangent space (ortiz-jimenez et al., neurips 2023)"
+    },
+    {
+      "label": "AdaLoRA (Zhang et al., ICLR 2023)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2303.10512",
+        "source_file": "AdaLORA.pdf",
+        "year": 2023,
+        "venue": "ICLR 2023",
+        "parameterization": "W = W(0) + P\u039bQ where P, Q are orthogonal",
+        "orthogonality_regularizer": "R(P,Q) = ||P^T P \u2212 I||^2_F + ||QQ^T \u2212 I||^2_F",
+        "importance_scoring": "s_{k,i} = s(\u03bb_{k,i}) + mean_j s(P_{k,ji}) + mean_j s(Q_{k,ij})",
+        "sensitivity_uncertainty": "\u012a(w) = EMA of |w\u2207L|; \u016a(w) = local variation; importance = \u012a \u00d7 \u016a",
+        "budget_scheduler": "cubic schedule from b(0) to b(T)",
+        "results": "outperforms LoRA on GLUE (DeBERTaV3-base), SQuAD, XSum, CNN/DailyMail; especially in low-budget settings"
+      },
+      "id": "adalora",
+      "community": 0,
+      "norm_label": "adalora (zhang et al., iclr 2023)"
+    },
+    {
+      "label": "Equivariant Deep Weight Spaces / DEEP-ALIGN (Navon et al., ICML 2024)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2310.13397",
+        "source_file": "EquivariantDeepWeightSpaces.pdf",
+        "year": 2024,
+        "venue": "ICML 2024",
+        "weight_alignment_problem": "argmin_{k\u2208G} ||v \u2212 k#v'||^2",
+        "equivariance_theorem": "G(g#v, g'#v') = g \u00b7 G(v,v') \u00b7 g'^T",
+        "deep_align_architecture": "FDW S (Siamese DWSNet) \u2192 FV\u2192A (weight-to-activation mapping) \u2192 Fprod (generalized outer product) \u2192 Fproj (Sinkhorn projection \u2192 Hungarian algorithm)",
+        "prop_5_1": "DEEP-ALIGN can simulate activation matching",
+        "prop_5_2": "exactness for perfect alignments",
+        "training": "labeled (synthetic permuted+noisy) + unsupervised (alignment loss + LMC loss)",
+        "applications": "model merging, federated learning (outperforms FedAvg, Weight Matching, Sinkhorn-L2)"
+      },
+      "id": "equivariant_deep_weight_spaces",
+      "community": 0,
+      "norm_label": "equivariant deep weight spaces / deep-align (navon et al., icml 2024)"
+    },
+    {
+      "label": "Drag-and-Drop LLMs / DnD (Liang et al., 2025)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2506.16406",
+        "source_file": "DragAndDropLLMS.pdf",
+        "year": 2025,
+        "key_claim": "prompt-conditioned hyper-generator eliminates per-task gradient-based optimization",
+        "architecture": "frozen text encoder (Sentence-BERT) \u2192 condition embeddings \u2192 cascaded hyper-convolutional decoder (ConvW, ConvH, ConvL blocks) \u2192 LoRA matrices",
+        "training": "MSE loss between generated and original tokenized LoRA checkpoints",
+        "results": "12,000\u00d7 lower overhead than full fine-tuning; up to 30% gains on unseen datasets",
+        "tasks": [
+          "common-sense",
+          "math",
+          "coding",
+          "multimodal"
+        ],
+        "scale": "0.5B to 7B parameter models"
+      },
+      "id": "drag_and_drop_llms",
+      "community": 0,
+      "norm_label": "drag-and-drop llms / dnd (liang et al., 2025)"
+    },
+    {
+      "label": "Survey of Weight Space Learning (Han et al., 2026)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2603.10090",
+        "source_file": "SurveyOfWeightSpaceLearning.pdf",
+        "year": 2026,
+        "taxonomy": {
+          "WSU": "Weight Space Understanding \u2014 functional invariance and equivariance",
+          "WSR": "Weight Space Representation \u2014 model-based (symmetry-agnostic, symmetry-aware like DWSNets/NFN/UNF, graph-based like NG/GMN) and model-free (probe-based like ProbeLog/ProbeGen/ProbeX)",
+          "WSG": "Weight Space Generation \u2014 hypernetworks and generative models (autoencoders, GANs, autoregressive, diffusion-based like p-diff, COND P-DIFF, RPG, DnD)"
+        },
+        "functional_invariances": [
+          "neuron permutation",
+          "positive scaling",
+          "bias translation"
+        ],
+        "functional_equivariances": [
+          "orthogonal rotation",
+          "sign flipping",
+          "attention-head permutation"
+        ],
+        "benchmarks": [
+          "MLP/CNN/RNN/Transformer model zoos"
+        ],
+        "applications": [
+          "INR",
+          "model unification",
+          "continual learning",
+          "meta learning",
+          "federated learning",
+          "NAS"
+        ]
+      },
+      "id": "survey_weight_space_learning",
+      "community": 0,
+      "norm_label": "survey of weight space learning (han et al., 2026)"
+    },
+    {
+      "label": "TIES-Merging (Yadav et al., NeurIPS 2023)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2306.01708",
+        "source_file": "TIESMerginh.pdf",
+        "year": 2023,
+        "venue": "NeurIPS 2023",
+        "problem": "parameter interference when merging task vectors: (a) redundant parameters, (b) sign disagreement",
+        "algorithm_steps": [
+          "Trim: keep top-k% by magnitude, zero rest",
+          "Elect sign: \u03b3^p_m = sgn(\u03a3 \u03c4\u0302^p_t)",
+          "Disjoint merge: mean only of values with elected sign"
+        ],
+        "final_formula": "\u03b8_m = \u03b8_init + \u03bb \u00d7 \u03c4_m",
+        "baselines_beaten": [
+          "Task Arithmetic",
+          "RegMean",
+          "Fisher Merging"
+        ],
+        "models": [
+          "PEFT/(IA)^3",
+          "T5-base/large",
+          "ViT-B/32",
+          "ViT-L/14"
+        ],
+        "oracle_sign_experiment": "using multitask sign vector achieves 72% \u2248 multitask trained model (73.1%)"
+      },
+      "id": "ties_merging",
+      "community": 3,
+      "norm_label": "ties-merging (yadav et al., neurips 2023)"
+    },
+    {
+      "label": "In-Context Meta LoRA / ICM-LoRA (Shao et al., 2025)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2501.17635",
+        "source_file": "ICMLOra.pdf",
+        "year": 2025,
+        "key_claim": "CVAE-based multi-task LoRA parameter generator using in-context meta-learning and task vectors",
+        "architecture": "Conditional Variational Autoencoder (CVAE) with 12-layer 1D CNN encoder/decoder; task vectors from last hidden state of last layer",
+        "task_vector_formula": "v_task = (1/N) \u03a3 h^last_i (mean of last-token hidden states)",
+        "elbo_loss": "L = E[log p_\u03b8(l|z,v_task)] + KL(q_\u03d5(z|l,v_task) || p(z))",
+        "storage": "283MB vs 4.3G for original LoRA (rank=2), 1% of original dataset storage",
+        "models_tested": [
+          "Florence-2 on COCO detection",
+          "Llama-3-8B on The Pile subsets"
+        ],
+        "results": "matches or exceeds original LoRA on MAP50/75 (detection) and PPL/BPC (language modeling)",
+        "key_insight": "task hidden space has clustering phenomena (t-SNE shows distinct clusters per task)"
+      },
+      "id": "icm_lora",
+      "community": 0,
+      "norm_label": "in-context meta lora / icm-lora (shao et al., 2025)"
+    },
+    {
+      "label": "Graph Meta Networks / GMNs (Lim et al., 2023)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2312.04501",
+        "source_file": "GraphMetaNetworks.pdf",
+        "year": 2023,
+        "key_claim": "Representing neural networks as parameter graphs and processing with GNNs gives equivariant metanetworks generalizing to diverse architectures",
+        "parameter_graph": "each parameter is a single edge; contrast with computation graph where one parameter maps to many edges",
+        "neural_dag_automorphisms": "graph automorphisms on DAGs correspond to permutation parameter symmetries",
+        "proposition_1": "any neural DAG automorphism leaves network function unchanged",
+        "proposition_2": "graph metanets are equivariant to permutation symmetries induced by neural DAG automorphisms",
+        "proposition_3": "GMNs can express StatNN and NP-NFN on MLP inputs",
+        "proposition_4": "GMNs can simulate the forward pass of any feedforward neural network",
+        "supported_architectures": [
+          "MLPs",
+          "CNNs",
+          "multi-head attention",
+          "normalization layers",
+          "residual connections",
+          "ResNets",
+          "Vision Transformers",
+          "DeepSets",
+          "group-equivariant layers"
+        ],
+        "gnn_formulation": "message passing on edge attributes with node/edge/global feature updates",
+        "comparison_to_DWSNets": "more general; handles architectures DWSNets cannot"
+      },
+      "id": "graph_meta_networks",
+      "community": 0,
+      "norm_label": "graph meta networks / gmns (lim et al., 2023)"
+    },
+    {
+      "label": "SANE: Sequential Autoencoder for Neural Embeddings (Sch\u00fcrholt et al., ICML 2024)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2406.09997",
+        "source_file": "TowardsScalableAndVersatileWeightSpaceLearning.pdf",
+        "year": 2024,
+        "venue": "ICML 2024",
+        "key_claim": "Task-agnostic, scalable hyper-representations by sequential processing of weight subsets (tokens)",
+        "architecture": "transformer encoder-decoder processing windows of weight tokens; 3D positional encoding [global_pos, layer_idx, within_layer_pos]",
+        "tokenization": "reshape weights to 2D, slice row-wise, split into tokens of size dt",
+        "training_loss": "composite: (1-\u03b3)L_rec + \u03b3L_c (reconstruction + contrastive)",
+        "augmentations": [
+          "weight permutation",
+          "noise",
+          "masking"
+        ],
+        "sampling": "KDE per token \u2192 sample embeddings \u2192 decode to weights; bootstrapped refinement",
+        "scalability": "tested up to ResNet-101; decouples memory from model size",
+        "results": {
+          "discriminative": "matches SOTA on CNN model zoos",
+          "generative": "outperforms SOTA by 25% (initialization same task), 17% (finetuning new tasks) on CNNs; 31% and 28% on ResNets"
+        },
+        "cross_architecture": "can embed models with varying architectures in same embedding space"
+      },
+      "id": "sane_weight_space",
+      "community": 0,
+      "norm_label": "sane: sequential autoencoder for neural embeddings (schurholt et al., icml 2024)"
+    },
+    {
+      "label": "Weight Space Representation via Neural Field Adaptation / mLoRA (Yang et al., 2026)",
+      "file_type": "academic_paper",
+      "properties": {
+        "arxiv": "2512.01759",
+        "source_file": "WeightSpaceRepresentationLearningViaNeuralFieldAdaption.pdf",
+        "year": 2026,
+        "key_claim": "Constraining weight optimization through a pre-trained base model + multiplicative low-rank adaptation (mLoRA) induces semantic structure in weight space",
+        "mLoRA": "weight updates via element-wise multiplication rather than addition; aligns with modulation mechanisms in generative neural fields",
+        "inductive_biases": [
+          "LoRA constrains updates to low-dimensional subspace of base model",
+          "low-rank constraint reduces dimensionality of representation"
+        ],
+        "finding_standard_lora": "additive LoRA insufficient for neural field weight space learning",
+        "asymmetric_masking": "symmetry-breaking constraint enabling structured representations",
+        "applications": [
+          "reconstruction (lower error)",
+          "generation (diffusion models on mLoRA weights)",
+          "classification/clustering (semantic structure)"
+        ],
+        "context": "focuses on neural fields (INRs), not LLMs directly; approach generalizes to 2D and 3D data modalities"
+      },
+      "id": "weight_space_via_neural_field",
+      "community": 0,
+      "norm_label": "weight space representation via neural field adaptation / mlora (yang et al., 2026)"
+    },
+    {
+      "label": "LoRA (Low-Rank Adaptation)",
+      "file_type": "concept",
+      "properties": {
+        "formula": "\u0394W = BA where B \u2208 R^{d\u00d7r}, A \u2208 R^{r\u00d7k}, r << min(d,k)",
+        "parameter_budget": "2\u00d7r\u00d7d parameters vs d\u00d7d for full fine-tuning",
+        "original_paper": "Hu et al. 2021, arXiv:2106.09685",
+        "relevance": "core mechanism for weight-space experiments in WeightBench; each LoRA is a point in parameter space"
+      },
+      "id": "concept_lora",
+      "community": 0,
+      "norm_label": "lora (low-rank adaptation)"
+    },
+    {
+      "label": "Weight Disentanglement",
+      "file_type": "concept",
+      "properties": {
+        "definition": "distinct directions in weight space correspond to localized areas in function space; function decomposes as sum of spatially-localized components",
+        "origin": "emergent property of pre-training; not present at random initialization",
+        "amplification": "NTK linearization amplifies weight disentanglement",
+        "significance_for_research": "enables dual-signal framing: weight-space geometry correlates with task-level functional behavior"
+      },
+      "id": "concept_weight_disentanglement",
+      "community": 3,
+      "norm_label": "weight disentanglement"
+    },
+    {
+      "label": "Permutation Symmetry / Invariance in Neural Networks",
+      "file_type": "concept",
+      "properties": {
+        "definition": "permuting neurons in hidden layers leaves network function unchanged",
+        "challenge": "makes weight-space distance metrics ill-defined without alignment; distribution multi-modal",
+        "solutions": [
+          "DEEP-ALIGN (equivariant alignment)",
+          "TIES-Merging (elect sign to handle interference)",
+          "DWSNets/NFN (equivariant architectures)",
+          "GMNs (graph automorphism equivariance)",
+          "mLoRA (symmetry-breaking via asymmetric masking)"
+        ],
+        "relevance": "core challenge for any weight-space analysis in WeightBench"
+      },
+      "id": "concept_permutation_symmetry",
+      "community": 0,
+      "norm_label": "permutation symmetry / invariance in neural networks"
+    },
+    {
+      "label": "Task Vector",
+      "file_type": "concept",
+      "properties": {
+        "definition_task_arithmetic": "\u03c4_t = \u03b8*_t \u2212 \u03b8_0 (fine-tuned weights minus pre-trained weights)",
+        "definition_icm_lora": "mean of last-token hidden states from last layer: v_task = (1/N) \u03a3 h^last_i",
+        "usage_task_arithmetic": "arithmetic on task vectors for model editing: \u03b8_0 + \u03a3 \u03b1_t \u03c4_t",
+        "usage_icm_lora": "condition vector for CVAE to generate task-specific LoRA parameters",
+        "relevance": "provides behavioral coordinate for weight-space models; bridge between parameters and task identity"
+      },
+      "id": "concept_task_vector",
+      "community": 3,
+      "norm_label": "task vector"
+    },
+    {
+      "label": "Hypernetwork / Parameter Generation",
+      "file_type": "concept",
+      "properties": {
+        "definition": "network that generates parameters for another network",
+        "examples": [
+          "HyperNetworks (Ha et al. 2016)",
+          "DnD hyper-convolutional decoder",
+          "ICM-LoRA CVAE",
+          "COND P-DIFF diffusion-based"
+        ],
+        "relevance_to_research": "WSG (Weight Space Generation) category; could be used for LoRA population synthesis in WeightBench"
+      },
+      "id": "concept_hypernetwork",
+      "community": 0,
+      "norm_label": "hypernetwork / parameter generation"
+    },
+    {
+      "label": "Dual-Signal Framing (WeightBench Core Concept)",
+      "file_type": "concept",
+      "properties": {
+        "definition": "for every fine-tuned model: (1) weight-space coordinate = representation of parameters; (2) behavioral coordinate = benchmark score vector",
+        "research_question": "are the two coordinate systems redundant or complementary? where do they agree and where does disagreement carry useful information?",
+        "methods_to_explore": [
+          "raw distances in \u0394W space",
+          "symmetry-aware distances",
+          "functional probes",
+          "decompositions",
+          "learned encoders"
+        ],
+        "downstream_prediction": "combined signal should beat single-signal at predicting merging compatibility, transfer prediction, OOD generalization, capability decomposition"
+      },
+      "id": "concept_dual_signal",
+      "community": 3,
+      "norm_label": "dual-signal framing (weightbench core concept)"
+    },
+    {
+      "label": "NTK Linearization / Tangent Space Fine-tuning",
+      "file_type": "concept",
+      "properties": {
+        "definition": "linearizing a model around initialization: f(\u03b8) \u2248 f(\u03b8_0) + J(\u03b8_0)(\u03b8 \u2212 \u03b8_0) where J is Jacobian",
+        "effect": "amplifies weight disentanglement; improves task arithmetic performance",
+        "ntk_eigenfunction_localization": "CLIP NTK eigenfunctions localized on training data domains",
+        "relevance": "suggests weight-space geometry in tangent space is more interpretable than in parameter space directly"
+      },
+      "id": "concept_ntk_linearization",
+      "community": 3,
+      "norm_label": "ntk linearization / tangent space fine-tuning"
+    },
+    {
+      "label": "Model Merging",
+      "file_type": "concept",
+      "properties": {
+        "definition": "combining weights of multiple fine-tuned models without additional training",
+        "methods": [
+          "simple averaging",
+          "Task Arithmetic (\u03b8_0 + \u03a3 \u03c4_t)",
+          "TIES-Merging (trim + elect sign + disjoint merge)",
+          "DEEP-ALIGN (equivariant alignment then merge)",
+          "Model Soup"
+        ],
+        "interference_types": [
+          "redundant parameters",
+          "sign disagreement"
+        ],
+        "relevance": "natural downstream prediction task for WeightBench; merging compatibility as predictive target"
+      },
+      "id": "concept_model_merging",
+      "community": 3,
+      "norm_label": "model merging"
+    },
+    {
+      "label": "Weight Space Representation (WSR)",
+      "file_type": "concept",
+      "properties": {
+        "approaches": {
+          "raw_weights": "direct use of flattened weight vector; sensitive to permutation symmetry",
+          "model_based_symmetry_aware": "DWSNets, NFN, UNF \u2014 architectures that respect permutation equivariance",
+          "graph_based": "GMNs \u2014 neural networks as parameter graphs processed by GNNs",
+          "sequential_autoencoder": "SANE \u2014 transformer autoencoder on weight token subsequences",
+          "probe_based": "ProbeLog, ProbeGen, ProbeX \u2014 functional probes measuring behavior on specific inputs",
+          "neural_field_weights": "mLoRA \u2014 constraining LoRA weights induces semantic structure"
+        },
+        "relevance": "WeightBench component 3: deciding which weight-space representation to use is a key open question"
+      },
+      "id": "concept_weight_space_representation",
+      "community": 0,
+      "norm_label": "weight space representation (wsr)"
+    },
+    {
+      "label": "DWSNets (Deep Weight Space Networks)",
+      "file_type": "concept",
+      "properties": {
+        "definition": "equivariant architectures for deep weight spaces respecting permutation symmetry of neuron ordering",
+        "authors": "Navon et al. 2023",
+        "key_property": "equivariant to permutation symmetries of input network parameters",
+        "used_in": [
+          "DEEP-ALIGN (Navon et al. ICML 2024)",
+          "SANE references as baseline",
+          "Survey taxonomy WSR model-based symmetry-aware"
+        ],
+        "limitation": "originally designed for MLPs/CNNs; GMNs generalize to more architectures"
+      },
+      "id": "concept_dwsnets",
+      "community": 0,
+      "norm_label": "dwsnets (deep weight space networks)"
+    },
+    {
+      "label": "Editing Models with Task Arithmetic",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2212.04089",
+      "captured_at": null,
+      "author": "Gabriel Ilharco, Marco Tulio Ribeiro, Mitchell Wortsman, Suchin Gururangan, Ludwig Schmidt, Hannaneh Hajishirzi, Ali Farhadi",
+      "contributor": null,
+      "id": "editingmodelwithtaskarithmetic_paper",
+      "community": 2,
+      "norm_label": "editing models with task arithmetic"
+    },
+    {
+      "label": "Task Vector",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A task vector is obtained by subtracting pre-trained model weights from fine-tuned model weights, defining a direction in weight space. Arithmetic operations (negation, addition, analogy composition) on task vectors steer model behavior without extra inference cost, because operations are purely element-wise on weights.",
+      "id": "editingmodelwithtaskarithmetic_task_vector",
+      "community": 2,
+      "norm_label": "task vector"
+    },
+    {
+      "label": "Task Arithmetic",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Negating a task vector unlearns a task; adding vectors creates multi-task models; forming analogies transfers knowledge to unseen tasks. Chosen because it requires no additional data or training and has zero inference latency overhead.",
+      "id": "editingmodelwithtaskarithmetic_task_arithmetic",
+      "community": 2,
+      "norm_label": "task arithmetic"
+    },
+    {
+      "label": "Weight Interpolation",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Prior work on weight interpolation motivated the task vector construction. Linear interpolation between model weights can maintain or improve performance, underpinning the additive structure exploited by task arithmetic.",
+      "id": "editingmodelwithtaskarithmetic_weight_interpolation",
+      "community": 2,
+      "norm_label": "weight interpolation"
+    },
+    {
+      "label": "Weights2Weights: Interpreting the Weight Space of Customized Diffusion Models",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2406.09413",
+      "captured_at": null,
+      "author": "Amil Dravid, Yossi Gandelsman, Kuan-Chieh Wang, Alexei A. Efros, Rameen Abdal, Gordon Wetzstein, Kfir Aberman",
+      "contributor": null,
+      "id": "weight2weight_paper",
+      "community": 6,
+      "norm_label": "weights2weights: interpreting the weight space of customized diffusion models"
+    },
+    {
+      "label": "weights2weights (w2w) Space",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": "Abstract, Section 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A PCA-derived subspace over 60k+ LoRA fine-tuned diffusion model weights, one model per identity, functions as a meta-latent space. Sampling from it yields new identity-encoding models; linear directions correspond to semantic edits. LoRA is used to reduce dimensionality before PCA, making the manifold tractable.",
+      "id": "weight2weight_w2w_space",
+      "community": 6,
+      "norm_label": "weights2weights (w2w) space"
+    },
+    {
+      "label": "Meta-Latent Space over Model Weights",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Unlike GAN latent spaces that control individual images, the w2w meta-latent space controls the model itself, enabling consistent multi-image generation for a subject. This motivates treating model weights as data points in a learnable generative space.",
+      "id": "weight2weight_meta_latent_space",
+      "community": 6,
+      "norm_label": "meta-latent space over model weights"
+    },
+    {
+      "label": "ORAL: Prompting Your Large-Scale LoRAs via Conditional Recurrent Diffusion",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2503.24354",
+      "captured_at": null,
+      "author": "Rana Muhammad Shahroz Khan, Pingzhi Li, Kai Wang, Dongwen Tang, Tianlong Chen",
+      "contributor": null,
+      "id": "oral_paper",
+      "community": 4,
+      "norm_label": "oral: prompting your large-scale loras via conditional recurrent diffusion"
+    },
+    {
+      "label": "Conditional Recurrent Diffusion for LoRA Generation",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "ORAL uses a recurrent diffusion backbone (from RPG) augmented with a novel conditioning mechanism encoding model architecture and textual task specifications. This achieves simultaneous scalability (up to 7B parameter LLMs), controllability (task-specific generation), and portability (transfer to evolving base models without retraining) \u2014 properties no prior method achieved together.",
+      "id": "oral_conditional_recurrent_diffusion",
+      "community": 4,
+      "norm_label": "conditional recurrent diffusion for lora generation"
+    },
+    {
+      "label": "Neural Network Parameter Generation",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": "Section 1-2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Parameter generation treats neural network weights as a distinct modality to synthesize directly, offering an alternative to traditional training. Prior work (P-Diff, Cond P-Diff, RPG) each solved only a subset of scalability/controllability/portability.",
+      "id": "oral_parameter_generation",
+      "community": 4,
+      "norm_label": "neural network parameter generation"
+    },
+    {
+      "label": "Knowledge Is a Region in Weight Space for Finetuned Language Models",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2302.04863",
+      "captured_at": null,
+      "author": "Almog Gueta, Elad Venezian, Colin Raffel, Noam Slonim, Yoav Katz, Leshem Choshen",
+      "contributor": null,
+      "id": "knowledgeinweightspace_paper",
+      "community": 6,
+      "norm_label": "knowledge is a region in weight space for finetuned language models"
+    },
+    {
+      "label": "Knowledge Region in Weight Space",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": "Abstract, Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Fine-tuned models optimized for high performance cluster in well-defined, linearly connected regions of weight space. Any model within a region also performs well. The center of such a region outperforms individual fine-tuned models on average, suggesting the best models may not lie at region edges (where gradient-based fine-tuning typically ends).",
+      "id": "knowledgeinweightspace_weight_region",
+      "community": 6,
+      "norm_label": "knowledge region in weight space"
+    },
+    {
+      "label": "Linear Mode Connectivity",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": "Section 5",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Models fine-tuned on the same dataset are linearly connected in weight space \u2014 the convex hull between them forms a connected low-loss basin. This extends the linear connectivity result of Entezari et al. to a full bounded convex region, not just a line.",
+      "id": "knowledgeinweightspace_linear_connectivity",
+      "community": 6,
+      "norm_label": "linear mode connectivity"
+    },
+    {
+      "label": "Equivariant Deep Weight Space Alignment (Deep-Align / DWSNets)",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2310.13397",
+      "captured_at": null,
+      "author": "Aviv Navon, Aviv Shamsian, Ethan Fetaya, Gal Chechik, Nadav Dym, Haggai Maron",
+      "contributor": null,
+      "id": "dwsnets_paper",
+      "community": 2,
+      "norm_label": "equivariant deep weight space alignment (deep-align / dwsnets)"
+    },
+    {
+      "label": "Deep-Align Framework",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A learning-based weight alignment method using DWSNets with Siamese architecture. Alignment is reduced to a feedforward pass rather than iterative optimization (NP-hard in general). Equivariance design reduces training set size requirements and enables efficient inference.",
+      "id": "dwsnets_deep_align",
+      "community": 2,
+      "norm_label": "deep-align framework"
+    },
+    {
+      "label": "Permutation Symmetry of Neural Networks",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Abstract, Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Deep networks maintain function under permutations of weights, making naive weight averaging or distance computation meaningless without alignment. This symmetry motivates equivariant architectures that respect it by design.",
+      "id": "dwsnets_permutation_symmetry",
+      "community": 2,
+      "norm_label": "permutation symmetry of neural networks"
+    },
+    {
+      "label": "Weight Alignment",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Finding optimal permutations between two networks' weight matrices to make them comparable. Critical for model merging, loss landscape study, and federated learning. NP-hard in general; prior work uses relaxed optimization.",
+      "id": "dwsnets_weight_alignment",
+      "community": 2,
+      "norm_label": "weight alignment"
+    },
+    {
+      "label": "Predicting Trends in the Quality of State-of-the-Art Neural Networks without Access to Training or Testing Data",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2002.06716",
+      "captured_at": null,
+      "author": "Charles H. Martin, Tongsu Peng, Michael W. Mahoney",
+      "contributor": null,
+      "id": "predictingtrends_paper",
+      "community": 5,
+      "norm_label": "predicting trends in the quality of state-of-the-art neural networks without access to training or testing data"
+    },
+    {
+      "label": "Power Law (Heavy-Tailed) Metrics for Model Quality",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "PL-based metrics (weighted alpha, alpha-norm) derived from eigenvalue power-law fits outperform norm-based metrics for predicting model quality without training/test data. They can distinguish well-trained vs. poorly-trained models where norms fail (Scale Collapse). Based on Theory of Heavy-Tailed Self Regularization.",
+      "id": "predictingtrends_power_law_metrics",
+      "community": 5,
+      "norm_label": "power law (heavy-tailed) metrics for model quality"
+    },
+    {
+      "label": "WeightWatcher Tool",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A publicly available tool (v0.2.7) used to compute norm- and PL-based weight matrix metrics on pretrained models without access to training data.",
+      "id": "predictingtrends_weightwatcher",
+      "community": 5,
+      "norm_label": "weightwatcher tool"
+    },
+    {
+      "label": "Intrinsic Dimensionality Explains the Effectiveness of Language Model Fine-Tuning",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2012.13255",
+      "captured_at": null,
+      "author": "Armen Aghajanyan, Luke Zettlemoyer, Sonal Gupta",
+      "contributor": null,
+      "id": "intrinsicdimensionality_paper",
+      "community": 1,
+      "norm_label": "intrinsic dimensionality explains the effectiveness of language model fine-tuning"
+    },
+    {
+      "label": "Intrinsic Dimension of Fine-Tuning",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf",
+      "source_location": "Section 1, 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The minimum number of parameters needed to achieve ~90% of full fine-tuning performance. Pre-training implicitly minimizes this intrinsic dimension, and larger models tend to have lower intrinsic dimension, directly motivating low-rank adaptation approaches like LoRA. RoBERTa can be fine-tuned with only 200 parameters projected back to full space.",
+      "id": "intrinsicdimensionality_intrinsic_dimension",
+      "community": 1,
+      "norm_label": "intrinsic dimension of fine-tuning"
+    },
+    {
+      "label": "Structure-Aware Intrinsic Dimension (SAID)",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf",
+      "source_location": "Section 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "An extension of intrinsic dimension measurement that incorporates layer-wise scaling parameters. Addresses the limitation of layer-unaware DID by allowing different layers to contribute differently to the subspace optimization, reflecting that attention layers specialize separately.",
+      "id": "intrinsicdimensionality_said",
+      "community": 1,
+      "norm_label": "structure-aware intrinsic dimension (said)"
+    },
+    {
+      "label": "LoRAGen: Structure-Aware Weight Space Learning for LoRA Generation",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Hao Huang, Jingtao Ding, Mengqi Liao, Xin Wang, Jinyang Ban, Yuan Yuan, Huaiyu Wan, Yong Li",
+      "contributor": null,
+      "id": "structureawarelorgen_paper",
+      "community": 4,
+      "norm_label": "loragen: structure-aware weight space learning for lora generation"
+    },
+    {
+      "label": "LoRAGen Method",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Generates LoRA parameters from natural language task descriptions using a latent diffusion model. Addresses non-uniqueness of low-rank decomposition by supervising on full adaptation matrix (not A/B matrices directly). Uses a module-aware Mix-of-Experts decoder to handle heterogeneous weight distributions across Transformer modules.",
+      "id": "structureawarelorgen_lorangen",
+      "community": 4,
+      "norm_label": "loragen method"
+    },
+    {
+      "label": "Non-Uniqueness of Low-Rank Decomposition",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 3, Obs-1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "For any invertible R, (BR)(R^{-1}A) yields the same full adaptation matrix \u0394W. Supervising on A,B directly is sensitive to arbitrary rescalings/rotations; supervising on \u0394W avoids this ambiguity and improves generalization.",
+      "id": "structureawarelorgen_nonuniqueness",
+      "community": 4,
+      "norm_label": "non-uniqueness of low-rank decomposition"
+    },
+    {
+      "label": "Module-Aware Mix-of-Experts (MoE) Decoder",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Different Transformer modules (encoder self-attention, decoder self-attention, cross-attention) have systematically different spectral-entropy distributions. A shared decoder cannot model this heterogeneity; routing to module-specialized experts with structural embeddings addresses it.",
+      "id": "structureawarelorgen_moe_decoder",
+      "community": 4,
+      "norm_label": "module-aware mix-of-experts (moe) decoder"
+    },
+    {
+      "label": "Locating and Editing Factual Associations in GPT (ROME)",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2202.05262",
+      "captured_at": null,
+      "author": "Kevin Meng, David Bau, Alex Andonian, Yonatan Belinkov",
+      "contributor": null,
+      "id": "locatingeditinggpt_paper",
+      "community": 7,
+      "norm_label": "locating and editing factual associations in gpt (rome)"
+    },
+    {
+      "label": "Rank-One Model Editing (ROME)",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 1-2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Modifies feed-forward weights at specific middle-layer MLP modules to update factual associations. Uses causal mediation analysis to locate decisive neuron activations. Achieves specificity and generalization simultaneously, unlike fine-tuning or interpretability-based alternatives.",
+      "id": "locatingeditinggpt_rome",
+      "community": 7,
+      "norm_label": "rank-one model editing (rome)"
+    },
+    {
+      "label": "Causal Mediation Analysis for Knowledge Localization",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Identifies which internal hidden states causally mediate factual predictions by corrupting subject tokens and restoring activations layer by layer. Reveals that middle-layer MLP modules at subject-last-token positions are decisive, not attention layers.",
+      "id": "locatingeditinggpt_causal_tracing",
+      "community": 7,
+      "norm_label": "causal mediation analysis for knowledge localization"
+    },
+    {
+      "label": "Mid-Layer MLP Modules as Factual Association Storage",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Factual associations in GPT are stored in localized, directly-editable computations within mid-layer feed-forward modules, not distributed across all layers, enabling targeted weight edits.",
+      "id": "locatingeditinggpt_mlp_factual_storage",
+      "community": 7,
+      "norm_label": "mid-layer mlp modules as factual association storage"
+    },
+    {
+      "label": "LoRA: Low-Rank Adaptation of Large Language Models",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2106.09685",
+      "captured_at": null,
+      "author": "Edward Hu, Yelong Shen, Phillip Wallis, Zeyuan Allen-Zhu, Yuanzhi Li, Shean Wang, Lu Wang, Weizhu Chen",
+      "contributor": null,
+      "id": "loraoriginal_paper",
+      "community": 1,
+      "norm_label": "lora: low-rank adaptation of large language models"
+    },
+    {
+      "label": "Low-Rank Adaptation (LoRA)",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1-2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Freezes pre-trained weights and injects trainable rank-decomposition matrices (\u0394W=BA) into Transformer layers. Motivated by the low intrinsic dimension of fine-tuning (Aghajanyan et al., 2020; Li et al., 2018). Reduces trainable parameters by ~10,000x vs GPT-3 full fine-tuning with no inference latency since \u0394W can be merged at deploy time.",
+      "id": "loraoriginal_low_rank_adaptation",
+      "community": 1,
+      "norm_label": "low-rank adaptation (lora)"
+    },
+    {
+      "label": "Rank Deficiency in Weight Updates",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The hypothesis that weight changes during adaptation have low intrinsic rank justifies LoRA. Even rank r=1 or r=2 suffices for GPT-3 adaptation (d=12288), confirming the low-rank structure of adaptation deltas.",
+      "id": "loraoriginal_rank_deficiency",
+      "community": 1,
+      "norm_label": "rank deficiency in weight updates"
+    },
+    {
+      "label": "LoRA Learns Less and Forgets Less",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2405.09673",
+      "captured_at": null,
+      "author": "Dan Biderman, Jacob Portes, Jose Javier Gonzalez Ortiz, Mansheej Paul, Philip Greengard, Connor Jennings, Daniel King, Sam Havens, Vitaliy Chiley, Jonathan Frankle, Cody Blakeney, John P. Cunningham",
+      "contributor": null,
+      "id": "loralearnlessforgetless_paper",
+      "community": 1,
+      "norm_label": "lora learns less and forgets less"
+    },
+    {
+      "label": "LoRA Learning-Forgetting Tradeoff",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": "Section 1, 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "LoRA substantially underperforms full fine-tuning in continued pretraining but forgets less of source domain capabilities. The constrained low-rank update acts as an implicit regularizer stronger than dropout or weight decay. Full fine-tuning produces high-rank perturbations (10-100x typical LoRA rank), explaining the performance gap in challenging domains like code and math.",
+      "id": "loralearnlessforgetless_tradeoff",
+      "community": 1,
+      "norm_label": "lora learning-forgetting tradeoff"
+    },
+    {
+      "label": "High-Rank Weight Perturbations in Full Fine-Tuning",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": "Section 4.6",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "SVD analysis reveals full fine-tuning produces perturbations with rank 10-100x higher than typical LoRA configurations, challenging the low-rank hypothesis that motivated LoRA in difficult domains like code/math while barely changing the spectrum of base weight matrices.",
+      "id": "loralearnlessforgetless_high_rank_perturbation",
+      "community": 1,
+      "norm_label": "high-rank weight perturbations in full fine-tuning"
+    },
+    {
+      "label": "Self-Supervised Representation Learning on Neural Network Weights for Model Characteristic Prediction",
+      "file_type": "paper",
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Konstantin Sch\u00fcrholt, Dimche Kostadinov, Damian Borth",
+      "contributor": null,
+      "id": "selfsupervisedweightlearning_paper",
+      "community": 5,
+      "norm_label": "self-supervised representation learning on neural network weights for model characteristic prediction"
+    },
+    {
+      "label": "Hyper-Representations of Neural Network Weights",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 1, 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "SSL (reconstruction + contrastive) applied to populations of trained NNs (model zoos) to learn task-agnostic latent representations. Domain-specific augmentations (permutation, erasing, noise) are critical; permutation augmentation exploits weight-space symmetries and creates near-free valid NN samples for contrastive pairs.",
+      "id": "selfsupervisedweightlearning_hyper_representations",
+      "community": 5,
+      "norm_label": "hyper-representations of neural network weights"
+    },
+    {
+      "label": "Model Zoo",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "A dataset of trained neural networks with diverse configurations (data, hyperparameters, architecture). Serves as the training corpus for learning hyper-representations. Seed variation within a model zoo adds beneficial diversity for recovering model properties.",
+      "id": "selfsupervisedweightlearning_model_zoo",
+      "community": 5,
+      "norm_label": "model zoo"
+    },
+    {
+      "label": "Permutation Augmentation for Neural Network Weights",
+      "file_type": "rationale",
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Permuting incoming/outgoing weights of a neuron preserves the network's mapping exactly. This creates valid augmented samples at near-zero cost (each layer with N neurons has N! permutations) and exploits structural symmetry as an inductive bias for contrastive learning.",
+      "id": "selfsupervisedweightlearning_permutation_augmentation",
+      "community": 5,
+      "norm_label": "permutation augmentation for neural network weights"
+    }
+  ],
+  "links": [
+    {
+      "relation": "uses_as_core_mechanism",
+      "confidence": "high",
+      "confidence_score": 0.98,
+      "weight": 1.0,
+      "properties": {
+        "rationale": "WeightBench plans to train populations of LoRAs; each LoRA is a point in parameter space"
+      },
+      "source": "prompt_md",
+      "target": "concept_lora"
+    },
+    {
+      "relation": "defines",
+      "confidence": "high",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "properties": {
+        "rationale": "The dual-signal framing is the core research commitment of WeightBench"
+      },
+      "source": "prompt_md",
+      "target": "concept_dual_signal"
+    },
+    {
+      "relation": "requires_component",
+      "confidence": "high",
+      "confidence_score": 0.97,
+      "weight": 0.9,
+      "properties": {
+        "rationale": "Component 3 of WeightBench: weight-space representation (raw \u0394W / learned encoding / functional probes)"
+      },
+      "source": "prompt_md",
+      "target": "concept_weight_space_representation"
+    },
+    {
+      "relation": "considers_as_downstream_task",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "weight": 0.8,
+      "properties": {
+        "rationale": "Merging compatibility mentioned as natural downstream predictive demonstration"
+      },
+      "source": "prompt_md",
+      "target": "concept_model_merging"
+    },
+    {
+      "relation": "informs",
+      "confidence": "high",
+      "confidence_score": 0.85,
+      "weight": 0.8,
+      "properties": {
+        "rationale": "Asymmetry in LoRA matrices (B vs A importance) is relevant to weight-space analysis in WeightBench; B may be the more informative component"
+      },
+      "source": "lora_asymmetry",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "weight": 0.85,
+      "properties": {
+        "rationale": "Weight disentanglement supports the dual-signal hypothesis; task vectors are weight-space coordinates with behavioral meaning"
+      },
+      "source": "task_arithmetic_tangent",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "medium",
+      "confidence_score": 0.7,
+      "weight": 0.65,
+      "properties": {
+        "rationale": "AdaLoRA's importance scoring (per singular value triplet) could be used to identify which weight-space dimensions carry behavioral signal"
+      },
+      "source": "adalora",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "high",
+      "confidence_score": 0.88,
+      "weight": 0.85,
+      "properties": {
+        "rationale": "Equivariant alignment is critical for cross-model comparison (Experiment 2) in WeightBench"
+      },
+      "source": "equivariant_deep_weight_spaces",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "medium",
+      "confidence_score": 0.75,
+      "weight": 0.7,
+      "properties": {
+        "rationale": "DnD demonstrates that LoRA weight space has structure learnable from task descriptions; relevant to prompt-conditioned LoRA generation for WeightBench population"
+      },
+      "source": "drag_and_drop_llms",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "provides_background_for",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "weight": 0.85,
+      "properties": {
+        "rationale": "Comprehensive taxonomy of WSL methods; directly guides component 3 (weight-space representation) in WeightBench"
+      },
+      "source": "survey_weight_space_learning",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "high",
+      "confidence_score": 0.85,
+      "weight": 0.8,
+      "properties": {
+        "rationale": "Merging compatibility as downstream prediction task; TIES provides baseline and insights on when models are compatible"
+      },
+      "source": "ties_merging",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "medium",
+      "confidence_score": 0.75,
+      "weight": 0.7,
+      "properties": {
+        "rationale": "Task hidden space clustering (t-SNE visualization) shows LoRA parameters encode task identity; supports dual-signal hypothesis"
+      },
+      "source": "icm_lora",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "medium",
+      "confidence_score": 0.78,
+      "weight": 0.75,
+      "properties": {
+        "rationale": "GMNs could serve as weight-space encoder in WeightBench; handles transformer architectures (relevant for LLMs)"
+      },
+      "source": "graph_meta_networks",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "high",
+      "confidence_score": 0.92,
+      "weight": 0.9,
+      "properties": {
+        "rationale": "SANE's cross-architecture embedding directly addresses WeightBench Experiment 2 (cross-model comparison); scalable to LLM sizes"
+      },
+      "source": "sane_weight_space",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "informs",
+      "confidence": "medium",
+      "confidence_score": 0.72,
+      "weight": 0.68,
+      "properties": {
+        "rationale": "mLoRA's finding that constrained LoRA representations have semantic structure directly supports the weight-space coordinate idea in dual-signal framing"
+      },
+      "source": "weight_space_via_neural_field",
+      "target": "prompt_md"
+    },
+    {
+      "relation": "analyzes",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "key_finding": "B matrix (output projection) more important than A; B-only training with larger rank is optimal strategy"
+      },
+      "source": "lora_asymmetry",
+      "target": "concept_lora"
+    },
+    {
+      "relation": "related_to",
+      "confidence": "medium",
+      "confidence_score": 0.75,
+      "weight": 0.7,
+      "properties": {
+        "connection": "both study structural properties of LoRA weight space; mLoRA's multiplicative formulation provides different inductive bias from standard LoRA"
+      },
+      "source": "weight_space_via_neural_field",
+      "target": "lora_asymmetry"
+    },
+    {
+      "relation": "related_approach",
+      "confidence": "medium",
+      "confidence_score": 0.75,
+      "weight": 0.7,
+      "properties": {
+        "connection": "both study rank allocation and structural properties of LoRA; AdaLoRA's SVD shows importance of singular value spectrum"
+      },
+      "source": "adalora",
+      "target": "lora_asymmetry"
+    },
+    {
+      "relation": "defines_and_uses",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "formula": "\u03c4_t = \u03b8*_t \u2212 \u03b8_0"
+      },
+      "source": "task_arithmetic_tangent",
+      "target": "concept_task_vector"
+    },
+    {
+      "relation": "discovers_and_analyzes",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "finding": "weight disentanglement is emergent from pre-training; NTK linearization amplifies it"
+      },
+      "source": "task_arithmetic_tangent",
+      "target": "concept_weight_disentanglement"
+    },
+    {
+      "relation": "employs",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 0.95,
+      "properties": {
+        "effect": "linearized fine-tuning amplifies weight disentanglement and improves task arithmetic"
+      },
+      "source": "task_arithmetic_tangent",
+      "target": "concept_ntk_linearization"
+    },
+    {
+      "relation": "enables_via_arithmetic",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "properties": {
+        "mechanism": "task arithmetic: \u03b8_0 + \u03a3 \u03b1_t \u03c4_t enables model merging and editing"
+      },
+      "source": "task_arithmetic_tangent",
+      "target": "concept_model_merging"
+    },
+    {
+      "relation": "extends",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "properties": {
+        "rationale": "TIES addresses sign interference problems that limit plain Task Arithmetic"
+      },
+      "source": "ties_merging",
+      "target": "task_arithmetic_tangent"
+    },
+    {
+      "relation": "extends",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "extension": "SVD-based adaptive rank allocation W = W(0) + P\u039bQ instead of fixed rank"
+      },
+      "source": "adalora",
+      "target": "concept_lora"
+    },
+    {
+      "relation": "related_to",
+      "confidence": "low",
+      "confidence_score": 0.5,
+      "weight": 0.4,
+      "properties": {
+        "connection": "both deal with LoRA rank selection and parameter efficiency; different goals (ICM-LoRA: generation, AdaLoRA: adaptive training)"
+      },
+      "source": "icm_lora",
+      "target": "adalora"
+    },
+    {
+      "relation": "solves",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "method": "DEEP-ALIGN learns equivariant alignment: G(g#v, g'#v') = g \u00b7 G(v,v') \u00b7 g'^T"
+      },
+      "source": "equivariant_deep_weight_spaces",
+      "target": "concept_permutation_symmetry"
+    },
+    {
+      "relation": "uses",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 0.9,
+      "properties": {
+        "usage": "Siamese DWSNet as FDW S component of DEEP-ALIGN"
+      },
+      "source": "equivariant_deep_weight_spaces",
+      "target": "concept_dwsnets"
+    },
+    {
+      "relation": "enables_via_alignment",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "properties": {
+        "contribution": "proper alignment before merging reduces interference and improves merged model quality"
+      },
+      "source": "equivariant_deep_weight_spaces",
+      "target": "concept_model_merging"
+    },
+    {
+      "relation": "complementary_to",
+      "confidence": "high",
+      "confidence_score": 0.85,
+      "weight": 0.8,
+      "properties": {
+        "difference": "GMNs: process arbitrary architectures as graphs; DEEP-ALIGN: align weights of same-architecture models before merging"
+      },
+      "source": "graph_meta_networks",
+      "target": "equivariant_deep_weight_spaces"
+    },
+    {
+      "relation": "generates",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "mechanism": "hyper-convolutional decoder maps task descriptions to LoRA matrices"
+      },
+      "source": "drag_and_drop_llms",
+      "target": "concept_lora"
+    },
+    {
+      "relation": "is_instance_of",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 0.95,
+      "source": "drag_and_drop_llms",
+      "target": "concept_hypernetwork"
+    },
+    {
+      "relation": "related_approach",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "weight": 0.8,
+      "properties": {
+        "similarity": "both generate LoRA parameters from task descriptions without per-task training",
+        "difference": "ICM-LoRA uses CVAE + in-context meta-learning; DnD uses hyper-convolutional decoder"
+      },
+      "source": "icm_lora",
+      "target": "drag_and_drop_llms"
+    },
+    {
+      "relation": "taxonomizes",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "taxonomy": "WSU \u2192 WSR (model-based: symmetry-agnostic/aware/graph, model-free: probe-based) \u2192 WSG"
+      },
+      "source": "survey_weight_space_learning",
+      "target": "concept_weight_space_representation"
+    },
+    {
+      "relation": "formalizes",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "properties": {
+        "coverage": "neuron permutation, positive scaling, bias translation as functional invariances"
+      },
+      "source": "survey_weight_space_learning",
+      "target": "concept_permutation_symmetry"
+    },
+    {
+      "relation": "surveys",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.85,
+      "source": "survey_weight_space_learning",
+      "target": "concept_dwsnets"
+    },
+    {
+      "relation": "improves_via",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "mechanism": "TIES resolves parameter interference: trim redundant params, elect dominant sign, disjoint merge"
+      },
+      "source": "ties_merging",
+      "target": "concept_model_merging"
+    },
+    {
+      "relation": "builds_on",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "source": "ties_merging",
+      "target": "concept_task_vector"
+    },
+    {
+      "relation": "generates_parameters_for",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "source": "icm_lora",
+      "target": "concept_lora"
+    },
+    {
+      "relation": "is_instance_of",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "source": "icm_lora",
+      "target": "concept_hypernetwork"
+    },
+    {
+      "relation": "uses_as_condition",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "mechanism": "task vectors extracted as mean last-token hidden states condition the CVAE"
+      },
+      "source": "icm_lora",
+      "target": "concept_task_vector"
+    },
+    {
+      "relation": "handles_via",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "mechanism": "neural DAG automorphisms formalize parameter permutation symmetries; GNNs are equivariant to these"
+      },
+      "source": "graph_meta_networks",
+      "target": "concept_permutation_symmetry"
+    },
+    {
+      "relation": "generalizes",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "weight": 0.9,
+      "properties": {
+        "extension": "GMNs work on arbitrary feedforward architectures including attention, normalization, residual connections"
+      },
+      "source": "graph_meta_networks",
+      "target": "concept_dwsnets"
+    },
+    {
+      "relation": "provides_method_for",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "properties": {
+        "method": "graph-based weight space representation: parameter graph + GNN metanetwork"
+      },
+      "source": "graph_meta_networks",
+      "target": "concept_weight_space_representation"
+    },
+    {
+      "relation": "alternative_approach_to",
+      "confidence": "medium",
+      "confidence_score": 0.75,
+      "weight": 0.7,
+      "properties": {
+        "difference": "SANE: sequential autoencoder on weight tokens; GMNs: GNN on parameter graphs; both cross-architecture but different inductive biases"
+      },
+      "source": "sane_weight_space",
+      "target": "graph_meta_networks"
+    },
+    {
+      "relation": "provides_method_for",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "method": "sequential autoencoder on weight tokens; cross-architecture embedding in same latent space"
+      },
+      "source": "sane_weight_space",
+      "target": "concept_weight_space_representation"
+    },
+    {
+      "relation": "addresses_via",
+      "confidence": "high",
+      "confidence_score": 0.85,
+      "weight": 0.8,
+      "properties": {
+        "method": "model alignment preprocessing + weight permutation augmentation during training"
+      },
+      "source": "sane_weight_space",
+      "target": "concept_permutation_symmetry"
+    },
+    {
+      "relation": "builds_on",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "properties": {
+        "extension": "introduces multiplicative LoRA (mLoRA) for neural fields"
+      },
+      "source": "weight_space_via_neural_field",
+      "target": "concept_lora"
+    },
+    {
+      "relation": "provides_method_for",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "properties": {
+        "contribution": "mLoRA weights as structured semantic representations; asymmetric masking for symmetry-breaking"
+      },
+      "source": "weight_space_via_neural_field",
+      "target": "concept_weight_space_representation"
+    },
+    {
+      "relation": "addresses_via",
+      "confidence": "high",
+      "confidence_score": 0.9,
+      "weight": 0.85,
+      "properties": {
+        "method": "asymmetric masking as symmetry-breaking constraint"
+      },
+      "source": "weight_space_via_neural_field",
+      "target": "concept_permutation_symmetry"
+    },
+    {
+      "relation": "supports_hypothesis_of",
+      "confidence": "high",
+      "confidence_score": 0.88,
+      "weight": 0.85,
+      "properties": {
+        "rationale": "If weight directions are disentangled, weight-space coordinates and behavioral coordinates should be informatively related, not just redundant"
+      },
+      "source": "concept_weight_disentanglement",
+      "target": "concept_dual_signal"
+    },
+    {
+      "relation": "amplifies",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "source": "concept_ntk_linearization",
+      "target": "concept_weight_disentanglement"
+    },
+    {
+      "relation": "challenged_by",
+      "confidence": "high",
+      "confidence_score": 0.95,
+      "weight": 0.9,
+      "source": "concept_model_merging",
+      "target": "concept_permutation_symmetry"
+    },
+    {
+      "relation": "uses_as_behavioral_coordinate",
+      "confidence": "high",
+      "confidence_score": 0.85,
+      "weight": 0.8,
+      "source": "concept_dual_signal",
+      "target": "concept_task_vector"
+    },
+    {
+      "relation": "requires",
+      "confidence": "high",
+      "confidence_score": 0.99,
+      "weight": 1.0,
+      "source": "concept_dual_signal",
+      "target": "concept_weight_space_representation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "editingmodelwithtaskarithmetic_paper",
+      "target": "editingmodelwithtaskarithmetic_task_vector"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "editingmodelwithtaskarithmetic_paper",
+      "target": "editingmodelwithtaskarithmetic_task_arithmetic"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "editingmodelwithtaskarithmetic_paper",
+      "target": "editingmodelwithtaskarithmetic_weight_interpolation"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "dwsnets_paper",
+      "target": "editingmodelwithtaskarithmetic_paper"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/EditingModelWithTaskArthimetic.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "editingmodelwithtaskarithmetic_task_vector",
+      "target": "editingmodelwithtaskarithmetic_task_arithmetic"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "knowledgeinweightspace_weight_region",
+      "target": "editingmodelwithtaskarithmetic_task_vector"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": null,
+      "weight": 0.75,
+      "source": "locatingeditinggpt_rome",
+      "target": "editingmodelwithtaskarithmetic_task_arithmetic"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": "Abstract",
+      "weight": 1.0,
+      "source": "weight2weight_paper",
+      "target": "weight2weight_w2w_space"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "weight2weight_paper",
+      "target": "weight2weight_meta_latent_space"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": "Section 3.1",
+      "weight": 1.0,
+      "source": "weight2weight_paper",
+      "target": "loraoriginal_low_rank_adaptation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": "Figure 2",
+      "weight": 1.0,
+      "source": "weight2weight_w2w_space",
+      "target": "weight2weight_meta_latent_space"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "relevant_literature_but_not_limited_to/weight2weight.pdf",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "weight2weight_w2w_space",
+      "target": "knowledgeinweightspace_weight_region"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "oral_paper",
+      "target": "oral_conditional_recurrent_diffusion"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": "Section 1-2",
+      "weight": 1.0,
+      "source": "oral_paper",
+      "target": "oral_parameter_generation"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "oral_paper",
+      "target": "loraoriginal_low_rank_adaptation"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "oral_conditional_recurrent_diffusion",
+      "target": "structureawarelorgen_lorangen"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": "Abstract",
+      "weight": 1.0,
+      "source": "knowledgeinweightspace_paper",
+      "target": "knowledgeinweightspace_weight_region"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": "Section 5",
+      "weight": 1.0,
+      "source": "knowledgeinweightspace_paper",
+      "target": "knowledgeinweightspace_linear_connectivity"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf",
+      "source_location": "Section 5",
+      "weight": 1.0,
+      "source": "knowledgeinweightspace_weight_region",
+      "target": "knowledgeinweightspace_linear_connectivity"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "dwsnets_paper",
+      "target": "dwsnets_deep_align"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Abstract",
+      "weight": 1.0,
+      "source": "dwsnets_paper",
+      "target": "dwsnets_permutation_symmetry"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "dwsnets_paper",
+      "target": "dwsnets_weight_alignment"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "dwsnets_deep_align",
+      "target": "dwsnets_weight_alignment"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/DWSNets.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "dwsnets_permutation_symmetry",
+      "target": "dwsnets_weight_alignment"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "selfsupervisedweightlearning_permutation_augmentation",
+      "target": "dwsnets_permutation_symmetry"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "predictingtrends_paper",
+      "target": "predictingtrends_power_law_metrics"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "predictingtrends_paper",
+      "target": "predictingtrends_weightwatcher"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "source_file": "relevant_literature_but_not_limited_to/PredictingTrendsInQualityOfStateOfArt.pdf",
+      "source_location": null,
+      "weight": 0.65,
+      "source": "predictingtrends_power_law_metrics",
+      "target": "selfsupervisedweightlearning_hyper_representations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "intrinsicdimensionality_paper",
+      "target": "intrinsicdimensionality_intrinsic_dimension"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf",
+      "source_location": "Section 3",
+      "weight": 1.0,
+      "source": "intrinsicdimensionality_paper",
+      "target": "intrinsicdimensionality_said"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "loraoriginal_paper",
+      "target": "intrinsicdimensionality_paper"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "intrinsicdimensionality_intrinsic_dimension",
+      "target": "loraoriginal_low_rank_adaptation"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "relevant_literature_but_not_limited_to/IntrinsicDimensionality.pdf",
+      "source_location": null,
+      "weight": 0.95,
+      "source": "intrinsicdimensionality_intrinsic_dimension",
+      "target": "loraoriginal_rank_deficiency"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Abstract",
+      "weight": 1.0,
+      "source": "structureawarelorgen_paper",
+      "target": "structureawarelorgen_lorangen"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 3",
+      "weight": 1.0,
+      "source": "structureawarelorgen_paper",
+      "target": "structureawarelorgen_nonuniqueness"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 4",
+      "weight": 1.0,
+      "source": "structureawarelorgen_paper",
+      "target": "structureawarelorgen_moe_decoder"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 3",
+      "weight": 1.0,
+      "source": "structureawarelorgen_paper",
+      "target": "loraoriginal_paper"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/StructureAwareWeightSpaceLearningForLoraGeneration.pdf",
+      "source_location": "Section 4",
+      "weight": 1.0,
+      "source": "structureawarelorgen_nonuniqueness",
+      "target": "structureawarelorgen_lorangen"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "locatingeditinggpt_paper",
+      "target": "locatingeditinggpt_rome"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "locatingeditinggpt_paper",
+      "target": "locatingeditinggpt_causal_tracing"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "locatingeditinggpt_paper",
+      "target": "locatingeditinggpt_mlp_factual_storage"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "locatingeditinggpt_mlp_factual_storage",
+      "target": "locatingeditinggpt_rome"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LocatingAndEditingFactualAssosciationsInGPT.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "locatingeditinggpt_causal_tracing",
+      "target": "locatingeditinggpt_mlp_factual_storage"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "loraoriginal_paper",
+      "target": "loraoriginal_low_rank_adaptation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "loraoriginal_paper",
+      "target": "loraoriginal_rank_deficiency"
+    },
+    {
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "loralearnlessforgetless_paper",
+      "target": "loraoriginal_paper"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "loraoriginal_rank_deficiency",
+      "target": "loraoriginal_low_rank_adaptation"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": "Section 4.6",
+      "weight": 1.0,
+      "source": "loralearnlessforgetless_high_rank_perturbation",
+      "target": "loraoriginal_rank_deficiency"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "loralearnlessforgetless_paper",
+      "target": "loralearnlessforgetless_tradeoff"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/LoraLearnLessForgetLess.pdf",
+      "source_location": "Section 4.6",
+      "weight": 1.0,
+      "source": "loralearnlessforgetless_paper",
+      "target": "loralearnlessforgetless_high_rank_perturbation"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "selfsupervisedweightlearning_paper",
+      "target": "selfsupervisedweightlearning_hyper_representations"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "selfsupervisedweightlearning_paper",
+      "target": "selfsupervisedweightlearning_model_zoo"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "selfsupervisedweightlearning_paper",
+      "target": "selfsupervisedweightlearning_permutation_augmentation"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 2",
+      "weight": 1.0,
+      "source": "selfsupervisedweightlearning_permutation_augmentation",
+      "target": "selfsupervisedweightlearning_hyper_representations"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "relevant_literature_but_not_limited_to/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf",
+      "source_location": "Section 1",
+      "weight": 1.0,
+      "source": "selfsupervisedweightlearning_model_zoo",
+      "target": "selfsupervisedweightlearning_hyper_representations"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "hyperedge_lora_weight_space_methods",
+      "label": "LoRA Weight Space Methods",
+      "nodes": [
+        "lora_asymmetry",
+        "adalora",
+        "weight_space_via_neural_field",
+        "icm_lora",
+        "drag_and_drop_llms"
+      ],
+      "relation": "all_study_lora_parameter_space_structure",
+      "properties": {
+        "description": "These papers collectively characterize the structure of LoRA weight space: asymmetry (B vs A), adaptive rank allocation (SVD), multiplicative adaptation (mLoRA), generative models (CVAE, hyper-convolutional). Together they inform the choice of weight-space coordinate system for WeightBench.",
+        "relevance_to_research": "Component 3 of WeightBench: choosing the right LoRA representation"
+      }
+    },
+    {
+      "id": "hyperedge_equivariant_metanetworks",
+      "label": "Equivariant Metanetworks for Weight Spaces",
+      "nodes": [
+        "equivariant_deep_weight_spaces",
+        "graph_meta_networks",
+        "concept_dwsnets",
+        "concept_permutation_symmetry"
+      ],
+      "relation": "solve_permutation_symmetry_for_weight_space_learning",
+      "properties": {
+        "description": "DEEP-ALIGN, GMNs, and DWSNets all address the fundamental challenge of permutation symmetry in weight spaces. DEEP-ALIGN learns equivariant alignment; GMNs use graph automorphisms; DWSNets use equivariant linear layers. These are the primary tools for symmetry-aware weight-space analysis.",
+        "relevance_to_research": "Critical for Experiment 2 (cross-model comparison) in WeightBench where weight-space distances must be symmetry-aware"
+      }
+    },
+    {
+      "id": "hyperedge_model_merging_ecosystem",
+      "label": "Model Merging Methods",
+      "nodes": [
+        "task_arithmetic_tangent",
+        "ties_merging",
+        "equivariant_deep_weight_spaces",
+        "concept_model_merging",
+        "concept_task_vector"
+      ],
+      "relation": "constitute_model_merging_ecosystem",
+      "properties": {
+        "description": "Task Arithmetic defines task vectors and simple merging; TIES-Merging adds sign election to resolve interference; DEEP-ALIGN adds equivariant alignment before merging. Together they form a progression of increasingly sophisticated merging methods. WeightBench could use merging compatibility as downstream prediction target.",
+        "relevance_to_research": "Downstream predictive demonstration in WeightBench (Component 5)"
+      }
+    },
+    {
+      "id": "hyperedge_scalable_weight_representations",
+      "label": "Scalable Weight Space Representations",
+      "nodes": [
+        "sane_weight_space",
+        "graph_meta_networks",
+        "survey_weight_space_learning"
+      ],
+      "relation": "provide_scalable_cross_architecture_weight_representations",
+      "properties": {
+        "description": "SANE (sequential autoencoder) and GMNs (graph-based) both enable cross-architecture model comparison. The survey provides the taxonomy. Together they address the hardest open question in WeightBench: cross-model methodology for Experiment 2.",
+        "relevance_to_research": "Key tools for Experiment 2 (cross-model setting) in WeightBench"
+      }
+    },
+    {
+      "id": "hyperedge_parameter_generation",
+      "label": "LoRA Parameter Generation Methods",
+      "nodes": [
+        "drag_and_drop_llms",
+        "icm_lora",
+        "concept_hypernetwork"
+      ],
+      "relation": "generate_lora_parameters_from_task_descriptions",
+      "properties": {
+        "description": "DnD (hyper-convolutional) and ICM-LoRA (CVAE) both generate LoRA parameters conditioned on task descriptions without per-task fine-tuning. Both show that task descriptions and LoRA parameters are meaningfully linked in a learnable latent space.",
+        "relevance_to_research": "Could be used to synthesize LoRA populations for WeightBench experiments; demonstrate that behavioral signal (task description) predicts weight-space coordinates"
+      }
+    },
+    {
+      "id": "hyperedge_dual_signal_evidence",
+      "label": "Evidence for Dual-Signal Hypothesis",
+      "nodes": [
+        "task_arithmetic_tangent",
+        "concept_weight_disentanglement",
+        "icm_lora",
+        "weight_space_via_neural_field",
+        "concept_dual_signal"
+      ],
+      "relation": "provide_empirical_and_theoretical_evidence_for_weight_behavior_correlation",
+      "properties": {
+        "description": "Weight disentanglement (Task Arithmetic paper) shows weight space has task-localized structure. ICM-LoRA's t-SNE shows task clustering in LoRA hidden space. mLoRA paper shows semantic structure in constrained LoRA weights. Together these support the WeightBench hypothesis that weight-space and behavioral coordinates are complementary, not redundant.",
+        "relevance_to_research": "Core theoretical motivation for WeightBench dual-signal framing"
+      }
+    },
+    {
+      "id": "hyperedge_lora_generation_methods",
+      "label": "LoRA Parameter Generation Paradigm",
+      "nodes": [
+        "oral_conditional_recurrent_diffusion",
+        "structureawarelorgen_lorangen",
+        "weight2weight_w2w_space",
+        "oral_parameter_generation"
+      ],
+      "relation": "implement",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "relevant_literature_but_not_limited_to/ORALLoraViaReccurentDiffusion.pdf"
+    },
+    {
+      "id": "hyperedge_weight_space_structure",
+      "label": "Weight Space Structure and Geometry",
+      "nodes": [
+        "knowledgeinweightspace_weight_region",
+        "knowledgeinweightspace_linear_connectivity",
+        "dwsnets_permutation_symmetry",
+        "dwsnets_weight_alignment",
+        "selfsupervisedweightlearning_permutation_augmentation"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "relevant_literature_but_not_limited_to/KnowledgeIsARegionInWeightSpace.pdf"
+    },
+    {
+      "id": "hyperedge_lora_rank_hypothesis",
+      "label": "Low-Rank Hypothesis for Fine-Tuning",
+      "nodes": [
+        "intrinsicdimensionality_intrinsic_dimension",
+        "loraoriginal_rank_deficiency",
+        "loraoriginal_low_rank_adaptation",
+        "loralearnlessforgetless_high_rank_perturbation"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.95,
+      "source_file": "relevant_literature_but_not_limited_to/LoRa-OriginalPaper.pdf"
+    }
+  ],
+  "built_at_commit": "d1504097ab8d25ac90b6fbf04c92b7f9d081e094"
+}
