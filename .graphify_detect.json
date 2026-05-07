@@ -1,0 +1,36 @@
+{
+  "files": {
+    "code": [],
+    "document": [
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\BIG_IDEAS.md",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\prompt_experiment_design.md",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\some_insights_lora_papers.md",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\SYNTHESIS.md"
+    ],
+    "paper": [
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\aristotelian_platonic_hypothesis.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\FINDINGS.md",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\grokking_dimensional_phase_transition.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\grokking_slt_competing_basins.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_interference_orthogonal_subspaces.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_ntk_regime_no_spurious_minima.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_vs_fullft_intruder_dimensions.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\mechanistic_similarity_transformers_mamba.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\model_stitching_functional_latent_alignment.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\origin_of_llamas_model_tree_heritage.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\shared_lora_subspaces_continual_learning.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\singular_learning_theory_grokking.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\small_singular_values_rmt_transformers.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\weight_space_learning_survey.pdf",
+      "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\weight_spectra_model_adaptation.pdf"
+    ],
+    "image": [],
+    "video": []
+  },
+  "total_files": 19,
+  "total_words": 7116,
+  "needs_graph": false,
+  "warning": "Corpus is ~7,116 words - fits in a single context window. You may not need a graph.",
+  "skipped_sensitive": [],
+  "graphifyignore_patterns": 0
+}
