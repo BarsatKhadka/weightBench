@@ -11155,6 +11155,27 @@
       "community": 10,
       "norm_label": "recbundle meta-theory: maml/imaml as special cases of fiber bundle connection choice",
       "id": "concept_recbundle_meta_learning_bundle"
+    },
+    {
+      "id": "conjecture_us_trs_reference_frame_gap",
+      "label": "Open Empirical Question: U_W0 vs U_S* Principal Angles",
+      "file_type": "rationale",
+      "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
+      "community": null
+    },
+    {
+      "id": "opLora_w0_orthogonal_projection",
+      "label": "OPLoRA: Projects LoRA Updates Orthogonal to W0 Top Singular Vectors",
+      "file_type": "paper",
+      "source_file": "arXiv:2510.13003",
+      "community": null
+    },
+    {
+      "id": "eigenlorax_shared_lora_subspace",
+      "label": "Eigenlorax: SVD of Stacked LoRA Matrices as Shared Principal Subspace",
+      "file_type": "paper",
+      "source_file": "arXiv:2502.04700",
+      "community": null
     }
   ],
   "links": [
@@ -22904,6 +22925,72 @@
       "weight": 0.75,
       "source": "concept_unified_bundle_table",
       "target": "concept_recbundle_meta_learning_bundle"
+    },
+    {
+      "source": "universal_weight_subspace_concept",
+      "target": "BIG_IDEAS_intruder_dimensions",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "weight": 0.65,
+      "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
+      "note": "CONJECTURE: Secondary subspace (outside S*) may = intruder dims (outside U_W0). Open empirical question: measure principal angles between U_W0 and U_S*"
+    },
+    {
+      "source": "BIG_IDEAS_universal_weight_subspace",
+      "target": "BIG_IDEAS_task_residual_spectrum",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "weight": 0.7,
+      "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
+      "note": "CONJECTURE: TRS subspaces may all lie within S*. TRS = spectrally-denoised coordinates within S*"
+    },
+    {
+      "source": "share_universal_weight_subspace_hypothesis",
+      "target": "shuttleworth_intruder_dims_paper",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.65,
+      "weight": 0.65,
+      "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
+      "note": "CONJECTURE: Two distinct reference frames (U_W0 vs U_S*) that may coincide for large pretrained models. No paper has measured this."
+    },
+    {
+      "source": "opLora_w0_orthogonal_projection",
+      "target": "BIG_IDEAS_intruder_dimensions",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "arXiv:2510.13003"
+    },
+    {
+      "source": "eigenlorax_shared_lora_subspace",
+      "target": "BIG_IDEAS_universal_weight_subspace",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "arXiv:2502.04700"
+    },
+    {
+      "source": "conjecture_us_trs_reference_frame_gap",
+      "target": "universal_weight_subspace_concept",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md"
+    },
+    {
+      "source": "conjecture_us_trs_reference_frame_gap",
+      "target": "BIG_IDEAS_intruder_dimensions",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "weight": 1.0,
+      "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md"
     }
   ],
   "hyperedges": [
