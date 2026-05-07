@@ -1,114 +1,202 @@
 {
-  "/Users/barsat/weightBench/relevant_literature/AssymetryOfLora.pdf": {
-    "mtime": 1777923329.3726466,
-    "hash": "de9a2df1658e14406a8b7b51cd1457a2"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\BIG_IDEAS.md": {
+    "mtime": 1778136711.210677,
+    "hash": "41b23a8a442b96e4dae8478104256cac"
   },
-  "/Users/barsat/weightBench/relevant_literature/TaskArthimeticInTangentSpace.pdf": {
-    "mtime": 1777923329.551744,
-    "hash": "479ebeba9ed20c317b949a0df78a8fad"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\prompt_experiment_design.md": {
+    "mtime": 1777858300.824138,
+    "hash": "adf276c1134faac193af98915f7ca865"
   },
-  "/Users/barsat/weightBench/relevant_literature/AdaLORA.pdf": {
-    "mtime": 1777923329.3633142,
-    "hash": "5f75e2e14b0f40b57c3122c76f19c2e7"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\some_insights_lora_papers.md": {
+    "mtime": 1778074998.6618762,
+    "hash": "44f286aec7e78d861c4370e253b9963a"
   },
-  "/Users/barsat/weightBench/relevant_literature/AdaptiveWeightSpaceEnsemblingForFewShotFineTuning.pdf": {
-    "mtime": 1777923329.3690457,
-    "hash": "4efa44f9f70205ba9c3ad2f1aa5ae811"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\SYNTHESIS.md": {
+    "mtime": 1778136727.7936678,
+    "hash": "2caa7d9cc908f8f1f3fbdfd5fe68c684"
   },
-  "/Users/barsat/weightBench/relevant_literature/EquivariantDeepWeightSpaces.pdf": {
-    "mtime": 1777923329.4231532,
-    "hash": "307ec8a4df693b9d714e14f7a5398b30"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_2_critical_revision.md": {
+    "mtime": 1778145375.8254702,
+    "hash": "f7e47bf4a5e6831dc802d0589d06b594"
   },
-  "/Users/barsat/weightBench/relevant_literature/DragAndDropLLMS.pdf": {
-    "mtime": 1777923329.3929856,
-    "hash": "0bb231400b7401d9d9729827e4f5c025"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\alphalore_htsr_rank_allocation.pdf": {
+    "mtime": 1778131872.0523624,
+    "hash": "f7fcd1f9601705c0e09571c5accb6246"
   },
-  "/Users/barsat/weightBench/relevant_literature/SurveyOfWeightSpaceLearning.pdf": {
-    "mtime": 1777923329.533843,
-    "hash": "4423f7103cdc4c7273eae697664c1859"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\aristotelian_platonic_hypothesis.pdf": {
+    "mtime": 1778129703.0001159,
+    "hash": "f0c1fc54860a1ad2b54e15b662d373bb"
   },
-  "/Users/barsat/weightBench/relevant_literature/TIESMerginh.pdf": {
-    "mtime": 1777923329.538164,
-    "hash": "3ad4df1d0aa5f76be2215c99dbc33d77"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\cross_lora_transfer_heterogeneous_llms.pdf": {
+    "mtime": 1778131918.9074008,
+    "hash": "6bb239a58b6f21027ea04c62d7447215"
   },
-  "/Users/barsat/weightBench/relevant_literature/GraphMetaNetworks.pdf": {
-    "mtime": 1777923329.4371681,
-    "hash": "ce9f07d844c5ccdcf4eeaab78d91f607"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\data_driven_adapter_clustering_merging_svd.pdf": {
+    "mtime": 1778136945.1548977,
+    "hash": "295ccbc3d21fa4c92841d27f06b52e65"
   },
-  "/Users/barsat/weightBench/relevant_literature/ICMLOra.pdf": {
-    "mtime": 1777923329.4434242,
-    "hash": "b1a2eb628e097e98e83a7155ec7e5fb0"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\desire_dataset_size_recovery_lora_svd.pdf": {
+    "mtime": 1778136944.8894808,
+    "hash": "2a8b13de18942b412046060fdc2b2df4"
   },
-  "/Users/barsat/weightBench/relevant_literature/AModernSelf-ReferentialWeightMatrixThatLearnsToModifyItself.pdf": {
-    "mtime": 1777923329.361213,
-    "hash": "b37a9eebfdcb1928aa183bb542f67a52"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\eblora_spectral_imbalance_forgetting.pdf": {
+    "mtime": 1778136222.4246304,
+    "hash": "b5c00f05ce7e09927f6d84665b9759d1"
   },
-  "/Users/barsat/weightBench/relevant_literature/TowardsScalableAndVersatileWeightSpaceLearning.pdf": {
-    "mtime": 1777923329.5624995,
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\eigenloreax_recycling_adapters_principal_subspace.pdf": {
+    "mtime": 1778136955.5983596,
+    "hash": "80241f7e81e75a6420466baf7b461d14"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\eigenl\u043e\u0440\u0430\u0445_recycling_adapters_principal_subspace.pdf": {
+    "mtime": 1778136948.0317075,
+    "hash": "80241f7e81e75a6420466baf7b461d14"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\FINDINGS.md": {
+    "mtime": 1778136361.6853044,
+    "hash": "a63d6eb83e89a3c5e5814d4716aa8605"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\fisher_subspace_lora_initialization.pdf": {
+    "mtime": 1778132900.6800761,
+    "hash": "ed77189633552360145e4ed0e8c48630"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\frechet_model_merging_quotient_manifold.pdf": {
+    "mtime": 1778132900.3476381,
+    "hash": "48cfc9e54263074129512cdd96e9df7b"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\from_spikes_to_heavy_tails_spectral_evolution.pdf": {
+    "mtime": 1778136223.2390647,
+    "hash": "7e4cb86faf2f930df7dc1aae7b5ef320"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\gelora_geometric_adaptive_rank_intrinsic_dim.pdf": {
+    "mtime": 1778136049.4839122,
+    "hash": "899b8c33b3d3ed410d3a76a7f07befd6"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\gradient_space_lora_task_discovery_svd.pdf": {
+    "mtime": 1778136048.686745,
+    "hash": "cbefaed8d3516650c3f950df2a95416f"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\grokking_dimensional_phase_transition.pdf": {
+    "mtime": 1778130321.472577,
+    "hash": "13c2cf649715a89a2d76f05261d27932"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\grokking_generalization_collapse_htsr.pdf": {
+    "mtime": 1778131654.5511074,
+    "hash": "b0985024ca07eee17ff851d617fa5a90"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\grokking_slt_competing_basins.pdf": {
+    "mtime": 1778130321.8012805,
+    "hash": "e99111227017339bd77e88678b9a62d8"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\heavy_tailed_mechanistic_universality_htmp.pdf": {
+    "mtime": 1778136222.7266622,
+    "hash": "b943a84ac61e5645c2663e1137041746"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\isotropic_model_merging_spectral_skewness.pdf": {
+    "mtime": 1778132900.0730193,
+    "hash": "4432dbfcef7349d23201ff3b3cd11d39"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\learning_on_loras_gl_equivariant_weight_space.pdf": {
+    "mtime": 1778133687.1458833,
+    "hash": "3f3b953be148e6d01f3bcb9b7382a7e4"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_interference_orthogonal_subspaces.pdf": {
+    "mtime": 1778130322.1038873,
+    "hash": "cc3a0713d9d43d616b385c0014ac9196"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_ntk_regime_no_spurious_minima.pdf": {
+    "mtime": 1778130275.1499457,
+    "hash": "e70f871a8d04c525128d67ac077d8252"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_parameter_redundancy_spectral_encoding.pdf": {
+    "mtime": 1778131653.849938,
+    "hash": "54900d5154adb92af610e6e032086f29"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_vs_fullft_intruder_dimensions.pdf": {
+    "mtime": 1778129700.816522,
+    "hash": "3d8b9a91a2540d2bb744992d1df916c8"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\mechanistic_similarity_transformers_mamba.pdf": {
+    "mtime": 1778130275.822528,
+    "hash": "63a2691f75694b824f9c0254c9a3b9be"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\model_stitching_functional_latent_alignment.pdf": {
+    "mtime": 1778129702.5967624,
+    "hash": "36e29f1ce3a117b595377164ebc2612e"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\mtlora_spectral_multitask_regularization.pdf": {
+    "mtime": 1778136049.8542964,
+    "hash": "af36605c76fde576b46bcf0714bf92a7"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\new_papers_found.md": {
+    "mtime": 1778144731.607251,
+    "hash": "5a5643c048f5ce3cfdc91289f1cd8753"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\origin_of_llamas_model_tree_heritage.pdf": {
+    "mtime": 1778130274.796245,
+    "hash": "6d74136ceb9d3b977fc778ed6576fcbc"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\purifying_task_vectors_knowledge_subspace.pdf": {
+    "mtime": 1778131654.159971,
+    "hash": "47d45a64af7f380415a4ac29e62d8570"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\rmt_spectrum_learned_features_spiked.pdf": {
+    "mtime": 1778133688.1564772,
+    "hash": "97e75f75a3ec50192caf334a35e9d71c"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\sane_scalable_versatile_weight_space_learning.pdf": {
+    "mtime": 1778136049.204419,
     "hash": "7c18cc4763b6cbe2a26738f47a471554"
   },
-  "/Users/barsat/weightBench/relevant_literature/WeightSpaceRepresentationLearningViaNeuralFieldAdaption.pdf": {
-    "mtime": 1777923329.6125293,
-    "hash": "098fbc8250d7b6ca002853f5827d9a46"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\shared_lora_subspaces_continual_learning.pdf": {
+    "mtime": 1778130322.640235,
+    "hash": "e35a890d2957e4fc4870b815c18dbbe9"
   },
-  "/Users/barsat/weightBench/relevant_literature/EditingModelWithTaskArthimetic.pdf": {
-    "mtime": 1777923329.4122214,
-    "hash": "a369f0f1b9f48e35762de345730471e2"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\singular_learning_theory_grokking.pdf": {
+    "mtime": 1778130322.9134057,
+    "hash": "5fcbe7c87f5103dc80cf294dab8c59d4"
   },
-  "/Users/barsat/weightBench/relevant_literature/WeightSpaceRotationForIncrementalLearning.pdf": {
-    "mtime": 1777923329.6154115,
-    "hash": "b08251e58c5d3ac847fcd4da3b9b4724"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\small_singular_values_rmt_transformers.pdf": {
+    "mtime": 1778129701.2188525,
+    "hash": "98a55cf303fbaa55e94a00e7e72d7670"
   },
-  "/Users/barsat/weightBench/relevant_literature/WeightSpaceLinearRecurrentNeuralNetworks.pdf": {
-    "mtime": 1777923329.5698204,
-    "hash": "77a0e3ce7ee699282d33dd11912c4dae"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_over_accumulation_model_merging.pdf": {
+    "mtime": 1778133687.4278114,
+    "hash": "55771a8d4f4b3ac44e3347bb894d20f6"
   },
-  "/Users/barsat/weightBench/relevant_literature/weight2weight.pdf": {
-    "mtime": 1777923329.7614083,
-    "hash": "a424e4604cc198e6e2998e9134bf7b6f"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectrum_snr_marchenko_pastur_training.pdf": {
+    "mtime": 1778133686.81695,
+    "hash": "32430444333e21ef148ff8bb47d84463"
   },
-  "/Users/barsat/weightBench/relevant_literature/ORALLoraViaReccurentDiffusion.pdf": {
-    "mtime": 1777923329.5023382,
-    "hash": "a8959ea3ec68f133bd506b1cffffe9a3"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\subspace_boosted_model_merging_hosvd.pdf": {
+    "mtime": 1778136050.3299615,
+    "hash": "199a79fb6eae61081026ff443068466a"
   },
-  "/Users/barsat/weightBench/relevant_literature/KnowledgeIsARegionInWeightSpace.pdf": {
-    "mtime": 1777923329.453447,
-    "hash": "3165c9195161d21b84daeaae487d215b"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\subspace_geometry_catastrophic_forgetting_lora.pdf": {
+    "mtime": 1778133687.8451107,
+    "hash": "5c2e5491a74e95c3b348a92debce32c6"
   },
-  "/Users/barsat/weightBench/relevant_literature/DWSNets.pdf": {
-    "mtime": 1777923329.3905735,
-    "hash": "307ec8a4df693b9d714e14f7a5398b30"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_1.md": {
+    "mtime": 1778144819.971689,
+    "hash": "f5a5eca5747f6727a4afaf27dfd31d8b"
   },
-  "/Users/barsat/weightBench/relevant_literature/SymmetriesInWeightSpaceLearningToRetainOrRemove.pdf": {
-    "mtime": 1777923329.5346053,
-    "hash": "19cd8aa9e00f7b336ddc9a775f03e108"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\task_singular_vectors_merge_interference.pdf": {
+    "mtime": 1778131919.3716922,
+    "hash": "bfc12241da5c24f559d6618da33df434"
   },
-  "/Users/barsat/weightBench/relevant_literature/PredictingTrendsInQualityOfStateOfArt.pdf": {
-    "mtime": 1777923329.5143442,
-    "hash": "a9ce6249ceaafdfc66e08668e874078b"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\universal_weight_subspace_hypothesis.pdf": {
+    "mtime": 1778131871.490023,
+    "hash": "3ce09d6b7063ad96e6704059f85fa6c7"
   },
-  "/Users/barsat/weightBench/relevant_literature/IntrinsicDimensionality.pdf": {
-    "mtime": 1777923329.4446197,
-    "hash": "3b9a6858f60c3a94538c8268d12fb653"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\w2t_lora_weights_know_capabilities.pdf": {
+    "mtime": 1778131653.536636,
+    "hash": "60f94bd6904b5578117a3c0ad803f988"
   },
-  "/Users/barsat/weightBench/relevant_literature/StructureAwareWeightSpaceLearningForLoraGeneration.pdf": {
-    "mtime": 1777923329.5288827,
-    "hash": "86488aa57368b080245b6e7d10b38702"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\weight_space_learning_survey.pdf": {
+    "mtime": 1778130275.478891,
+    "hash": "4423f7103cdc4c7273eae697664c1859"
   },
-  "/Users/barsat/weightBench/relevant_literature/LocatingAndEditingFactualAssosciationsInGPT.pdf": {
-    "mtime": 1777923329.479307,
-    "hash": "feb17505bd7add285354c5a90a51f73b"
-  },
-  "/Users/barsat/weightBench/relevant_literature/LoRa-OriginalPaper.pdf": {
-    "mtime": 1777923329.4591124,
-    "hash": "6071803f93e4573eb7e0fb2c4e65976a"
-  },
-  "/Users/barsat/weightBench/relevant_literature/LoraLearnLessForgetLess.pdf": {
-    "mtime": 1777923329.4979641,
-    "hash": "8da3fcff12eb2898848f8a2eb1a5e2c5"
-  },
-  "/Users/barsat/weightBench/relevant_literature/SelfSupervisedRepresentationLearningOnNeuralNetworkWeights.pdf": {
-    "mtime": 1777923329.5199366,
-    "hash": "44a19d2b8ae348ad6154b871df6ad38f"
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\weight_spectra_model_adaptation.pdf": {
+    "mtime": 1778129703.690256,
+    "hash": "450b6ab16926058ab9946403e39c1be5"
   }
 }
