@@ -203,6 +203,26 @@ def measure_alignment(W0_weights, all_deltas, layer_names, k=K):
             total = max(np.linalg.norm(dW, "fro") ** 2, 1e-10)
             var_explained.append(float(proj / total))
 
+        # Per-adapter intruder dimension analysis (Shuttleworth 2410.21228).
+        # Intruder dims = singular vectors of ΔW with max cosine similarity < 0.3 to
+        # top-4k W0 singular vectors. Measures Frobenius energy in intruder vs TRS dims,
+        # adjudicating the rank-forgetting tension: is the mediator intruder count or magnitude?
+        U_W0_ref = U_W0[:, :min(4 * k, m)]  # generous reference (4k W0 directions)
+        intruder_analysis = []
+        for dW in dWs_raw:
+            if np.linalg.norm(dW, "fro") < 1e-10:
+                intruder_analysis.append({"intruder_count": 0, "intruder_frob_energy": 0.0,
+                                          "trs_frob_energy": 0.0})
+                continue
+            U_dW, S_dW, _ = np.linalg.svd(dW, full_matrices=False)
+            max_cos = np.abs(U_W0_ref.T @ U_dW).max(axis=0)  # (r,): max W0-alignment per ΔW dim
+            intruder = max_cos < 0.3
+            intruder_analysis.append({
+                "intruder_count": int(intruder.sum()),
+                "intruder_frob_energy": float(np.sum(S_dW[intruder] ** 2)),
+                "trs_frob_energy": float(np.sum(S_dW[~intruder] ** 2)),
+            })
+
         results[layer] = {
             "n_adapters": len(dWs_raw),
             "principal_angles_deg": np.degrees(angles).tolist(),
@@ -215,6 +235,7 @@ def measure_alignment(W0_weights, all_deltas, layer_names, k=K):
             "adapter_frob_norms": frob_norms,
             "W0_singular_values_top_k": S_W0[:k].tolist(),
             "S_hat_eigenvalues_top_k": eigenvals[idx[:k]].tolist(),
+            "intruder_analysis": intruder_analysis,
         }
 
     return results

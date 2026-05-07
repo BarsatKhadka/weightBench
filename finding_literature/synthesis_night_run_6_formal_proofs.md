@@ -221,3 +221,33 @@ New INFERRED edges:
 **Most urgent action:** `python run_experiment.py` — determines whether Conjecture 2 survives or collapses.
 
 **Most urgent mathematical fix:** Fisher degeneracy → either (a) constant-rank stratum restriction or (b) Tikhonov regularization with explicit ε dependence. This must be resolved before formal submission.
+
+---
+
+## 7. Additional Falsifier: The Rank-Forgetting Empirical Tension
+
+*Added 2026-05-07 from systematic literature search*
+
+**The tension:**
+- Shuttleworth et al. (2410.21228): Low rank (r ∈ {1,2,4,8}) produces MORE intruder dimensions than high rank (r=2048 essentially eliminates them)
+- Biderman et al. (2405.09673, TMLR): Lower rank (r ∈ {16,64,256}) forgets LESS
+
+If intruder-dim *count* mediates the rank-forgetting relationship, these two findings contradict: low rank → more intruder dims → should forget more; but empirically low rank forgets less.
+
+**Why this is not yet a proven contradiction:**
+The two studies test non-overlapping rank ranges (Shuttleworth: r ∈ {1−16}; Biderman: r ∈ {16−256}). r=16 is the only overlap point. They may describe two different regimes rather than a single monotonic relationship.
+
+**The unresolved question (CONJECTURE 2b, untested):**
+The mediating variable may be intruder-dim *Frobenius energy* (sum of squared intruder singular values), not intruder-dim *count*. Low-rank LoRA produces more intruder vectors, but each carries less energy (total ΔW energy is constrained by the rank bound). High-rank LoRA produces fewer intruder vectors but allows larger magnitude ones.
+
+If correct: the TRS/MP threshold is the unifying mechanism — below-MP intruder dims are automatically noise-suppressed regardless of count. The relevant predictor is above-MP intruder Frobenius energy.
+
+**This is testable:** `run_experiment.py` now measures both intruder count and intruder Frobenius energy per adapter per layer (added 2026-05-07). Comparing across adapters with known rank values (r ∈ {8, 16, 64, 256} in the current K=11 set) will directly test whether energy or count correlates with rank.
+
+**Additional falsifier (from this tension):** If run_experiment.py shows that low-r adapters in our set have equal or *larger* intruder Frobenius energy compared to high-r adapters, then the count/magnitude distinction does not resolve the tension → Conjecture 2's causal mechanism is incorrect.
+
+**Key papers for this question:**
+- arXiv:2405.09673 (Biderman, LoRA Learns Less and Forgets Less) — monotonic rank↑→forgetting↑ in r={16,64,256}
+- arXiv:2512.15634 (How Much is Too Much?) — non-monotonic, task-dependent; SVD cosine sim measured directly
+- arXiv:2603.02224 (Steele) — rank approximately irrelevant when task subspaces are orthogonal
+- arXiv:2603.09684 (Catastrophic Forgetting in Low-Rank PEFT) — update subspace geometry as causal factor
