@@ -1,7 +1,7 @@
 {
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\BIG_IDEAS.md": {
-    "mtime": 1778136711.210677,
-    "hash": "41b23a8a442b96e4dae8478104256cac"
+    "mtime": 1778147625.0348346,
+    "hash": "7daee82bd347c1d90b805e7400bf2edb"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\prompt_experiment_design.md": {
     "mtime": 1777858300.824138,
@@ -18,6 +18,14 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_2_critical_revision.md": {
     "mtime": 1778145375.8254702,
     "hash": "f7e47bf4a5e6831dc802d0589d06b594"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_3_holonomy_gauge.md": {
+    "mtime": 1778147522.2346604,
+    "hash": "b8a5dd5e97b1a952a0d0e9535ce9a713"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_4_steele_holonomy.md": {
+    "mtime": 1778147849.201253,
+    "hash": "e77c7619aaa30525a58ff71f3a6ad936"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\alphalore_htsr_rank_allocation.pdf": {
     "mtime": 1778131872.0523624,
@@ -66,6 +74,14 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\from_spikes_to_heavy_tails_spectral_evolution.pdf": {
     "mtime": 1778136223.2390647,
     "hash": "7e4cb86faf2f930df7dc1aae7b5ef320"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\gauge_invariant_representation_holonomy.pdf": {
+    "mtime": 1778147543.560258,
+    "hash": "6f89c5020ce1e909fd886d0c0c963ce7"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\gauge_theory_superposition_holonomy_interference.pdf": {
+    "mtime": 1778147543.16353,
+    "hash": "ed96ae8c2cee29f4d62d09d2b5de454b"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\gelora_geometric_adaptive_rank_intrinsic_dim.pdf": {
     "mtime": 1778136049.4839122,
@@ -128,8 +144,8 @@
     "hash": "af36605c76fde576b46bcf0714bf92a7"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\new_papers_found.md": {
-    "mtime": 1778144731.607251,
-    "hash": "5a5643c048f5ce3cfdc91289f1cd8753"
+    "mtime": 1778147454.7594311,
+    "hash": "cf273ed7f5b0c09cd3b51216a529f084"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\origin_of_llamas_model_tree_heritage.pdf": {
     "mtime": 1778130274.796245,
@@ -182,6 +198,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\task_singular_vectors_merge_interference.pdf": {
     "mtime": 1778131919.3716922,
     "hash": "bfc12241da5c24f559d6618da33df434"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\underlying_structures_self_attention.pdf": {
+    "mtime": 1778147859.8241272,
+    "hash": "7adae7c7892e9a9cabc2ccf105847539"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\universal_weight_subspace_hypothesis.pdf": {
     "mtime": 1778131871.490023,
