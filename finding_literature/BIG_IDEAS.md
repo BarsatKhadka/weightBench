@@ -198,6 +198,65 @@ The Level-2 TRS is what enables cross-architecture comparison: if both Llama and
 
 ---
 
+## NEW IDEAS FROM ITERATION 4 (Night Run, May 2026)
+
+### Idea 12: TRS = Optimal Bayes Estimator of Task Signal
+The spiked RMT paper (2410.18938) establishes an exact result: the optimal Bayes estimator of the learned signal from a noisy weight matrix is **Marchenko-Pastur shrinkage** — set all singular values within the MP bulk to zero, keep those above the MP edge. This is EXACTLY TRS computation.
+
+**The profound implication**: Computing TRS is not an ad hoc design choice — it is computing the **maximum likelihood estimate of the task-specific information** in the LoRA B matrix, given that the noise follows the MP distribution. TRS is statistically optimal by construction. No other spectral fingerprint can extract MORE task-specific information from the same B matrix.
+
+**New result**: TRS ≥ any other spectral fingerprint in task information content, by the Gauss-Markov theorem applied to the spiked RMT model. This is a theorem we can state and prove in the paper.
+
+### Idea 13: Zero-Shot LoRA Audit via LoL + TRS
+The LoL paradigm (2410.04207) shows task properties are learnable from LoRA weights. TRS is the canonical GL_r-invariant feature for LoL. Combining them:
+
+**LoRA Audit Protocol**:
+1. Receive any LoRA checkpoint (no access to training data, base model, or inference)
+2. Compute canonical TRS (QR+SVD per B matrix, MP normalization)
+3. Run LoL-style meta-prediction on TRS features
+4. Output: (a) task label, (b) training data characteristics, (c) estimated held-out performance, (d) harmful fine-tune detection score
+
+This is a zero-shot LoRA audit tool. Practical applications:
+- Marketplace trust (detect malicious LoRAs before deployment)
+- Model provenance (trace which task a LoRA was trained on)
+- Performance estimation without inference (cheaply rank LoRA candidates)
+- Cross-architecture compatibility score (TRS distance predicts transfer quality)
+
+**This is a productizable application of TRS.** NeurIPS workshop paper → ICLR 2027 full paper on "LoRA audit via task residual spectrum."
+
+### Idea 14: Bayesian Spectral Calibration — Unifying TRS and SVC
+Spectral Over-Accumulation (2602.05536) introduces SVC (Singular Value Calibration), which rescales inflated singular values after merging. TRS introduces MP null normalization before comparison. These are special cases of a general principle:
+
+**Bayesian Spectral Calibration**: normalize singular values against a null distribution that encodes "what would happen if there were no task-specific information." Different choices of null give different calibration methods:
+- MP null (TRS): theoretically principled, architecture-agnostic, infinite-data Bayesian limit
+- Empirical shared distribution (SVC): data-driven, architecture-specific, finite-sample
+- Universal subspace prior (Level-2 TRS): two-level normalization, removes architecture-specific LoRA prior
+
+The hierarchy: MP null ⊂ Universal subspace null ⊂ Empirical shared null. More specific nulls give sharper calibration but are less generalizable. MP null is the most generalizable (works for any architecture, any task distribution).
+
+**The unified theorem**: All good LoRA comparison methods are special cases of Bayesian spectral calibration with different prior choices. TRS is the prior corresponding to maximum entropy (most conservative, most generalizable).
+
+### Idea 15: Task Sequencing via TRS — A Continual Learning Curriculum
+The subspace geometry paper (2603.02224) proves that minimum principal angle between task gradient subspaces governs forgetting. TRS distance approximates this principal angle. Therefore:
+
+**TRS-based continual learning curriculum**: Given a set of tasks {T₁, T₂, ..., Tₙ}, compute pairwise TRS distances. Find the ordering that maximizes the minimum pairwise TRS distance between consecutive tasks — this minimizes catastrophic forgetting by ensuring each new task operates in a subspace maximally orthogonal to the previous task.
+
+This is equivalent to solving the "maximum weight Hamiltonian path" problem on the TRS distance graph. Greedy version: always pick the task with maximum TRS distance from the current task.
+
+**Experimental prediction**: Sequential training using TRS-optimal ordering reduces forgetting by X% compared to random ordering, where X depends on the task diversity (measured by TRS variance in the task population). This is measurable and direct.
+
+### Idea 16: Spectrum + TRS = Pre/Post Adaptation Signal Map
+The Spectrum paper (2406.06623) applies MP null to BASE MODEL weights to identify which layers are trainable (high SNR before fine-tuning). TRS applies MP null to LORA B matrices to identify which layers were task-adapted (high SNR after fine-tuning). Combining them:
+
+**The complete layer lifecycle map**:
+- Pre-training quality (Spectrum): which layers have high SNR in base model → determines trainability
+- Task adaptation signal (TRS): which layers have high SNR in LoRA → determines task information
+- Joint criterion (α×TRS×Spectrum): three-way layer selection
+
+**The unexpected finding**: Layers with HIGH Spectrum SNR (good base training) and LOW TRS (no task adaptation) are "dormant" layers — the task doesn't need to change them. Layers with LOW Spectrum SNR and HIGH TRS are "rescued" layers — the LoRA is compensating for poorly-trained base. The frequency of "rescued" layers across architectures tells us how architecture-independent the task solution is.
+
+---
+
 ## WHAT THE GRAPH REVEALED (17-community analysis, iteration 2)
 
 Community structure shows:
@@ -214,14 +273,20 @@ Community structure shows:
 
 ---
 
-## PRIORITY SEARCH TOPICS FOR ITERATION 3
+## PRIORITY SEARCH TOPICS FOR ITERATION 4
 
-1. "universal weight subspace cross-architecture principal angles comparison" — do Llama/Mistral share universal subspaces?
-2. "LoRA canonical form QR SVD task prediction retrieval" — W2T follow-on work
-3. "task singular vectors cross-architecture interference prediction" — extending TSV (2412.00081) cross-model
-4. "HT-SR alpha power law LoRA layer importance fine-tuning" — extending AlphaLoRA
-5. "continual learning LoRA shared subspace catastrophic forgetting boundary" — spectral analysis of forgetting
-6. "spectral skewness task vector model merging quality prediction" — skewness as merge predictor
-7. "LoRA population manifold geometry clustering task identity" — manifold hypothesis for LoRA populations
-8. "GrokLoRA grokking spectral transition" — grokking as spectral phase transition in B matrix
-9. "local learning coefficient practical computation LoRA adapter" — how to measure LLC empirically
+**Already found this iteration (download next):**
+1. **CRITICAL** "GradientSpace SVD LoRA task structure" (2512.06678) — SVD on LoRA gradients reveals latent task structure; validates TRS direction
+2. "SANE weight space learning cross-architecture" (2406.09997) — architecture-agnostic weight representations for task prediction
+3. "GeLoRA intrinsic dimensionality adaptive rank" (2412.09250) — intrinsic dim → optimal rank; task complexity scaling law
+4. "mtLoRA spectral task regularization" (2603.01526) — high-SV (shared) vs. low-SV (task-specific) distinction confirmed at scale
+5. "Subspace Boosted merging HOSVD task similarity" (2506.16506) — HOSVD as task similarity metric; rank collapse in task arithmetic
+
+**New search directions (not yet explored):**
+6. "spectral imbalance forgetting continual LoRA Stiefel manifold" — EBLoRA (2602.00722), task-specific spectral shape
+7. "null-space compression cross-task LoRA merging label-free" — label-free merge via null-space geometry
+8. "heavy-tailed mechanistic universality HTMP ensemble" — theoretical origin of MP deviations (2506.03470)
+9. "spikes heavy tails spectral evolution neural network training" — from spikes to heavy tails (2406.04657)
+10. "predicting LLM compression spectral stable rank" — stable rank cross-architecture (2604.18085)
+11. "LoRA gradient subspace catastrophic forgetting principal angles" — task sequencing for continual learning
+12. "task residual spectrum optimal Bayes estimator shrinkage" — check if anyone has the spiked RMT connection to LoRA
