@@ -1,4 +1,38 @@
 # New Literature Found — Night Run, May 2026
+*Updated: Iteration 3 additions appended below*
+
+## Category 9: Gauge Theory / Holonomy in Neural Networks (NEW — Iteration 3)
+
+**A Gauge Theory of Superposition: Toward a Sheaf-Theoretic Atlas of Neural Representations**
+- arXiv:2603.00824 (Feb 2026)
+- Replaces global dictionary model with sheaf-theoretic local semantic charts
+- Uses holonomy over fundamental cycles in the context graph to certify interference bounds
+- KEY: Proves holonomy is computable and gauge-invariant (after spanning-tree gauge fixing), non-trivial holonomy measures interference bounds on Llama-3.2-3B
+- Closest paper to the fiber bundle gap: uses holonomy to certify task interference, but in representation space (input-space loops), not weight-space training trajectories
+- **Gap remaining:** representation-space holonomy ≠ weight-space training holonomy
+
+**Gauge-invariant Representation Holonomy**
+- arXiv:2601.21653 (Jan 2026)
+- Sevetlidis & Pavlidis
+- Parallel-transports feature neighborhoods along loops in input space to compute holonomy metric
+- Zero holonomy = flat (invariant) representations; non-zero = hidden curvature
+- Invariant to orthogonal and affine transformations; correlates with adversarial robustness
+- Provides concrete computational infrastructure for holonomy estimation
+- **Application to weight space:** the parallel transport machinery can be adapted to weight-space loops if the right connection is specified
+
+**Quotient Geometry, Effective Curvature, and Implicit Bias (Dong & Cheng)**
+- arXiv:2603.21502 (Mar 2026)
+- Confirmed: W/G quotient manifold with vertical/horizontal tangent decomposition
+- Only the horizontal component contributes to first-order predictor evolution; vertical = gauge variation
+- Does NOT use "principal fiber bundle" terminology but the structure is exactly that
+- **Gap confirmed:** No holonomy, no parallel transport, no multi-task/continual learning analysis
+
+## Category 10: The 10 Priority Papers — Verification Results (Iteration 3)
+
+All 10 arXiv IDs from synthesis_night_run_2 were VALID. Key corrections:
+- arXiv:2412.00081 is "Task Singular Vectors: Reducing Task Interference in Model Merging" — about merging interference, not capability suppression during training (though closely related)
+- arXiv:2512.05117 — "16-dim universal subspace" claim needs paper-body verification (abstract says "low-dimensional", not "16-dim" specifically)
+- arXiv:2604.22778 — Q/K vs V/O spectral asymmetry: Q/K depth-dependent dynamics vs V/O uniform compression → four-way decomposition applies per projection type, not uniformly
 
 ## Category 1: Spectral Analysis / RMT on Real Weights
 

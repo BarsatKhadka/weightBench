@@ -335,6 +335,76 @@ From Spikes to Heavy Tails (2406.04657) shows that the spectral density evolves 
 
 ---
 
+---
+
+## NEW IDEAS FROM ITERATION 6 (May 2026 — Night Run 3, Holonomy & Gauge Theory)
+
+### Idea 22: Intruder Dimensions = Weight-Space Holonomy (THE KEY UNIFICATION)
+
+The most important insight of the night run: intruder dimensions are NOT arbitrary artifacts —
+they are the **holonomy of the low-rank constraint in weight space**.
+
+Formal argument: Sequential fine-tune T1 → T2 → "undo T2" (gradient reversal).
+In flat Euclidean space: undo is perfect, you return to T1 model.
+In curved weight space with low-rank constraint: the constraint prevents exact undo.
+The non-undoable residual = holonomy of the training loop = the intruder dimensions.
+
+Evidence: As rank → ∞ (constraint disappears): intruder dims → 0 (Shuttleworth Table 1).
+This IS the mathematical signature of holonomy vanishing as curvature decreases.
+
+**New prediction**: Holonomy magnitude = intruder_dim_score. Testable: run T1→T2→-T2,
+measure ||θ_after - θ_T1||. Compare to intruder_dim_score(T2). Should be proportional.
+
+### Idea 23: Q/K vs V/O Spectral Asymmetry in TRS
+
+From the Spectral Lifecycle paper (2604.22778): Q/K attention projections have depth-dependent
+spectral dynamics; V/O projections have uniform compression.
+
+**Implication**: TRS computed on V/O layers is CLEANER (less geometric noise) than TRS on Q/K.
+Prediction: V-layer TRS clusters tasks better (higher ARI) than Q-layer TRS.
+
+Also implies: the four-way decomposition (Genuine TRS / Intruder / Bulk / Suppression) is
+sharper on V/O layers. Experimental validation of this asymmetry is a free, quick experiment.
+
+### Idea 24: Optimal Rank = sqrt(N) for Intruder-Free Fine-tuning
+
+From NTK rank theory (2402.11867): full fine-tuning solutions have rank ≈ sqrt(N).
+At rank r = sqrt(N), the LoRA constraint is exactly tight enough to represent task signal.
+Below sqrt(N): holonomy grows → intruder dims appear → forgetting increases.
+Above sqrt(N): no benefit, just compute waste.
+
+**The formula**: intruder_dim_score ∝ max(0, 1 - r/sqrt(N))
+This is a closed-form prediction for how many intruder dimensions a LoRA will create,
+given only its rank r and training set size N.
+
+### Idea 25: Sheaf-Bundle Duality for Holonomy Measurement (arXiv:2603.00824)
+
+The Gauge Theory of Superposition paper computes holonomy in *representation space* (input loops).
+Our framework computes holonomy in *weight space* (training loops).
+
+**Conjecture**: These are isomorphic under the model's function map.
+If true: measure representation holonomy from a SINGLE checkpoint (using 2601.21653 infrastructure)
+to predict weight-space training holonomy without running sequential fine-tuning.
+
+Practical implication: Predict catastrophic forgetting from a single checkpoint, no expensive
+sequential training needed. Compute rep-space holonomy between two LoRAs and get a forgetting
+prediction.
+
+### Idea 26: Universal Subspace = Flat Directions of the Fisher Bundle (Zero Curvature)
+
+Conjecture connecting universal subspace to the fiber bundle geometry:
+- Universal subspace (2512.05117): 16-dim subspace shared across ALL LoRAs regardless of task
+- Flat directions of Fisher bundle: where the connection form ω = 0, zero curvature
+
+**Claim**: Universal subspace = flat directions of Fisher bundle = zero holonomy directions.
+These are the directions the manifold "doesn't care about" for task purposes.
+Training in the universal subspace produces zero holonomy → zero task-specific information.
+This explains WHY the universal subspace is task-GENERAL: it's geometrically flat.
+
+Task-specific directions = curved directions of the Fisher bundle (non-zero holonomy).
+
+---
+
 ## PRIORITY SEARCH TOPICS FOR ITERATION 4
 
 **Already found this iteration (download next):**
