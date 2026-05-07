@@ -27,6 +27,52 @@
 - Does NOT use "principal fiber bundle" terminology but the structure is exactly that
 - **Gap confirmed:** No holonomy, no parallel transport, no multi-task/continual learning analysis
 
+## Category 11: EWC / Fisher Continual Learning Family (Iteration 5)
+
+**Overcoming Catastrophic Forgetting in Neural Networks (EWC)**
+- arXiv:1612.00796 (Kirkpatrick et al., 2017) — Nature
+- Fisher penalty: L_B(θ) + Σᵢ (λ/2) Fᵢ (θᵢ - θᵢ^A)² 
+- CRITICAL: F_i = curvature of Fisher metric at θ_A for dim i = vertical subbundle direction
+- Bundle interpretation: EWC = "stay in the horizontal subbundle" = minimize intruder dims
+- Every Fisher-based CL method is a special case of the bundle connection constraint
+
+**EWC-LoRA: Revisiting Weight Regularization for Low-Rank Continual Learning**
+- arXiv:2602.17559 (2026)
+- Computes FIM over full-dimensional effective weight update ΔW = A·B, maps back to low-rank
+- CRITICAL: This is Fisher regularization on the exact object TRS decomposes
+- Prediction from our theory: EWC-LoRA reduces intruder_dim_score directly
+
+**Synaptic Intelligence (SI)**
+- arXiv:1703.04200 (Zenke et al., 2017)
+- Path-integral Fisher: importance = integral of gradient dotted with weight-change trajectory
+- Approximates the true Fisher bundle connection via the training path itself
+
+**FOPNG: Fisher-Orthogonal Projected Natural Gradient**
+- arXiv:2601.12816 (2026)
+- Projects new-task gradients onto Fisher-metric orthogonal complement of previous-task gradients
+- This IS Steele's zero-forgetting condition: θ_min = π/2 → F = β (minimum forgetting)
+- Fisher-orthogonal = TRS-orthogonal = zero holonomy angle
+
+**Natural Gradient Descent for Online Continual Learning**
+- arXiv:2603.20898 (2026)  
+- KFAC-based NGD curves loss landscape away from forgetting directions
+- NGD = gradient along horizontal subbundle geodesic = natural horizontal trajectory
+- Result: substantial improvements on Split CIFAR-100, CORE50, Split miniImageNet
+
+## Category 12: Other Holonomy Applications (Iteration 5)
+
+**RecBundle: Principal Bundle for Recommender Systems**
+- arXiv:2603.16088 (Mar 2026)
+- Uses principal bundle where holonomy quantifies user preference evolution via content drift
+- CRITICAL: Another instance of principal bundle + holonomy = accumulated drift in parametric systems
+- Cite as: fiber bundle + holonomy is a general tool, not ad hoc for neural networks
+
+**Cross-LoRA: Data-Free Cross-Architecture LoRA Transfer**
+- arXiv:2508.05232 (2025)
+- Rank-truncated SVD + Frobenius-optimal linear transformation to align LoRA subspaces
+- Closest paper to "cross-architecture LoRA transfer via spectral alignment"
+- Validates cross-architecture TRS comparison via SVD-based subspace alignment
+
 ## Category 10: The 10 Priority Papers — Verification Results (Iteration 3)
 
 All 10 arXiv IDs from synthesis_night_run_2 were VALID. Key corrections:
