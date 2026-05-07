@@ -19,6 +19,10 @@
     "mtime": 1778074998.6523242,
     "hash": "e6057f61ebdf72ee8643c520c80d3fac"
   },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\alignment_collapse_curvature_instability.md": {
+    "mtime": 1778158411.8560016,
+    "hash": "6feda71369f893687c6a9c8ed7232d57"
+  },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\biderman_lora_learns_less_forgets_less.md": {
     "mtime": 1778153114.3921285,
     "hash": "71a274afd340eb335111a21b6ca76edc"
@@ -43,9 +47,25 @@
     "mtime": 1778152213.7167904,
     "hash": "e81d5487cd64b5618e3a6f308fd7f88f"
   },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\frechet_averages_quotient_manifold_merging.md": {
+    "mtime": 1778158421.6249793,
+    "hash": "6deec462c6d80d945249ae5af8059467"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\multitask_grokking_invariant_manifold.md": {
+    "mtime": 1778158435.0341,
+    "hash": "eb62e232102bb1a5dfa59d5fb6f43f0e"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\oplora_orthogonal_projection_forgetting.md": {
+    "mtime": 1778158399.5795293,
+    "hash": "2e781d4088248fe2e0e3964ac4dc0fa0"
+  },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\prompt_experiment_design.md": {
     "mtime": 1777858300.824138,
     "hash": "adf276c1134faac193af98915f7ca865"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\rank_collapse_continual_learning_forgetting.md": {
+    "mtime": 1778158443.6955774,
+    "hash": "737dfef06daeeb12a4732a9464c20462"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\rank_tradeoffs_forgetting_svd_analysis.md": {
     "mtime": 1778153123.5087183,
@@ -58,6 +78,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_geometry_lora_adapters_training_objective.md": {
     "mtime": 1778153146.52204,
     "hash": "fc6b4500c5154d468387eaa0ff8069a4"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_surgery_lora_singular_directions.md": {
+    "mtime": 1778158428.1674502,
+    "hash": "b9f3702c3a85a9ca2d2188bb4312de5d"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\SYNTHESIS.md": {
     "mtime": 1778136727.7936678,
@@ -82,6 +106,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_7_fisher_degeneracy.md": {
     "mtime": 1778153653.3397243,
     "hash": "7d27dc29823a797c8409c3cf3cb36253"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\alignment_collapse_curvature_instability.pdf": {
+    "mtime": 1778158512.7862098,
+    "hash": "e61f43865295e6e03429cca6e245f487"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\alphalore_htsr_rank_allocation.pdf": {
     "mtime": 1778131872.0523624,
@@ -126,6 +154,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\fisher_subspace_lora_initialization.pdf": {
     "mtime": 1778132900.6800761,
     "hash": "ed77189633552360145e4ed0e8c48630"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\frechet_averages_quotient_manifold_merging.pdf": {
+    "mtime": 1778158513.4877238,
+    "hash": "48cfc9e54263074129512cdd96e9df7b"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\frechet_model_merging_quotient_manifold.pdf": {
     "mtime": 1778132900.3476381,
@@ -203,9 +235,17 @@
     "mtime": 1778136049.8542964,
     "hash": "af36605c76fde576b46bcf0714bf92a7"
   },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\multitask_grokking_invariant_manifold.pdf": {
+    "mtime": 1778158528.6412446,
+    "hash": "8a09c36f6ea9cb79aec2947977d7fb0a"
+  },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\new_papers_found.md": {
     "mtime": 1778153630.4778152,
     "hash": "7239cd0510234dd402beed09c6f4d934"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\oplora_orthogonal_projection_forgetting.pdf": {
+    "mtime": 1778158509.1407487,
+    "hash": "48a71935c42d2f7b7c702a3306e0260e"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\origin_of_llamas_model_tree_heritage.pdf": {
     "mtime": 1778130274.796245,
@@ -214,6 +254,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\purifying_task_vectors_knowledge_subspace.pdf": {
     "mtime": 1778131654.159971,
     "hash": "47d45a64af7f380415a4ac29e62d8570"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\rank_collapse_continual_learning_forgetting.pdf": {
+    "mtime": 1778158531.0466926,
+    "hash": "20d44f4990ae5aa07fb338362ecdb332"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\recbundle_principal_bundle_holonomy_recommender.pdf": {
     "mtime": 1778148653.9365935,
@@ -242,6 +286,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_over_accumulation_model_merging.pdf": {
     "mtime": 1778133687.4278114,
     "hash": "55771a8d4f4b3ac44e3347bb894d20f6"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_surgery_lora_singular_directions.pdf": {
+    "mtime": 1778158520.3694239,
+    "hash": "e3c95b57f231a37d7d6542ff3b8bcb54"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectrum_snr_marchenko_pastur_training.pdf": {
     "mtime": 1778133686.81695,
