@@ -18,7 +18,7 @@
 - Zero holonomy = flat (invariant) representations; non-zero = hidden curvature
 - Invariant to orthogonal and affine transformations; correlates with adversarial robustness
 - Provides concrete computational infrastructure for holonomy estimation
-- **Application to weight space:** the parallel transport machinery can be adapted to weight-space loops if the right connection is specified
+- **Application to weight space:** [CORRECTION 2026-05-07] The paper operates exclusively in activation/feature space via INPUT-space loops. The claim that the machinery "can be adapted to weight-space loops" is speculative and unvalidated — it requires proving the rep-space↔weight-space isomorphism (Conjecture, untested). Do NOT cite this as authority for weight-space holonomy measurement.
 
 **Quotient Geometry, Effective Curvature, and Implicit Bias (Dong & Cheng)**
 - arXiv:2603.21502 (Mar 2026)

@@ -34,13 +34,23 @@ The paper contribution: Steele's α and β are computable from the Fisher bundle
 
 ## THE HOLONOMY ALGORITHM ADAPTED TO WEIGHT SPACE
 
+> **[CORRECTION — session 4, 2026-05-07]:** The description below is WRONG. arXiv:2601.21653
+> (Sevetlidis) Algorithm 1 operates on ACTIVATION/FEATURE representations via loops in INPUT
+> space — it does NOT operate on weight matrices and is NOT directly adaptable to weight space.
+> The "weight-space adaptation" below was a speculative extrapolation written in session 2 that
+> conflated two distinct spaces. The algorithm structure (Procrustes rotation + composition) is
+> a valid inspiration, but no paper currently provides a validated weight-space holonomy
+> estimator. Any such adaptation would require proving that the rep-space → weight-space
+> isomorphism holds (Conjecture, untested). Do not cite 2601.21653 as authority for
+> weight-space holonomy measurement.
+
 From the ICLR 2026 paper (2601.21653), Algorithm 1 computes representation holonomy by:
 1. Whitening feature representations globally
 2. Finding k-NN neighborhoods at each loop point
 3. Computing SO(p) Procrustes rotation between adjacent neighborhoods
 4. Composing rotations around the loop
 
-**The weight-space adaptation:**
+**The weight-space adaptation (SPECULATIVE — see correction above):**
 
 Replace features z(x) with weight matrices W(t) at training checkpoint t.
 
@@ -239,15 +249,15 @@ Intruder dims = ||fiber-escape|| = ||holonomy|| per task pair
 FILet = horizontal subbundle initialization → minimizes initial holonomy
 Universal subspace = flat fiber directions = zero holonomy directions
 
-**The algorithm:**
-Weight-space holonomy algorithm (adapted from 2601.21653 Algorithm 1):
+**The algorithm (SPECULATIVE — see correction at top of section):**
+Weight-space holonomy algorithm (structure inspired by 2601.21653 Algorithm 1, NOT validated):
 h_norm = ||R_return · R_{12} · R_{01} − I||_F / (2√p) ∈ [0,1]
 where R_ij = Fisher-weighted Procrustes alignment of weight checkpoint differences
 
 **Papers that confirm this:**
 - 2603.02224 (Steele): empirical holonomy formula without the name
 - 2410.21228 (Shuttleworth): intruder dims = fiber escape, identified causally
-- 2601.21653 (Sevetlidis/ICLR 2026): holonomy algorithm, gauge invariance proofs
+- 2601.21653 (Sevetlidis/ICLR 2026): holonomy algorithm in FEATURE space (NOT weight space) — gauge invariance proofs remain relevant
 - 2603.21502 (Dong & Cheng): W/G quotient with horizontal/vertical split
 - 2302.07384 (Kristiadi): Fisher metric is always present
 - 2605.01046 (FILet): Fisher horizontal subspace for LoRA, operationalized

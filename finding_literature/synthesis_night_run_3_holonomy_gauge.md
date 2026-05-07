@@ -142,7 +142,7 @@ Holonomy(weight space loop) = Holonomy(representation space loop over same data)
 
 If this holds, you can measure training holonomy from either representation or weight space.
 Practical implication: You don't need to run T1 → T2 → -T2 to measure holonomy.
-You can compute it from the representations alone (2601.21653 infrastructure).
+You can compute it from the representations alone — BUT ONLY IF the rep-space↔weight-space isomorphism holds (Conjecture, untested). Note: 2601.21653 operates in feature/activation space via INPUT loops, NOT weight space directly. The infrastructure cannot be applied to weight-space holonomy without proving this isomorphism first.
 
 ---
 
@@ -185,7 +185,7 @@ spectral lifecycle (2604.22778), NTK rank theory (2402.11867)
 Weight space as fiber bundle with Fisher metric connection.
 Holonomy of training loops = task interference measure.
 Intruder dimensions = holonomy artifacts of low-rank constraint.
-Supported by: W/G quotient (2603.21502), holonomy infrastructure (2601.21653),
+Supported by: W/G quotient (2603.21502), holonomy infrastructure in FEATURE space (2601.21653 — not directly weight-space),
 gauge theory of superposition (2603.00824), Fisher metric (2302.07384)
 
 **Pillar 3: Functional Consequences (Predictions)**
@@ -231,7 +231,9 @@ Prediction: ARI(task) >> ARI(architecture)
 ## OPEN QUESTIONS (Iteration 3)
 
 1. Does Claim 8 (Sheaf-Bundle Duality) hold quantitatively? Can we compute weight-space
-   holonomy from a single checkpoint's representations using 2601.21653 infrastructure?
+   holonomy from a single checkpoint's representations? NOTE: 2601.21653 infrastructure
+   operates in activation/feature space (input loops), not weight space — using it for
+   weight-space holonomy requires proving the rep-space↔weight-space isomorphism first.
 
 2. Is the V-layer TRS dominance effect architecture-dependent? MLP layers don't have Q/K/V —
    what's the analog for FFN blocks? (Answer: likely output projection is the "V equivalent")
@@ -252,7 +254,7 @@ Prediction: ARI(task) >> ARI(architecture)
 ## PAPERS TO ADD TO CORPUS (Iteration 3)
 
 1. arXiv:2603.00824 — Gauge Theory of Superposition (sheaf-theoretic holonomy, interference bounds)
-2. arXiv:2601.21653 — Gauge-invariant Representation Holonomy (practical holonomy estimator)
+2. arXiv:2601.21653 — Gauge-invariant Representation Holonomy (practical holonomy estimator IN FEATURE/ACTIVATION SPACE via input loops — NOT weight space; cannot be cited as a weight-space holonomy algorithm without proving the rep-space↔weight-space isomorphism)
 3. arXiv:2604.22778 — already known, confirmed VALID
 
 Priority: 2603.00824 is CRITICAL — it's the missing bridge between holonomy theory and

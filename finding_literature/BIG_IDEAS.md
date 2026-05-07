@@ -383,8 +383,11 @@ The Gauge Theory of Superposition paper computes holonomy in *representation spa
 Our framework computes holonomy in *weight space* (training loops).
 
 **Conjecture**: These are isomorphic under the model's function map.
-If true: measure representation holonomy from a SINGLE checkpoint (using 2601.21653 infrastructure)
-to predict weight-space training holonomy without running sequential fine-tuning.
+If true: measure representation holonomy from a SINGLE checkpoint to predict weight-space
+training holonomy without running sequential fine-tuning. NOTE: 2601.21653 operates in
+activation/feature space via INPUT loops — it can only serve as the rep-space tool here IF
+the isomorphism (Conjecture) is first validated. Do NOT cite 2601.21653 as a direct
+weight-space holonomy algorithm.
 
 Practical implication: Predict catastrophic forgetting from a single checkpoint, no expensive
 sequential training needed. Compute rep-space holonomy between two LoRAs and get a forgetting
