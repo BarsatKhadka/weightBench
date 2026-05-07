@@ -1,0 +1,975 @@
+{
+  "nodes": [
+    {
+      "id": "synthesis_night_run_5_ewc_fisher_bridge",
+      "label": "Synthesis Night Run 5: EWC = Horizontal Subbundle / W_qk Curvature = Holonomy Accumulation",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-05",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "new_papers_found",
+      "label": "New Literature Found — Night Run May 2026 (Iterations 3–5)",
+      "file_type": "document",
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": "2026-05",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "ewc_lora_paper",
+      "label": "EWC-LoRA: Revisiting Weight Regularization for Low-Rank Continual Learning (arXiv:2602.17559)",
+      "file_type": "paper",
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2602.17559",
+      "captured_at": "2026-02-19",
+      "author": "Yaoyue Zheng, Yin Zhang, Joost van de Weijer, Gido M van de Ven, Shaoyi Du, Xuetao Zhang, Zhiqiang Tian",
+      "contributor": null
+    },
+    {
+      "id": "recbundle_paper",
+      "label": "RecBundle: A Next-Generation Geometric Paradigm for Explainable Recommender Systems (arXiv:2603.16088)",
+      "file_type": "paper",
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2603.16088",
+      "captured_at": "2026-03-17",
+      "author": "Hui Wang, Tianzhu Hu, Mingming Li, Xi Zhou, Chun Gan, Jiao Dai, Jizhong Han, Songlin Hu, Tao Guo",
+      "contributor": null
+    },
+    {
+      "id": "ewc_kirkpatrick_paper",
+      "label": "Overcoming Catastrophic Forgetting in Neural Networks — EWC (arXiv:1612.00796)",
+      "file_type": "paper",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/1612.00796",
+      "captured_at": "2017",
+      "author": "James Kirkpatrick et al.",
+      "contributor": null
+    },
+    {
+      "id": "fopng_paper",
+      "label": "FOPNG: Fisher-Orthogonal Projected Natural Gradient (arXiv:2601.12816)",
+      "file_type": "paper",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2601.12816",
+      "captured_at": "2026-01",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "natural_gradient_ocl_paper",
+      "label": "Natural Gradient Descent for Online Continual Learning (arXiv:2603.20898)",
+      "file_type": "paper",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2603.20898",
+      "captured_at": "2026-03",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "filet_paper",
+      "label": "FILet: Learning in the Fisher Subspace — Guided Initialization for LoRA (arXiv:2605.01046)",
+      "file_type": "paper",
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2605.01046",
+      "captured_at": "2026-05",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "wqk_curvature_paper",
+      "label": "Self-Attention W_qk as Bilinear Metric / Curvature (arXiv:2502.10927)",
+      "file_type": "paper",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": null,
+      "source_url": "https://arxiv.org/abs/2502.10927",
+      "captured_at": "2025-02",
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewc_horizontal_subbundle",
+      "label": "EWC as Horizontal Subbundle Constraint (Fisher penalty = stay in ker(ω))",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC = Staying in the Horizontal Subbundle",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_fisher_bundle_connection",
+      "label": "Theorem 3: Fisher Information Matrix as Connection 1-Form ω on Fiber Bundle",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Paper Theorem Structure — Theorem 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_holonomy_intruder_correspondence",
+      "label": "Theorem 2: Holonomy–Intruder Dimension Correspondence",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Paper Theorem Structure — Theorem 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_spectral_decomposition_theorem1",
+      "label": "Theorem 1: Spectral Decomposition of ΔW into Four Bundle Components",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Paper Theorem Structure — Theorem 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_wqk_bilinear_metric",
+      "label": "W_qk = Bilinear Metric Form / Connection on Embedding Fiber (Q/K = curvature)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: The Self-Attention Paper (2502.10927) — Verdict",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_rank1_hebbian_holonomy",
+      "label": "Rank-1 Hebbian Updates as Discrete Holonomy Accumulation in W_qk",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: The Most Profound Finding — Rank-1 Hebbian Holonomy Accumulation",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_fopng_zero_holonomy_angle",
+      "label": "FOPNG Fisher-Orthogonal Gradients = Zero Holonomy Angle (θ_min = π/2, Steele formula)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: FOPNG: Fisher-Orthogonal Gradients = Zero Holonomy Angle",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ngd_horizontal_geodesic",
+      "label": "Natural Gradient Descent = Horizontal Geodesic in Fisher Bundle (KFAC-OCL)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Natural Gradient OCL",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_recbundle_holonomy_recommenders",
+      "label": "RecBundle: Holonomy = Accumulated Preference Drift in Recommender Closed Loop",
+      "file_type": "rationale",
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 3.3 Holonomy Transformations",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_recbundle_parallel_transport_collab",
+      "label": "RecBundle: Collaborative Filtering = Parallel Transport on User Manifold",
+      "file_type": "rationale",
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 3.2 Parallel Transport",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_recbundle_gbi_metric",
+      "label": "RecBundle Geometric Bias Index (GBI): Spectral Radius of Holonomy Matrix Measures Information Cocoon",
+      "file_type": "rationale",
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.1 Explainable Framework, Equation 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewclora_fim_fullspace",
+      "label": "EWC-LoRA: Full-Dimensional FIM over ΔW=AB (not A,B separately) for Accurate Fisher Estimation",
+      "file_type": "rationale",
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Section 3.2 EWC with Low-rank Adaptation, Appendix A.1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_unified_bundle_table",
+      "label": "Unified Table: All Major Fine-tuning Methods as Bundle Geometry Special Cases",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: The Complete Existing Methods = Bundle Geometry Table",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_filet_fopng_prediction",
+      "label": "FILet + FOPNG = Complete Horizontal Subbundle Constraint (Near-Zero Intruder Dims Prediction)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC = Horizontal Subbundle, prediction paragraph",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewclora_trs_object",
+      "label": "EWC-LoRA = Fisher Regularization on the TRS Object ΔW (Complementary to TRS Spectral Decomposition)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC-LoRA — The Direct Connection",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_recbundle_general_holonomy_tool",
+      "label": "RecBundle Validates: Principal Bundle + Holonomy is General Tool for Parametric Drift (Not Ad Hoc for NNs)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: RecBundle — Holonomy in Recommenders",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewc_diagonal_approximation_limitation",
+      "label": "EWC Diagonal Fisher Approximation Limitation: Misses Off-Diagonal Curvature → Residual Forgetting",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Why EWC is Imperfect",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewclora_proposition1",
+      "label": "EWC-LoRA Proposition 1: Separate Regularization of A,B ≠ Full-Space Regularization of ΔW",
+      "file_type": "rationale",
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Appendix A.1.1 Regularization under Different Parameterizations",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewclora_proposition3",
+      "label": "EWC-LoRA Proposition 3: Empirical FIM over ΔW Induces Constraints on Low-Rank Factors A,B",
+      "file_type": "rationale",
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Appendix A.1.3 Constraining Low-Rank Updates via Full-Space Fisher Regularization",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_recbundle_curvature_curvature_distortion",
+      "label": "RecBundle: Local Curvature Ω Quantifies Aggregation Distortion and Information Cocoon Formation",
+      "file_type": "rationale",
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.1 Explainable Framework, Equation 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_steele_forgetting_formula",
+      "label": "Steele's Forgetting Formula: F = α(1−cos²θ_min) + β, θ_min = Minimum Eigen-Angle of Holonomy",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: FOPNG — Zero Holonomy Angle",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_decoder_curvature_lora_intruder_dims",
+      "label": "Decoder W_qk Skew-Symmetry (Non-Zero Curvature) → More Intruder Dims in Tight-Rank LoRA Fine-tuning",
+      "file_type": "rationale",
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Prediction for fine-tuning",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_ewclora_stability_plasticity",
+      "label": "EWC-LoRA Achieves Flexible Stability–Plasticity Trade-off via Tunable λ (Outperforms Vanilla LoRA by 8.92%)",
+      "file_type": "rationale",
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Section 4.2 Main Results, Section 4.3 Ablation Study",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "concept_recbundle_meta_learning_bundle",
+      "label": "RecBundle Meta-Theory: MAML/iMAML as Special Cases of Fiber Bundle Connection Choice",
+      "file_type": "rationale",
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.2 Metatheory for Adaptive Recommendation",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "ewc_kirkpatrick_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC = Staying in the Horizontal Subbundle",
+      "weight": 1.0
+    },
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "ewc_lora_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC-LoRA — The Direct Connection",
+      "weight": 1.0
+    },
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "fopng_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: FOPNG: Fisher-Orthogonal Gradients",
+      "weight": 1.0
+    },
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "natural_gradient_ocl_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Natural Gradient OCL",
+      "weight": 1.0
+    },
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "recbundle_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: RecBundle — Holonomy in Recommenders",
+      "weight": 1.0
+    },
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "wqk_curvature_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: The Self-Attention Paper (2502.10927) — Verdict",
+      "weight": 1.0
+    },
+    {
+      "source": "synthesis_night_run_5_ewc_fisher_bridge",
+      "target": "filet_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC = Horizontal Subbundle, prediction paragraph",
+      "weight": 1.0
+    },
+    {
+      "source": "new_papers_found",
+      "target": "ewc_kirkpatrick_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": "Category 11",
+      "weight": 1.0
+    },
+    {
+      "source": "new_papers_found",
+      "target": "ewc_lora_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": "Category 11",
+      "weight": 1.0
+    },
+    {
+      "source": "new_papers_found",
+      "target": "fopng_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": "Category 11",
+      "weight": 1.0
+    },
+    {
+      "source": "new_papers_found",
+      "target": "natural_gradient_ocl_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": "Category 11",
+      "weight": 1.0
+    },
+    {
+      "source": "new_papers_found",
+      "target": "recbundle_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": "Category 12",
+      "weight": 1.0
+    },
+    {
+      "source": "new_papers_found",
+      "target": "filet_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/new_papers_found.md",
+      "source_location": "Category 2",
+      "weight": 1.0
+    },
+    {
+      "source": "ewc_lora_paper",
+      "target": "ewc_kirkpatrick_paper",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Introduction and Related Works",
+      "weight": 1.0
+    },
+    {
+      "source": "ewc_lora_paper",
+      "target": "concept_ewclora_fim_fullspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Section 3.2 EWC with Low-rank Adaptation",
+      "weight": 1.0
+    },
+    {
+      "source": "ewc_lora_paper",
+      "target": "concept_ewclora_proposition1",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Appendix A.1.1",
+      "weight": 1.0
+    },
+    {
+      "source": "ewc_lora_paper",
+      "target": "concept_ewclora_proposition3",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Appendix A.1.3",
+      "weight": 1.0
+    },
+    {
+      "source": "ewc_lora_paper",
+      "target": "concept_ewclora_stability_plasticity",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Section 4.2 Main Results",
+      "weight": 1.0
+    },
+    {
+      "source": "recbundle_paper",
+      "target": "concept_recbundle_holonomy_recommenders",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 3.3",
+      "weight": 1.0
+    },
+    {
+      "source": "recbundle_paper",
+      "target": "concept_recbundle_parallel_transport_collab",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 3.2",
+      "weight": 1.0
+    },
+    {
+      "source": "recbundle_paper",
+      "target": "concept_recbundle_gbi_metric",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.1, Equation 3",
+      "weight": 1.0
+    },
+    {
+      "source": "recbundle_paper",
+      "target": "concept_recbundle_curvature_curvature_distortion",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.1, Equation 2",
+      "weight": 1.0
+    },
+    {
+      "source": "recbundle_paper",
+      "target": "concept_recbundle_meta_learning_bundle",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.2",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewc_horizontal_subbundle",
+      "target": "ewc_kirkpatrick_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC = Staying in the Horizontal Subbundle",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewc_horizontal_subbundle",
+      "target": "concept_fisher_bundle_connection",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Paper Theorem Structure — Theorem 3",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_fopng_zero_holonomy_angle",
+      "target": "fopng_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: FOPNG: Fisher-Orthogonal Gradients",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_fopng_zero_holonomy_angle",
+      "target": "concept_steele_forgetting_formula",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: FOPNG — Zero Holonomy Angle (Steele's formula)",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ngd_horizontal_geodesic",
+      "target": "natural_gradient_ocl_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Natural Gradient OCL",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ngd_horizontal_geodesic",
+      "target": "concept_fisher_bundle_connection",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Natural Gradient OCL, Fiber bundle interpretation",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewclora_trs_object",
+      "target": "ewc_lora_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC-LoRA — The Direct Connection",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewclora_trs_object",
+      "target": "concept_spectral_decomposition_theorem1",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: EWC-LoRA — The Direct Connection",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_wqk_bilinear_metric",
+      "target": "wqk_curvature_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: The Self-Attention Paper — Verdict",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_wqk_bilinear_metric",
+      "target": "concept_rank1_hebbian_holonomy",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Rank-1 Hebbian Holonomy Accumulation",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_rank1_hebbian_holonomy",
+      "target": "concept_holonomy_intruder_correspondence",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Connection to TRS",
+      "weight": 0.85
+    },
+    {
+      "source": "concept_recbundle_holonomy_recommenders",
+      "target": "concept_holonomy_intruder_correspondence",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: RecBundle — Holonomy in Recommenders",
+      "weight": 0.85
+    },
+    {
+      "source": "concept_recbundle_general_holonomy_tool",
+      "target": "recbundle_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: RecBundle — For our paper",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_recbundle_gbi_metric",
+      "target": "concept_recbundle_holonomy_recommenders",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Section 4.1",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_fisher_bundle_connection",
+      "target": "concept_ewc_horizontal_subbundle",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Theorem 3: EWC is approximation to projecting onto ker(omega)",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_fisher_bundle_connection",
+      "target": "concept_fopng_zero_holonomy_angle",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Theorem 3: FOPNG is approximation to ker(omega)",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_filet_fopng_prediction",
+      "target": "filet_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Fisher Hierarchy table, FILet + FOPNG row",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_filet_fopng_prediction",
+      "target": "fopng_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Fisher Hierarchy table, FILet + FOPNG row",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewc_diagonal_approximation_limitation",
+      "target": "ewc_kirkpatrick_paper",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Why EWC is imperfect",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewc_diagonal_approximation_limitation",
+      "target": "concept_ewclora_fim_fullspace",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Diagonal Fisher limitation motivates full-space FIM in EWC-LoRA",
+      "weight": 0.85
+    },
+    {
+      "source": "concept_decoder_curvature_lora_intruder_dims",
+      "target": "concept_wqk_bilinear_metric",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Prediction for fine-tuning",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_decoder_curvature_lora_intruder_dims",
+      "target": "concept_holonomy_intruder_correspondence",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Prediction for fine-tuning and Theorem 2",
+      "weight": 0.85
+    },
+    {
+      "source": "concept_unified_bundle_table",
+      "target": "concept_spectral_decomposition_theorem1",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "Section: Complete Bundle Geometry Table",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_recbundle_parallel_transport_collab",
+      "target": "concept_ngd_horizontal_geodesic",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Both use parallel transport / horizontal movement in bundle geometry",
+      "weight": 0.75
+    },
+    {
+      "source": "ewc_lora_paper",
+      "target": "concept_ewclora_trs_object",
+      "relation": "rationale_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md",
+      "source_location": "EWC-LoRA applies Fisher to ΔW=AB, exactly the TRS object",
+      "weight": 0.95
+    },
+    {
+      "source": "concept_recbundle_meta_learning_bundle",
+      "target": "concept_unified_bundle_table",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf",
+      "source_location": "Both unify many methods as special cases of bundle structure",
+      "weight": 0.75
+    },
+    {
+      "source": "concept_ewclora_proposition1",
+      "target": "concept_ewclora_fim_fullspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Appendix A.1.1 motivates full-space approach",
+      "weight": 1.0
+    },
+    {
+      "source": "concept_ewclora_proposition3",
+      "target": "concept_ewclora_fim_fullspace",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf",
+      "source_location": "Appendix A.1.3 formalizes full-space constraint",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "fisher_based_cl_hierarchy",
+      "label": "Fisher-Based CL Hierarchy: EWC → EWC-LoRA → FILet → FOPNG → FILet+FOPNG (Increasing Faithfulness to Horizontal Subbundle)",
+      "nodes": [
+        "ewc_kirkpatrick_paper",
+        "ewc_lora_paper",
+        "filet_paper",
+        "fopng_paper",
+        "concept_fisher_bundle_connection",
+        "concept_ewc_horizontal_subbundle",
+        "concept_filet_fopng_prediction"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md"
+    },
+    {
+      "id": "holonomy_drift_across_domains",
+      "label": "Holonomy = Accumulated Drift (Neural Network Forgetting + Recommender Content Drift): Cross-Domain Instance",
+      "nodes": [
+        "recbundle_paper",
+        "concept_recbundle_holonomy_recommenders",
+        "concept_holonomy_intruder_correspondence",
+        "concept_rank1_hebbian_holonomy",
+        "concept_recbundle_general_holonomy_tool"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md"
+    },
+    {
+      "id": "trs_paper_theorem_cluster",
+      "label": "TRS Paper Core Theorem Cluster: Spectral Decomposition + Holonomy-Intruder + Fisher Bundle Connection",
+      "nodes": [
+        "concept_spectral_decomposition_theorem1",
+        "concept_holonomy_intruder_correspondence",
+        "concept_fisher_bundle_connection",
+        "concept_unified_bundle_table",
+        "concept_steele_forgetting_formula"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md"
+    },
+    {
+      "id": "wqk_curvature_training_artifact_cluster",
+      "label": "W_qk Curvature as Training Artifact: Bilinear Metric + Rank-1 Hebbian + Decoder vs Encoder Asymmetry",
+      "nodes": [
+        "wqk_curvature_paper",
+        "concept_wqk_bilinear_metric",
+        "concept_rank1_hebbian_holonomy",
+        "concept_decoder_curvature_lora_intruder_dims"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/synthesis_night_run_5_ewc_fisher_bridge.md"
+    },
+    {
+      "id": "recbundle_fiber_bundle_formalism",
+      "label": "RecBundle Fiber Bundle Formalism: Base Manifold (Users) + Fiber (Preferences) + Connection + Holonomy",
+      "nodes": [
+        "recbundle_paper",
+        "concept_recbundle_parallel_transport_collab",
+        "concept_recbundle_holonomy_recommenders",
+        "concept_recbundle_curvature_curvature_distortion",
+        "concept_recbundle_gbi_metric",
+        "concept_recbundle_meta_learning_bundle"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/recbundle_principal_bundle_holonomy_recommender.pdf"
+    },
+    {
+      "id": "ewclora_mathematical_foundations",
+      "label": "EWC-LoRA Mathematical Foundations: Proposition 1 (Separate≠Full) + Proposition 3 (FIM over ΔW) + Full-Space Fisher",
+      "nodes": [
+        "ewc_lora_paper",
+        "concept_ewclora_proposition1",
+        "concept_ewclora_proposition3",
+        "concept_ewclora_fim_fullspace",
+        "concept_ewclora_stability_plasticity"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
