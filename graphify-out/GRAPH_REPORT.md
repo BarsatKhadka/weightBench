@@ -1,16 +1,16 @@
 # Graph Report - weightBench  (2026-05-07)
 
 ## Corpus Check
-- 28 files · ~47,014 words
+- 33 files · ~50,270 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1192 nodes · 1495 edges · 90 communities (73 shown, 17 thin omitted)
-- Extraction: 82% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 211 edges (avg confidence: 0.83)
+- 1238 nodes · 1536 edges · 95 communities (78 shown, 17 thin omitted)
+- Extraction: 83% EXTRACTED · 14% INFERRED · 0% AMBIGUOUS · INFERRED: 211 edges (avg confidence: 0.83)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e5f7539c`
+- Built from commit: `c4b3af3e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -88,11 +88,11 @@
 - [[_COMMUNITY_Community 70|Community 70]]
 - [[_COMMUNITY_Community 71|Community 71]]
 - [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
 - [[_COMMUNITY_Community 75|Community 75]]
 - [[_COMMUNITY_Community 76|Community 76]]
 - [[_COMMUNITY_Community 77|Community 77]]
-- [[_COMMUNITY_Community 78|Community 78]]
-- [[_COMMUNITY_Community 79|Community 79]]
 - [[_COMMUNITY_Community 80|Community 80]]
 - [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 82|Community 82]]
@@ -103,6 +103,11 @@
 - [[_COMMUNITY_Community 87|Community 87]]
 - [[_COMMUNITY_Community 88|Community 88]]
 - [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Task Residual Spectrum (TRS)` - 20 edges
@@ -136,11 +141,11 @@
 - **RecBundle Fiber Bundle Formalism: Base Manifold (Users) + Fiber (Preferences) + Connection + Holonomy** — recbundle_paper, concept_recbundle_parallel_transport_collab, concept_recbundle_holonomy_recommenders, concept_recbundle_curvature_curvature_distortion, concept_recbundle_gbi_metric, concept_recbundle_meta_learning_bundle [EXTRACTED 1.00]
 - **EWC-LoRA Mathematical Foundations: Proposition 1 (Separate≠Full) + Proposition 3 (FIM over ΔW) + Full-Space Fisher** — ewc_lora_paper, concept_ewclora_proposition1, concept_ewclora_proposition3, concept_ewclora_fim_fullspace, concept_ewclora_stability_plasticity [EXTRACTED 1.00]
 
-## Communities (90 total, 17 thin omitted)
+## Communities (95 total, 17 thin omitted)
 
 ### Community 0 - "LoRA Weight Space Core"
 Cohesion: 0.05
-Nodes (63): 2D Layer Selection Map (alpha x TRS), Bayesian Spectral Calibration, Fisher Subspace, GL_r Invariance of LoRA B-matrix, Grokking as Spectral Phase Transition, Marchenko-Pastur Distribution, NTK Optimal Rank Bound sqrt(N), Spectral Over-Accumulation (SVC) (+55 more)
+Nodes (66): 2D Layer Selection Map (alpha x TRS), Bayesian Spectral Calibration, Fisher Subspace, GL_r Invariance of LoRA B-matrix, Grokking as Spectral Phase Transition, Intruder Dimensions, Marchenko-Pastur Distribution, NTK Optimal Rank Bound sqrt(N) (+58 more)
 
 ### Community 1 - "Intrinsic Dimensionality & Fine-Tuning"
 Cohesion: 0.06
@@ -212,11 +217,11 @@ Nodes (20): FILet Algorithm (Fisher-Guided LoRA Initialization via Minimum Fishe
 
 ### Community 18 - "Community 18"
 Cohesion: 0.12
-Nodes (20): LoRA: Low-Rank Adaptation of Large Language Models (Hu et al. 2021), Eigenvector-Based LoRA Initialization via Sample Covariance, LoRA Subspace Constraint Before Fine-Tuning, OSRM: Orthogonal Subspaces for Robust Model Merging, Parameter-Data Interaction in LoRA Model Merging, Low-Rank LoRA Solution Generalization Guarantee, Low-Rank Solution Existence for Full Fine-Tuning in NTK Regime, No Spurious Local Minima in LoRA with Sufficient Rank (+12 more)
+Nodes (20): Base-Model Transfer (SD1.4 to SD1.5) in W2T, Behavior Prediction from Weight Representations, Model Editing via Weight Space, Model-Free (Probe-Based) Weight Space Representation, Model Retrieval in Weight Space, Position-Level Transformer (f_pos) in W2T, ProbeGen (Deep Linear Probe Generator), ProbeLog (Probe-Based Model Representation) (+12 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.12
-Nodes (19): Base-Model Transfer (SD1.4 to SD1.5) in W2T, Behavior Prediction from Weight Representations, Model Editing via Weight Space, Model-Free (Probe-Based) Weight Space Representation, Model Retrieval in Weight Space, Position-Level Transformer (f_pos) in W2T, ProbeGen (Deep Linear Probe Generator), ProbeLog (Probe-Based Model Representation) (+11 more)
+Nodes (20): LoRA: Low-Rank Adaptation of Large Language Models (Hu et al. 2021), Eigenvector-Based LoRA Initialization via Sample Covariance, LoRA Subspace Constraint Before Fine-Tuning, OSRM: Orthogonal Subspaces for Robust Model Merging, Parameter-Data Interaction in LoRA Model Merging, Low-Rank LoRA Solution Generalization Guarantee, Low-Rank Solution Existence for Full Fine-Tuning in NTK Regime, No Spurious Local Minima in LoRA with Sufficient Rank (+12 more)
 
 ### Community 20 - "Community 20"
 Cohesion: 0.16
@@ -227,8 +232,8 @@ Cohesion: 0.11
 Nodes (17): ADDITIONAL QUESTIONS RESOLVED BY THE SAME EXPERIMENT, code:python ("""), COST ESTIMATE, EXPECTED OUTPUTS AND INTERPRETATIONS, EXPERIMENT: Principal Angles Between U_W₀ and U_S*, EXPERIMENTAL DESIGN, If U_S* ⊂ U_W₀_bottom (aligns with W₀ minor subspace):, If U_S* ⊂ U_W₀_top (aligns with W₀ principal subspace): (+9 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.14
-Nodes (17): DARE Merging (Yu et al. 2024), Iso-CTS Merging (Marczak et al. 2025), Model Merging (Weight Space Addition), Spectral Over-Accumulation in Model Merging (Li et al. 2026), Singular Value Calibration (SVC), Task Arithmetic (Ilharco et al. 2022), TIES Merging (Yadav et al. 2023), TSV-Merge (Gargiulo et al. 2025) - cited by SVC paper (+9 more)
+Cohesion: 0.11
+Nodes (17): 1. Nuclear Norm Minimization = Horizontal Subbundle Variational Principle, 2. BBP = MP = TRS = HT-SR: Four-Way Equivalence of a Single Threshold, 3. Grokking = Transition from Vertical Fiber to Horizontal Subbundle, 4. The Slow Fisher Mode Connection, 5. What These Connections Imply for Each Community in the Graph, 6. What Is Still Missing, 7. Summary, Anti-grokking in this framework (+9 more)
 
 ### Community 23 - "Community 23"
 Cohesion: 0.13
@@ -243,12 +248,12 @@ Cohesion: 0.13
 Nodes (14): code:block1 (TRS_final(B) = {u_i : σ_i > σ_MP), Critical Theory Revision: Night Run Iteration 2, NEW LITERATURE TO ADD, THE ASSUMPTION THAT BROKE, THE COMPLETE FOUR-WAY DECOMPOSITION, THE FIBER BUNDLE STRUCTURE — CONFIRMED GAP, THE FORGETTING GEOMETRY THEOREM, The Four-Way Spectral Decomposition — A Complete Theory (+6 more)
 
 ### Community 26 - "Community 26"
-Cohesion: 0.18
-Nodes (15): Low-Rank Adaptation (LoRA) for Parameter-Efficient Fine-Tuning, Singular Value Decomposition Applied to Weight Space Analysis, Singular Value Decomposition (SVD) for Task Analysis, Task Matrix (Weight Difference per Layer), Task Vector (Fine-tuned minus Pre-trained Weights), Low-Rank Nature of Per-Layer Task Matrices, Low-Rank Nature of Layer Task Matrices, Task Singular Vectors (TSV) (+7 more)
-
-### Community 27 - "Community 27"
 Cohesion: 0.14
 Nodes (13): code:block1 (F = α(1 − cos²θ_min) + β), code:block2 (Input:), CURRENT STATE OF THE THEORY (Summary of 4 Synthesis Documents), INTRUDER DIMENSIONS = "ESCAPING THE FIBER" (GEOMETRIC FORMALIZATION), NEW CRITICAL FINDING: FILet IS THE FISHER CONNECTION IN PRACTICE, NEW EXPERIMENT: FILet vs. Random vs. PiSSA Intruder Comparison, Steele's Formula = Holonomy. The Bridge Is Found., Synthesis Night Run: Iteration 4 (+5 more)
+
+### Community 27 - "Community 27"
+Cohesion: 0.16
+Nodes (14): DARE Merging (Yu et al. 2024), Spectral Over-Accumulation in Model Merging (Li et al. 2026), Task Arithmetic (Ilharco et al. 2022), TIES Merging (Yadav et al. 2023), TSV-Merge (Gargiulo et al. 2025) - cited by SVC paper, TSV-Compress (TSV-C): 10x Compression Retaining 99% Accuracy, Consensus Task Arithmetic (Wang et al. 2024), TSV-Merge (TSV-M): Low-Rank + Interference Reduction Merging (+6 more)
 
 ### Community 28 - "Community 28"
 Cohesion: 0.15
@@ -276,7 +281,7 @@ Nodes (12): Aggregation-Aware Null Calibration, Aristotelian Representation Hypo
 
 ### Community 34 - "Community 34"
 Cohesion: 0.18
-Nodes (12): Federated Learning via Weight Space Generation, Functional Invariance in Weight Space, HyperDreamBooth (Hypernetwork for LoRA Initialization), Hypernetworks for Weight Space Generation, Implicit Neural Representations (INRs), Model Unification via Weight Space, Neural Architecture Search via Weight Space Generation, Neuron Permutation Invariance (+4 more)
+Nodes (12): Deep Weight-Space Networks (DWSNets), Functional Equivariance in Weight Space, Functional Invariance in Weight Space, GLNet (GL(r)-Equivariant Baseline for LoRA), Graph Metanetworks (GMNs) for Weight Space, Model-Based Weight Space Representation, Neuron Permutation Invariance, Neural Functional Networks (NFN) (+4 more)
 
 ### Community 35 - "Community 35"
 Cohesion: 0.2
@@ -284,163 +289,183 @@ Nodes (12): Eilertsen et al. 2020 (Classifying the Classifier), Kofinas et al. 2
 
 ### Community 36 - "Community 36"
 Cohesion: 0.2
-Nodes (11): A Matrix Seed Variation as Cross-Seed Robustness Ablation, AdaLoRA Paper, AsymmetryOfLoRA Paper, B Matrix Clusters by Task; A Matrix Does Not, Canonical Representation: SVD Spectrum of B per Layer with Importance Weighting, Effective Rank as Confound and Covariate Control, Concrete Experiment 1 Design Changes Table, FFN Top Layers Carry More Task-Specific Singular Values (+3 more)
+Nodes (12): Diffusion-Based Weight Generation, DnD (Diffusion for LoRA via Task Vectors), Federated Learning via Weight Space Generation, Generative Models for Weight Space Generation, HyperDreamBooth (Hypernetwork for LoRA Initialization), Hypernetworks for Weight Space Generation, ICM-LoRA (Conditional VAE for LoRA Weights), Implicit Neural Representations (INRs) (+4 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.24
-Nodes (11): Intruder Dimensions, Open Empirical Question: U_W0 vs U_S* Principal Angles, Cross-Architecture Subspace Gap, Foundation Models as Objects in Weight Space, Implicit Regularization via Shared Subspace, LoRA as Universal Low-Rank Adaptation Module for WSL, OPLoRA: Projects LoRA Updates Orthogonal to W0 Top Singular Vectors, Open Question: Universal Architecture-Agnostic Weight Space Learner (+3 more)
+Cohesion: 0.2
+Nodes (11): A Matrix Seed Variation as Cross-Seed Robustness Ablation, AdaLoRA Paper, AsymmetryOfLoRA Paper, B Matrix Clusters by Task; A Matrix Does Not, Canonical Representation: SVD Spectrum of B per Layer with Importance Weighting, Effective Rank as Confound and Covariate Control, Concrete Experiment 1 Design Changes Table, FFN Top Layers Carry More Task-Specific Singular Values (+3 more)
 
 ### Community 38 - "Community 38"
+Cohesion: 0.25
+Nodes (11): Low-Rank Adaptation (LoRA) for Parameter-Efficient Fine-Tuning, Singular Value Decomposition Applied to Weight Space Analysis, Low-Rank Nature of Layer Task Matrices, Task Singular Vectors (TSV), Truncated Zero-Centered Higher-Order SVD (HOSVD) for Subspace Analysis, LoRA Adapters as Universal Subspace Evidence (500 Mistral-7B LoRAs), The Universal Weight Subspace Hypothesis, Spectral Convergence of Neural Networks to Shared Subspaces (+3 more)
+
+### Community 39 - "Community 39"
 Cohesion: 0.2
 Nodes (7): key_format_diagnostic(), load_lora_delta(), measure_alignment(), Principal angles between U_W0 (pretrained singular subspace) and U_S* (cross-LoR, Print first 6 adapter state dict keys so you can verify the key pattern., For each layer, compute:       - Principal angles between U_W0_top_k and U_S* (t, Load ΔW = scaling * lora_B @ lora_A directly from the adapter checkpoint.     Do
 
-### Community 39 - "Community 39"
+### Community 40 - "Community 40"
 Cohesion: 0.24
 Nodes (10): Singular Statistical Models (Non-identifiable Neural Networks), Arrhenius Reaction Rate Hypothesis for Grokking Time, SLT Free Energy (Fn) for Phase Transition Timing, Grokking: Delayed Generalization Phase Transition, Local Learning Coefficient (LLC) as Complexity Measure, Modulo Arithmetic Network (Grokking Testbed), Using SLT to Understand Grokking and Phase Transitions in Neural Networks, Stochastic Gradient Langevin Dynamics (SGLD) for LLC Estimation (+2 more)
 
-### Community 40 - "Community 40"
+### Community 41 - "Community 41"
 Cohesion: 0.29
 Nodes (10): Q/K vs V/O Spectral Asymmetry in TRS (Idea 23), Spectral Lifecycle of Transformer Training: Q/K vs V/O Asymmetry (arXiv:2604.22778), Autoregressive Training Induces Column Dominance / Directionality in W_qk (Theorem 2.3), Bidirectional Training Induces Symmetry in W_qk (Theorem 2.4), Underlying Structures of Self-Attention: Symmetry, Directionality, Emergent Dynamics (arXiv:2502.10927), Symmetry Score and Directionality Score for Square Matrices (Definitions 3.1-3.2), W_qk = W_q * W_k^T as Bilinear Form Defining Metric in Embedding Space, Claim 6: V-layer TRS Dominance (Synthesis 3) (+2 more)
 
-### Community 41 - "Community 41"
-Cohesion: 0.22
-Nodes (8): Defense A: Constant-Rank Stratum Restriction, Defense B: Tikhonov-Regularized Fisher, Implications for Conjecture 2 (Holonomy-Intruder Correspondence), Paper Writing Implication, Summary Status Table, Synthesis 7: The Fisher Degeneracy Problem (GAP 1), The Problem Statement, What Is NOT Resolved by Either Defense
-
 ### Community 42 - "Community 42"
 Cohesion: 0.22
-Nodes (9): Task Residual Spectrum (TRS), TRS as Optimal Bayes Estimator, GradientSpace SVD Task Clusters (2512.06678), No Task Left Behind Isotropic Merging (2502.04959), mtLoRA Spectral Task Regularization (2603.01526), Small Singular Values Matter RMT (2410.17770), Spectral Over-Accumulation Merging (2602.05536), Spiked RMT Task Learning Features (2410.18938) (+1 more)
+Nodes (8): Defense A: Constant-Rank Stratum Restriction, Defense B: Tikhonov-Regularized Fisher, Implications for Conjecture 2 (Holonomy-Intruder Correspondence), Paper Writing Implication, Summary Status Table, Synthesis 7: The Fisher Degeneracy Problem (GAP 1), The Problem Statement, What Is NOT Resolved by Either Defense
 
 ### Community 43 - "Community 43"
 Cohesion: 0.22
 Nodes (9): Fiber Bundle Structure of Weight Space, Fisher Metric Connection, Holonomy as Task Interference Measure, Intruder Dimensions (LoRA B matrix new directions), MiLoRA Paradox and Resolution, Platonic Weight Space Hypothesis, Frechet Averages Quotient Manifold (2604.27155), LoRA vs Full Fine-tuning Intruder Dimensions (2410.21228) (+1 more)
 
 ### Community 44 - "Community 44"
+Cohesion: 0.22
+Nodes (9): Task Residual Spectrum (TRS), TRS as Optimal Bayes Estimator, GradientSpace SVD Task Clusters (2512.06678), No Task Left Behind Isotropic Merging (2502.04959), mtLoRA Spectral Task Regularization (2603.01526), Small Singular Values Matter RMT (2410.17770), Spectral Over-Accumulation Merging (2602.05536), Spiked RMT Task Learning Features (2410.18938) (+1 more)
+
+### Community 45 - "Community 45"
 Cohesion: 0.25
 Nodes (7): Connection to Conjecture 2 (holonomy-intruder), Core finding, Critical implication for fiber bundle theory, The Geometry of Alignment Collapse: When Fine-Tuning Breaks Safety (arXiv:2602.15799), The mechanism, The quartic scaling law, What they do NOT say
 
-### Community 45 - "Community 45"
+### Community 46 - "Community 46"
+Cohesion: 0.25
+Nodes (7): Connection to LoRA, Connection to Marchenko-Pastur / TRS, Core finding, Implicit Regularization in Matrix Factorization (arXiv:1705.09280), Main theorem (informal), What this does NOT say, Why this is foundational for the TRS framework
+
+### Community 47 - "Community 47"
+Cohesion: 0.32
+Nodes (8): Cross-Architecture Subspace Gap, Foundation Models as Objects in Weight Space, Implicit Regularization via Shared Subspace, LoRA as Universal Low-Rank Adaptation Module for WSL, Open Question: Universal Architecture-Agnostic Weight Space Learner, Spectral Bias of Neural Networks (Low-Frequency Learning), Universal Subspace for Model Compression (100x Memory Reduction), Universal Weight Subspace
+
+### Community 48 - "Community 48"
 Cohesion: 0.29
 Nodes (8): Model Merging Without Extra Training, Task Interference in Multi-Task Model Merging, Projection Mismatch (Inter-task Interference Measure), Shared Knowledge (Cross-Task Aligned Components), Spectral Over-Counting / Over-Accumulation, Subspace Overlap (Column-Space Overlap in Merged Basis), Per-Layer Task Interference Pattern (High in Early, Low in Deep Layers), Singular Task Interference (STI) Metric
 
-### Community 46 - "Community 46"
-Cohesion: 0.29
-Nodes (8): Deep Weight-Space Networks (DWSNets), Functional Equivariance in Weight Space, GLNet (GL(r)-Equivariant Baseline for LoRA), Graph Metanetworks (GMNs) for Weight Space, Model-Based Weight Space Representation, Neural Functional Networks (NFN), Scale-GMN (Scaling + Permutation Equivariant GNN), Universal Neural Functionals (UNFs)
-
-### Community 47 - "Community 47"
+### Community 49 - "Community 49"
 Cohesion: 0.29
 Nodes (8): Universal Weight Subspace, D2C Iterative Clustering Algorithm, D2C Data-Driven Adapter Clustering and Merging (2601.17441), SVD Features for LoRA Clustering, EigenLoRAx Recycling Adapters Principal Subspace (2502.04700), EigenLoRAx Task-Invariant Principal Subspace, EigenLoRAx Generalization Bound Theorem 3.6, Universal Weight Subspace Hypothesis (2512.05117)
 
-### Community 48 - "Community 48"
+### Community 50 - "Community 50"
 Cohesion: 0.32
 Nodes (8): Forgetting Geometry Theorem, TRS-based Continual Learning Curriculum, Weight Disentanglement via TRS Orthogonality, Gradient Orthogonality Constraint (EBLoRA), EBLoRA Spectral Imbalance Forgetting (2602.00722), Spectral Imbalance in LoRA Updates, Stiefel Manifold Optimization for Balanced LoRA, Subspace Geometry Catastrophic Forgetting (2603.02224)
 
-### Community 49 - "Community 49"
-Cohesion: 0.29
-Nodes (6): Concrete Experiment 1 Changes, Experiment 1 Insights from LoRA-Specific Papers, From AdaLoRA: The geometry is not uniform — layer position and module type predict information density, From AsymmetryOfLoRA: Your weight-space representation should be B-only, From SymmetriesInWSL: Your distance metric must match what you're predicting, Hidden Cross-Paper Insights
-
-### Community 50 - "Community 50"
-Cohesion: 0.29
-Nodes (6): Core finding, Key tables, LoRA Learns Less and Forgets Less (arXiv:2405.09673, TMLR 2024), Mechanism claimed, Rank-forgetting relationship, Relevance to intruder dimensions
-
 ### Community 51 - "Community 51"
 Cohesion: 0.29
-Nodes (6): CONJECTURE EDGES (INFERRED, marked for graph), CONJECTURE: Universal Subspace ↔ TRS / Intruder Dims Bridge, PAPERS TO READ FOR DISCRIMINATING EVIDENCE, THE TWO REFERENCE FRAMES (operationally distinct in all existing papers), WHAT IS ESTABLISHED (EXTRACTED facts), WHAT MUST NOT BE CLAIMED (labeled CONJECTURE until measured)
+Nodes (6): Concrete Experiment 1 Changes, Experiment 1 Insights from LoRA-Specific Papers, From AdaLoRA: The geometry is not uniform — layer position and module type predict information density, From AsymmetryOfLoRA: Your weight-space representation should be B-only, From SymmetriesInWSL: Your distance metric must match what you're predicting, Hidden Cross-Paper Insights
 
 ### Community 52 - "Community 52"
 Cohesion: 0.29
-Nodes (6): Core finding, Fisher merging connection, Generalizing the Geometry of Model Merging Through Fréchet Averages (arXiv:2604.27155), Quotient manifold structure, What they do NOT say, Why this matters for fiber bundle theory
+Nodes (6): Core finding, Key tables, LoRA Learns Less and Forgets Less (arXiv:2405.09673, TMLR 2024), Mechanism claimed, Rank-forgetting relationship, Relevance to intruder dimensions
 
 ### Community 53 - "Community 53"
 Cohesion: 0.29
-Nodes (6): Core finding, Experiments, OPLoRA: Orthogonal Projection LoRA Prevents Catastrophic Forgetting (arXiv:2510.13003), The constraint, What they do NOT do, Why this matters for fiber bundle theory
+Nodes (6): CONJECTURE EDGES (INFERRED, marked for graph), CONJECTURE: Universal Subspace ↔ TRS / Intruder Dims Bridge, PAPERS TO READ FOR DISCRIMINATING EVIDENCE, THE TWO REFERENCE FRAMES (operationally distinct in all existing papers), WHAT IS ESTABLISHED (EXTRACTED facts), WHAT MUST NOT BE CLAIMED (labeled CONJECTURE until measured)
 
 ### Community 54 - "Community 54"
 Cohesion: 0.29
-Nodes (6): Causal direction, Core finding, Relevance to TRS, What they measure, What this does NOT resolve, Why Do Neural Networks Forget: A Study of Collapse in Continual Learning (arXiv:2603.04580)
+Nodes (6): Connection to LoRA rank selection, Core finding, Sample-Efficient Differentially Private Fine-Tuning via Gradient Matrix Denoising (arXiv:2510.01137), The BBP transition formula for gradient matrices, What this does NOT say, Why this matters: BBP = MP = TRS = HT-SR (four-way equivalence)
 
 ### Community 55 - "Community 55"
 Cohesion: 0.29
-Nodes (6): Core finding, How Much is Too Much? Exploring LoRA Rank Trade-offs (arXiv:2512.15634, Dec 2024), Key connection to TRS, No intruder dimension analysis, Rank tested, Spectral finding
+Nodes (6): Core finding, Fisher merging connection, Generalizing the Geometry of Model Merging Through Fréchet Averages (arXiv:2604.27155), Quotient manifold structure, What they do NOT say, Why this matters for fiber bundle theory
 
 ### Community 56 - "Community 56"
 Cohesion: 0.29
-Nodes (6): Concrete Experiment 1 Changes, Experiment 1 Insights from LoRA-Specific Papers, From AdaLoRA: The geometry is not uniform — layer position and module type predict information density, From AsymmetryOfLoRA: Your weight-space representation should be B-only, From SymmetriesInWSL: Your distance metric must match what you're predicting, Hidden Cross-Paper Insights
+Nodes (6): Core finding, Experiments, OPLoRA: Orthogonal Projection LoRA Prevents Catastrophic Forgetting (arXiv:2510.13003), The constraint, What they do NOT do, Why this matters for fiber bundle theory
 
 ### Community 57 - "Community 57"
 Cohesion: 0.29
-Nodes (7): Benchmark Score Invariant to Large Family of Weight-Space Transformations, Behavioral Signal (Benchmark Score Vector), Benchmark Evaluation Pipeline, Dual-Signal Framing (Weight-Space + Behavioral Combined), LoRA Training Pipeline (Infrastructure), Weight-Space Representation Extraction Method, Weight-Space Signal (LoRA Parameter Coordinate)
+Nodes (6): Causal direction, Core finding, Relevance to TRS, What they measure, What this does NOT resolve, Why Do Neural Networks Forget: A Study of Collapse in Continual Learning (arXiv:2603.04580)
 
 ### Community 58 - "Community 58"
+Cohesion: 0.29
+Nodes (6): Core finding, How Much is Too Much? Exploring LoRA Rank Trade-offs (arXiv:2512.15634, Dec 2024), Key connection to TRS, No intruder dimension analysis, Rank tested, Spectral finding
+
+### Community 59 - "Community 59"
+Cohesion: 0.29
+Nodes (6): Concrete Experiment 1 Changes, Experiment 1 Insights from LoRA-Specific Papers, From AdaLoRA: The geometry is not uniform — layer position and module type predict information density, From AsymmetryOfLoRA: Your weight-space representation should be B-only, From SymmetriesInWSL: Your distance metric must match what you're predicting, Hidden Cross-Paper Insights
+
+### Community 60 - "Community 60"
+Cohesion: 0.29
+Nodes (6): Approaching Deep Learning through the Spectral Dynamics of Weights (arXiv:2408.11804), Companion paper connection, Connection to TRS / intruder dim theory, Core finding, Key empirical findings, What this does NOT say
+
+### Community 61 - "Community 61"
+Cohesion: 0.29
+Nodes (7): Benchmark Score Invariant to Large Family of Weight-Space Transformations, Behavioral Signal (Benchmark Score Vector), Benchmark Evaluation Pipeline, Dual-Signal Framing (Weight-Space + Behavioral Combined), LoRA Training Pipeline (Infrastructure), Weight-Space Representation Extraction Method, Weight-Space Signal (LoRA Parameter Coordinate)
+
+### Community 62 - "Community 62"
 Cohesion: 0.38
 Nodes (7): Induction Circuits in Transformers and Mamba, Mamba State Space Model Architecture, Max Pairwise Pearson Correlation (MPPC) Feature Similarity Metric, Off-by-One Preference Motif in Mamba SSM, Towards Universality: Studying Mechanistic Similarity Across Language Model Architectures, Sparse Autoencoders (SAEs) for Interpretable Feature Extraction, Universality Hypothesis in Mechanistic Interpretability
 
-### Community 59 - "Community 59"
-Cohesion: 0.33
-Nodes (5): Core finding, Key claim, Missing, On Catastrophic Forgetting in Low-Rank Decomposition-Based PEFT (arXiv:2603.09684, 2026), Relevance to fiber bundle theory
-
-### Community 60 - "Community 60"
-Cohesion: 0.33
-Nodes (5): Connection to fiber bundle theory, Core finding, Key geometric claims, The Geometry of Multi-Task Grokking: Transverse Instability, Superposition, and Weight Decay Phase Structure (arXiv:2602.18523), What they do NOT say
-
-### Community 61 - "Community 61"
-Cohesion: 0.33
-Nodes (5): Connection to Q/K vs V/O asymmetry, Core finding, Key methodology, Relevance to intruder dimensions, Spectral Geometry of LoRA Adapters Encodes Training Objective (arXiv:2604.08844, April 2026)
-
-### Community 62 - "Community 62"
-Cohesion: 0.33
-Nodes (5): Connection to TRS / intruder dim theory, Core finding, Key claim, Spectral Surgery: Training-Free Refinement of LoRA via Gradient-Guided Singular Value Reweighting (arXiv:2603.03995), What they do NOT do
-
 ### Community 63 - "Community 63"
-Cohesion: 0.33
-Nodes (6): LoRA-WiSE Benchmark, DSiRe Dataset Size Recovery from LoRA (2406.19395), LoRA Spectrum Encodes Dataset Size, Intrinsic Dimensionality Profile Across Layers, GeLoRA Geometric Adaptive Ranks Intrinsic Dim (2412.09250), GeLoRA Rank Bound Theorem 3.2
+Cohesion: 0.29
+Nodes (7): Iso-CTS Merging (Marczak et al. 2025), Model Merging (Weight Space Addition), Singular Value Calibration (SVC), Singular Value Decomposition (SVD) for Task Analysis, Task Matrix (Weight Difference per Layer), Task Vector (Fine-tuned minus Pre-trained Weights), Low-Rank Nature of Per-Layer Task Matrices
 
 ### Community 64 - "Community 64"
 Cohesion: 0.33
-Nodes (6): Four-Way Spectral Decomposition, Genuine TRS, MP Bulk, Spectral-Population Duality, Near-zero Suppression Dimensions, Subspace-Boosted Merging Rank Collapse (2506.16506)
+Nodes (5): Core finding, Key claim, Missing, On Catastrophic Forgetting in Low-Rank Decomposition-Based PEFT (arXiv:2603.09684, 2026), Relevance to fiber bundle theory
 
 ### Community 65 - "Community 65"
-Cohesion: 0.6
-Nodes (5): Diffusion-Based Weight Generation, DnD (Diffusion for LoRA via Task Vectors), Generative Models for Weight Space Generation, ICM-LoRA (Conditional VAE for LoRA Weights), SANE (Sequential Autoencoding for Network Weights)
+Cohesion: 0.33
+Nodes (5): Connection to OPLoRA / horizontal subbundle, Core finding, LoRA Training Provably Converges to a Low-Rank Global Minimum (arXiv:2502.09376), What this does NOT say, What this proves for the TRS framework
 
 ### Community 66 - "Community 66"
+Cohesion: 0.33
+Nodes (5): Connection to fiber bundle theory, Core finding, Key geometric claims, The Geometry of Multi-Task Grokking: Transverse Instability, Superposition, and Weight Decay Phase Structure (arXiv:2602.18523), What they do NOT say
+
+### Community 67 - "Community 67"
+Cohesion: 0.33
+Nodes (5): Connection to Q/K vs V/O asymmetry, Core finding, Key methodology, Relevance to intruder dimensions, Spectral Geometry of LoRA Adapters Encodes Training Objective (arXiv:2604.08844, April 2026)
+
+### Community 68 - "Community 68"
+Cohesion: 0.33
+Nodes (5): Connection to TRS / intruder dim theory, Core finding, Key claim, Spectral Surgery: Training-Free Refinement of LoRA via Gradient-Guided Singular Value Reweighting (arXiv:2603.03995), What they do NOT do
+
+### Community 69 - "Community 69"
+Cohesion: 0.33
+Nodes (6): LoRA-WiSE Benchmark, DSiRe Dataset Size Recovery from LoRA (2406.19395), LoRA Spectrum Encodes Dataset Size, Intrinsic Dimensionality Profile Across Layers, GeLoRA Geometric Adaptive Ranks Intrinsic Dim (2412.09250), GeLoRA Rank Bound Theorem 3.2
+
+### Community 70 - "Community 70"
+Cohesion: 0.33
+Nodes (6): Four-Way Spectral Decomposition, Genuine TRS, MP Bulk, Spectral-Population Duality, Near-zero Suppression Dimensions, Subspace-Boosted Merging Rank Collapse (2506.16506)
+
+### Community 71 - "Community 71"
 Cohesion: 0.4
 Nodes (5): TRS_HTMP Next-Generation Fingerprint, HTMP Heavy-Tailed Mechanistic Universality (2506.03470), From Spikes to Heavy Tails Spectral Evolution (2406.04657), MP to Spike to Heavy-Tail ESD Pathway, Spectral Maturity Cross-Architecture Confound
 
-### Community 67 - "Community 67"
+### Community 72 - "Community 72"
 Cohesion: 0.5
 Nodes (4): Canonical TRS via QR+SVD, Zero-Shot LoRA Audit via LoL + TRS, Learning on LoRAs GL-Equivariant (2410.04207), W2T LoRA Weights Know Task (2603.15990)
 
-### Community 68 - "Community 68"
+### Community 73 - "Community 73"
 Cohesion: 0.5
 Nodes (4): BIG_IDEAS Synthesis Document, Night Run 2 Critical Revision Document, Literature Findings Document, Running Synthesis Document
 
-### Community 69 - "Community 69"
+### Community 74 - "Community 74"
 Cohesion: 0.67
 Nodes (3): Spectral Stability of Non-Dominant Subspace During Fine-Tuning, Task-Specific Knowledge Injected Into Low-Dimensional Subspace, Top Singular Vectors Reorient During Fine-Tuning
 
-### Community 70 - "Community 70"
+### Community 75 - "Community 75"
 Cohesion: 0.67
 Nodes (3): 2D Layer Selection Map (alpha x TRS), AlphaLoRA HT-SR Layer Quality (2410.10054), Spectrum MP-null Layer Selection (2406.06623)
 
 ## Knowledge Gaps
-- **506 isolated node(s):** `Principal angles between U_W0 (pretrained singular subspace) and U_S* (cross-LoR`, `Load ΔW = scaling * lora_B @ lora_A directly from the adapter checkpoint.     Do`, `Print first 6 adapter state dict keys so you can verify the key pattern.`, `For each layer, compute:       - Principal angles between U_W0_top_k and U_S* (t`, `graphify` (+501 more)
+- **538 isolated node(s):** `Principal angles between U_W0 (pretrained singular subspace) and U_S* (cross-LoR`, `Load ΔW = scaling * lora_B @ lora_A directly from the adapter checkpoint.     Do`, `Print first 6 adapter state dict keys so you can verify the key pattern.`, `For each layer, compute:       - Principal angles between U_W0_top_k and U_S* (t`, `graphify` (+533 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **17 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Empirical Spectral Density (ESD) of Layer Weight Matrices` connect `Adaptive LoRA & Hypernetworks` to `LoRA Weight Space Core`, `Weight Alignment & Model Quality`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
-- **Why does `Universal Weight Subspace` connect `Community 37` to `Community 16`, `Community 34`, `Community 19`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
-- **Why does `A Survey of Weight Space Learning: Understanding, Representation, and Generation` connect `Community 35` to `Community 34`, `Community 37`, `Community 16`, `Community 19`, `Community 23`?**
-  _High betweenness centrality (0.039) - this node is a cross-community bridge._
+- **Why does `A Survey of Weight Space Learning: Understanding, Representation, and Generation` connect `Community 35` to `Community 34`, `Community 36`, `Community 47`, `Community 16`, `Community 18`, `Community 23`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+- **Why does `Universal Weight Subspace` connect `Community 47` to `LoRA Weight Space Core`, `Community 16`, `Community 34`, `Community 18`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+- **Why does `Model Merging Without Extra Training` connect `Community 48` to `Community 38`, `Intrinsic Dimensionality & Fine-Tuning`, `Community 27`, `Community 35`?**
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Are the 5 inferred relationships involving `Task Residual Spectrum (TRS)` (e.g. with `Subspace Geometry and Catastrophic Forgetting` and `Fisher Subspace`) actually correct?**
   _`Task Residual Spectrum (TRS)` has 5 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 2 inferred relationships involving `A Survey of Weight Space Learning: Understanding, Representation, and Generation` (e.g. with `The Universal Weight Subspace Hypothesis` and `W2T: LoRA Weights Already Know What They Can Do`) actually correct?**
   _`A Survey of Weight Space Learning: Understanding, Representation, and Generation` has 2 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `Principal angles between U_W0 (pretrained singular subspace) and U_S* (cross-LoR`, `Load ΔW = scaling * lora_B @ lora_A directly from the adapter checkpoint.     Do`, `Print first 6 adapter state dict keys so you can verify the key pattern.` to the rest of the system?**
-  _506 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _538 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `LoRA Weight Space Core` be split into smaller, more focused modules?**
   _Cohesion score 0.05 - nodes in this community are weakly interconnected._

@@ -43,6 +43,10 @@
     "mtime": 1778149263.7551205,
     "hash": "1aa41c470db3b23ae454a4be565c75dc"
   },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\dp_sgd_gradient_denoising_bbp_finetuning.md": {
+    "mtime": 1778159777.8167849,
+    "hash": "1f5edef6fa9f22e6e6bec2e66a484dd0"
+  },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\experiment_design_reference_frame_measurement.md": {
     "mtime": 1778152213.7167904,
     "hash": "e81d5487cd64b5618e3a6f308fd7f88f"
@@ -50,6 +54,14 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\frechet_averages_quotient_manifold_merging.md": {
     "mtime": 1778158421.6249793,
     "hash": "6deec462c6d80d945249ae5af8059467"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\implicit_regularization_matrix_factorization_gunasekar.md": {
+    "mtime": 1778159752.4374254,
+    "hash": "a2b0af75ce635c38a5bc3e0cc1c1c6ab"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_training_converges_lowrank_global_minimum.md": {
+    "mtime": 1778159762.5512743,
+    "hash": "8d8f0426d7dbfd1b08d45af3ede7763e"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\multitask_grokking_invariant_manifold.md": {
     "mtime": 1778158435.0341,
@@ -74,6 +86,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\some_insights_lora_papers.md": {
     "mtime": 1778074998.6618762,
     "hash": "44f286aec7e78d861c4370e253b9963a"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_dynamics_weights_grokking_rank.md": {
+    "mtime": 1778159738.959443,
+    "hash": "cf27382c788e4633ea8fe6f9f8a12166"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_geometry_lora_adapters_training_objective.md": {
     "mtime": 1778153146.52204,
@@ -111,6 +127,10 @@
     "mtime": 1778158767.2801292,
     "hash": "869213a2c6997d6991e843cabe1c3a7d"
   },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\synthesis_night_run_9_implicit_reg_bbp_grokking.md": {
+    "mtime": 1778159844.3004081,
+    "hash": "ed75ab0921823bdd6f08f5e930c89012"
+  },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\alignment_collapse_curvature_instability.pdf": {
     "mtime": 1778158512.7862098,
     "hash": "e61f43865295e6e03429cca6e245f487"
@@ -134,6 +154,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\desire_dataset_size_recovery_lora_svd.pdf": {
     "mtime": 1778136944.8894808,
     "hash": "2a8b13de18942b412046060fdc2b2df4"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\dp_sgd_gradient_denoising_bbp_finetuning.pdf": {
+    "mtime": 1778159711.6502533,
+    "hash": "66510f28049fba93f65325f2d6127155"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\eblora_spectral_imbalance_forgetting.pdf": {
     "mtime": 1778136222.4246304,
@@ -203,6 +227,10 @@
     "mtime": 1778136222.7266622,
     "hash": "b943a84ac61e5645c2663e1137041746"
   },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\implicit_regularization_matrix_factorization_gunasekar.pdf": {
+    "mtime": 1778159700.898079,
+    "hash": "11dad4de7bc24a595ebd8c74f479af88"
+  },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\isotropic_model_merging_spectral_skewness.pdf": {
     "mtime": 1778132900.0730193,
     "hash": "4432dbfcef7349d23201ff3b3cd11d39"
@@ -222,6 +250,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_parameter_redundancy_spectral_encoding.pdf": {
     "mtime": 1778131653.849938,
     "hash": "54900d5154adb92af610e6e032086f29"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_training_converges_lowrank_global_minimum.pdf": {
+    "mtime": 1778159707.2452998,
+    "hash": "e4000759da7a1f096bd8e17a2a3b108c"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\lora_vs_fullft_intruder_dimensions.pdf": {
     "mtime": 1778129700.816522,
@@ -286,6 +318,10 @@
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\small_singular_values_rmt_transformers.pdf": {
     "mtime": 1778129701.2188525,
     "hash": "98a55cf303fbaa55e94a00e7e72d7670"
+  },
+  "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_dynamics_weights_grokking_rank.pdf": {
+    "mtime": 1778159698.499868,
+    "hash": "c895f1cf3a59f2cd1f3942ffd9f3f7c2"
   },
   "C:\\Users\\barsa\\Documents\\weightBench\\finding_literature\\spectral_over_accumulation_model_merging.pdf": {
     "mtime": 1778133687.4278114,

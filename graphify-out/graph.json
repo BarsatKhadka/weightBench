@@ -104,7 +104,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L1",
       "id": "run_experiment_py",
-      "community": 38,
+      "community": 39,
       "norm_label": "run_experiment.py"
     },
     {
@@ -113,7 +113,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L64",
       "id": "weightbench_run_experiment_load_base_weights",
-      "community": 38,
+      "community": 39,
       "norm_label": "load_base_weights()"
     },
     {
@@ -122,7 +122,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L83",
       "id": "weightbench_run_experiment_load_lora_delta",
-      "community": 38,
+      "community": 39,
       "norm_label": "load_lora_delta()"
     },
     {
@@ -131,7 +131,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L126",
       "id": "weightbench_run_experiment_key_format_diagnostic",
-      "community": 38,
+      "community": 39,
       "norm_label": "key_format_diagnostic()"
     },
     {
@@ -140,7 +140,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L143",
       "id": "weightbench_run_experiment_measure_alignment",
-      "community": 38,
+      "community": 39,
       "norm_label": "measure_alignment()"
     },
     {
@@ -149,7 +149,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L248",
       "id": "weightbench_run_experiment_interpret",
-      "community": 38,
+      "community": 39,
       "norm_label": "interpret()"
     },
     {
@@ -158,7 +158,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L1",
       "id": "weightbench_run_experiment_rationale_1",
-      "community": 38,
+      "community": 39,
       "norm_label": "principal angles between u_w0 (pretrained singular subspace) and u_s* (cross-lor"
     },
     {
@@ -167,7 +167,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L84",
       "id": "weightbench_run_experiment_rationale_84",
-      "community": 38,
+      "community": 39,
       "norm_label": "load \u03b4w = scaling * lora_b @ lora_a directly from the adapter checkpoint.     do"
     },
     {
@@ -176,7 +176,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L127",
       "id": "weightbench_run_experiment_rationale_127",
-      "community": 38,
+      "community": 39,
       "norm_label": "print first 6 adapter state dict keys so you can verify the key pattern."
     },
     {
@@ -185,7 +185,7 @@
       "source_file": "run_experiment.py",
       "source_location": "L144",
       "id": "weightbench_run_experiment_rationale_144",
-      "community": 38,
+      "community": 39,
       "norm_label": "for each layer, compute:       - principal angles between u_w0_top_k and u_s* (t"
     },
     {
@@ -194,7 +194,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "claude_md",
-      "community": 71,
+      "community": 76,
       "norm_label": "claude.md"
     },
     {
@@ -203,7 +203,7 @@
       "source_file": "CLAUDE.md",
       "source_location": "L1",
       "id": "weightbench_claude_graphify",
-      "community": 71,
+      "community": 76,
       "norm_label": "graphify"
     },
     {
@@ -212,7 +212,7 @@
       "source_file": "prompt.md",
       "source_location": "L1",
       "id": "prompt_md",
-      "community": 73,
+      "community": 78,
       "norm_label": "prompt.md"
     },
     {
@@ -221,7 +221,7 @@
       "source_file": "some-insights.md",
       "source_location": "L1",
       "id": "some_insights_md",
-      "community": 49,
+      "community": 51,
       "norm_label": "some-insights.md"
     },
     {
@@ -230,7 +230,7 @@
       "source_file": "some-insights.md",
       "source_location": "L1",
       "id": "weightbench_some_insights_experiment_1_insights_from_lora_specific_papers",
-      "community": 49,
+      "community": 51,
       "norm_label": "experiment 1 insights from lora-specific papers"
     },
     {
@@ -239,7 +239,7 @@
       "source_file": "some-insights.md",
       "source_location": "L3",
       "id": "weightbench_some_insights_from_asymmetryoflora_your_weight_space_representation_should_be_b_only",
-      "community": 49,
+      "community": 51,
       "norm_label": "from asymmetryoflora: your weight-space representation should be b-only"
     },
     {
@@ -248,7 +248,7 @@
       "source_file": "some-insights.md",
       "source_location": "L17",
       "id": "weightbench_some_insights_from_adalora_the_geometry_is_not_uniform_layer_position_and_module_type_predict_information_density",
-      "community": 49,
+      "community": 51,
       "norm_label": "from adalora: the geometry is not uniform \u2014 layer position and module type predict information density"
     },
     {
@@ -257,7 +257,7 @@
       "source_file": "some-insights.md",
       "source_location": "L31",
       "id": "weightbench_some_insights_from_symmetriesinwsl_your_distance_metric_must_match_what_you_re_predicting",
-      "community": 49,
+      "community": 51,
       "norm_label": "from symmetriesinwsl: your distance metric must match what you're predicting"
     },
     {
@@ -266,7 +266,7 @@
       "source_file": "some-insights.md",
       "source_location": "L55",
       "id": "weightbench_some_insights_hidden_cross_paper_insights",
-      "community": 49,
+      "community": 51,
       "norm_label": "hidden cross-paper insights"
     },
     {
@@ -275,7 +275,7 @@
       "source_file": "some-insights.md",
       "source_location": "L75",
       "id": "weightbench_some_insights_concrete_experiment_1_changes",
-      "community": 49,
+      "community": 51,
       "norm_label": "concrete experiment 1 changes"
     },
     {
@@ -392,7 +392,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L1",
       "id": "finding_literature_alignment_collapse_curvature_instability_md",
-      "community": 44,
+      "community": 45,
       "norm_label": "alignment_collapse_curvature_instability.md"
     },
     {
@@ -401,7 +401,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L7",
       "id": "finding_literature_alignment_collapse_curvature_instability_the_geometry_of_alignment_collapse_when_fine_tuning_breaks_safety_arxiv_2602_15799",
-      "community": 44,
+      "community": 45,
       "norm_label": "the geometry of alignment collapse: when fine-tuning breaks safety (arxiv:2602.15799)"
     },
     {
@@ -410,7 +410,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L9",
       "id": "finding_literature_alignment_collapse_curvature_instability_core_finding",
-      "community": 44,
+      "community": 45,
       "norm_label": "core finding"
     },
     {
@@ -419,7 +419,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L14",
       "id": "finding_literature_alignment_collapse_curvature_instability_the_mechanism",
-      "community": 44,
+      "community": 45,
       "norm_label": "the mechanism"
     },
     {
@@ -428,7 +428,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L19",
       "id": "finding_literature_alignment_collapse_curvature_instability_the_quartic_scaling_law",
-      "community": 44,
+      "community": 45,
       "norm_label": "the quartic scaling law"
     },
     {
@@ -437,7 +437,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L26",
       "id": "finding_literature_alignment_collapse_curvature_instability_critical_implication_for_fiber_bundle_theory",
-      "community": 44,
+      "community": 45,
       "norm_label": "critical implication for fiber bundle theory"
     },
     {
@@ -446,7 +446,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L37",
       "id": "finding_literature_alignment_collapse_curvature_instability_connection_to_conjecture_2_holonomy_intruder",
-      "community": 44,
+      "community": 45,
       "norm_label": "connection to conjecture 2 (holonomy-intruder)"
     },
     {
@@ -455,7 +455,7 @@
       "source_file": "finding_literature/alignment_collapse_curvature_instability.md",
       "source_location": "L42",
       "id": "finding_literature_alignment_collapse_curvature_instability_what_they_do_not_say",
-      "community": 44,
+      "community": 45,
       "norm_label": "what they do not say"
     },
     {
@@ -464,7 +464,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L1",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_md",
-      "community": 50,
+      "community": 52,
       "norm_label": "biderman_lora_learns_less_forgets_less.md"
     },
     {
@@ -473,7 +473,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L7",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_lora_learns_less_and_forgets_less_arxiv_2405_09673_tmlr_2024",
-      "community": 50,
+      "community": 52,
       "norm_label": "lora learns less and forgets less (arxiv:2405.09673, tmlr 2024)"
     },
     {
@@ -482,7 +482,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L9",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_core_finding",
-      "community": 50,
+      "community": 52,
       "norm_label": "core finding"
     },
     {
@@ -491,7 +491,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L12",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_rank_forgetting_relationship",
-      "community": 50,
+      "community": 52,
       "norm_label": "rank-forgetting relationship"
     },
     {
@@ -500,7 +500,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L15",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_mechanism_claimed",
-      "community": 50,
+      "community": 52,
       "norm_label": "mechanism claimed"
     },
     {
@@ -509,7 +509,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L18",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_relevance_to_intruder_dimensions",
-      "community": 50,
+      "community": 52,
       "norm_label": "relevance to intruder dimensions"
     },
     {
@@ -518,7 +518,7 @@
       "source_file": "finding_literature/biderman_lora_learns_less_forgets_less.md",
       "source_location": "L21",
       "id": "finding_literature_biderman_lora_learns_less_forgets_less_key_tables",
-      "community": 50,
+      "community": 52,
       "norm_label": "key tables"
     },
     {
@@ -932,7 +932,7 @@
       "source_file": "finding_literature/catastrophic_forgetting_lowrank_peft_subspace.md",
       "source_location": "L1",
       "id": "finding_literature_catastrophic_forgetting_lowrank_peft_subspace_md",
-      "community": 59,
+      "community": 64,
       "norm_label": "catastrophic_forgetting_lowrank_peft_subspace.md"
     },
     {
@@ -941,7 +941,7 @@
       "source_file": "finding_literature/catastrophic_forgetting_lowrank_peft_subspace.md",
       "source_location": "L7",
       "id": "finding_literature_catastrophic_forgetting_lowrank_peft_subspace_on_catastrophic_forgetting_in_low_rank_decomposition_based_peft_arxiv_2603_09684_2026",
-      "community": 59,
+      "community": 64,
       "norm_label": "on catastrophic forgetting in low-rank decomposition-based peft (arxiv:2603.09684, 2026)"
     },
     {
@@ -950,7 +950,7 @@
       "source_file": "finding_literature/catastrophic_forgetting_lowrank_peft_subspace.md",
       "source_location": "L9",
       "id": "finding_literature_catastrophic_forgetting_lowrank_peft_subspace_core_finding",
-      "community": 59,
+      "community": 64,
       "norm_label": "core finding"
     },
     {
@@ -959,7 +959,7 @@
       "source_file": "finding_literature/catastrophic_forgetting_lowrank_peft_subspace.md",
       "source_location": "L12",
       "id": "finding_literature_catastrophic_forgetting_lowrank_peft_subspace_key_claim",
-      "community": 59,
+      "community": 64,
       "norm_label": "key claim"
     },
     {
@@ -968,7 +968,7 @@
       "source_file": "finding_literature/catastrophic_forgetting_lowrank_peft_subspace.md",
       "source_location": "L15",
       "id": "finding_literature_catastrophic_forgetting_lowrank_peft_subspace_relevance_to_fiber_bundle_theory",
-      "community": 59,
+      "community": 64,
       "norm_label": "relevance to fiber bundle theory"
     },
     {
@@ -977,7 +977,7 @@
       "source_file": "finding_literature/catastrophic_forgetting_lowrank_peft_subspace.md",
       "source_location": "L18",
       "id": "finding_literature_catastrophic_forgetting_lowrank_peft_subspace_missing",
-      "community": 59,
+      "community": 64,
       "norm_label": "missing"
     },
     {
@@ -986,7 +986,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L1",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_md",
-      "community": 51,
+      "community": 53,
       "norm_label": "conjecture_universal_subspace_trs_bridge.md"
     },
     {
@@ -995,7 +995,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L1",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_conjecture_universal_subspace_trs_intruder_dims_bridge",
-      "community": 51,
+      "community": 53,
       "norm_label": "conjecture: universal subspace \u2194 trs / intruder dims bridge"
     },
     {
@@ -1004,7 +1004,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L7",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_the_two_reference_frames_operationally_distinct_in_all_existing_papers",
-      "community": 51,
+      "community": 53,
       "norm_label": "the two reference frames (operationally distinct in all existing papers)"
     },
     {
@@ -1013,7 +1013,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L34",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_what_is_established_extracted_facts",
-      "community": 51,
+      "community": 53,
       "norm_label": "what is established (extracted facts)"
     },
     {
@@ -1022,7 +1022,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L50",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_conjecture_edges_inferred_marked_for_graph",
-      "community": 51,
+      "community": 53,
       "norm_label": "conjecture edges (inferred, marked for graph)"
     },
     {
@@ -1031,7 +1031,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L67",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_what_must_not_be_claimed_labeled_conjecture_until_measured",
-      "community": 51,
+      "community": 53,
       "norm_label": "what must not be claimed (labeled conjecture until measured)"
     },
     {
@@ -1040,7 +1040,7 @@
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
       "source_location": "L75",
       "id": "finding_literature_conjecture_universal_subspace_trs_bridge_papers_to_read_for_discriminating_evidence",
-      "community": 51,
+      "community": 53,
       "norm_label": "papers to read for discriminating evidence"
     },
     {
@@ -1159,6 +1159,69 @@
       "id": "finding_literature_core_claim_what_attention_is_all_you_need_did",
       "community": 28,
       "norm_label": "what \"attention is all you need\" did"
+    },
+    {
+      "label": "dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L1",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_md",
+      "community": 54,
+      "norm_label": "dp_sgd_gradient_denoising_bbp_finetuning.md"
+    },
+    {
+      "label": "Sample-Efficient Differentially Private Fine-Tuning via Gradient Matrix Denoising (arXiv:2510.01137)",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L7",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "community": 54,
+      "norm_label": "sample-efficient differentially private fine-tuning via gradient matrix denoising (arxiv:2510.01137)"
+    },
+    {
+      "label": "Core finding",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L9",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_core_finding",
+      "community": 54,
+      "norm_label": "core finding"
+    },
+    {
+      "label": "The BBP transition formula for gradient matrices",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L16",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_the_bbp_transition_formula_for_gradient_matrices",
+      "community": 54,
+      "norm_label": "the bbp transition formula for gradient matrices"
+    },
+    {
+      "label": "Why this matters: BBP = MP = TRS = HT-SR (four-way equivalence)",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L24",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_why_this_matters_bbp_mp_trs_ht_sr_four_way_equivalence",
+      "community": 54,
+      "norm_label": "why this matters: bbp = mp = trs = ht-sr (four-way equivalence)"
+    },
+    {
+      "label": "Connection to LoRA rank selection",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L43",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_connection_to_lora_rank_selection",
+      "community": 54,
+      "norm_label": "connection to lora rank selection"
+    },
+    {
+      "label": "What this does NOT say",
+      "file_type": "document",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L53",
+      "id": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_what_this_does_not_say",
+      "community": 54,
+      "norm_label": "what this does not say"
     },
     {
       "label": "experiment_design_reference_frame_measurement.md",
@@ -1328,7 +1391,7 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L1",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_md",
-      "community": 52,
+      "community": 55,
       "norm_label": "frechet_averages_quotient_manifold_merging.md"
     },
     {
@@ -1337,7 +1400,7 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L7",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_generalizing_the_geometry_of_model_merging_through_fr_chet_averages_arxiv_2604_27155",
-      "community": 52,
+      "community": 55,
       "norm_label": "generalizing the geometry of model merging through frechet averages (arxiv:2604.27155)"
     },
     {
@@ -1346,7 +1409,7 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L9",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_core_finding",
-      "community": 52,
+      "community": 55,
       "norm_label": "core finding"
     },
     {
@@ -1355,7 +1418,7 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L14",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_quotient_manifold_structure",
-      "community": 52,
+      "community": 55,
       "norm_label": "quotient manifold structure"
     },
     {
@@ -1364,7 +1427,7 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L20",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_fisher_merging_connection",
-      "community": 52,
+      "community": 55,
       "norm_label": "fisher merging connection"
     },
     {
@@ -1373,7 +1436,7 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L25",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_why_this_matters_for_fiber_bundle_theory",
-      "community": 52,
+      "community": 55,
       "norm_label": "why this matters for fiber bundle theory"
     },
     {
@@ -1382,8 +1445,134 @@
       "source_file": "finding_literature/frechet_averages_quotient_manifold_merging.md",
       "source_location": "L31",
       "id": "finding_literature_frechet_averages_quotient_manifold_merging_what_they_do_not_say",
-      "community": 52,
+      "community": 55,
       "norm_label": "what they do not say"
+    },
+    {
+      "label": "implicit_regularization_matrix_factorization_gunasekar.md",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L1",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_md",
+      "community": 46,
+      "norm_label": "implicit_regularization_matrix_factorization_gunasekar.md"
+    },
+    {
+      "label": "Implicit Regularization in Matrix Factorization (arXiv:1705.09280)",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L7",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "community": 46,
+      "norm_label": "implicit regularization in matrix factorization (arxiv:1705.09280)"
+    },
+    {
+      "label": "Core finding",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L9",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_core_finding",
+      "community": 46,
+      "norm_label": "core finding"
+    },
+    {
+      "label": "Main theorem (informal)",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L15",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_main_theorem_informal",
+      "community": 46,
+      "norm_label": "main theorem (informal)"
+    },
+    {
+      "label": "Connection to Marchenko-Pastur / TRS",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L24",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_connection_to_marchenko_pastur_trs",
+      "community": 46,
+      "norm_label": "connection to marchenko-pastur / trs"
+    },
+    {
+      "label": "Connection to LoRA",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L34",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_connection_to_lora",
+      "community": 46,
+      "norm_label": "connection to lora"
+    },
+    {
+      "label": "Why this is foundational for the TRS framework",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L39",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_why_this_is_foundational_for_the_trs_framework",
+      "community": 46,
+      "norm_label": "why this is foundational for the trs framework"
+    },
+    {
+      "label": "What this does NOT say",
+      "file_type": "document",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L45",
+      "id": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_what_this_does_not_say",
+      "community": 46,
+      "norm_label": "what this does not say"
+    },
+    {
+      "label": "lora_training_converges_lowrank_global_minimum.md",
+      "file_type": "document",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L1",
+      "id": "finding_literature_lora_training_converges_lowrank_global_minimum_md",
+      "community": 65,
+      "norm_label": "lora_training_converges_lowrank_global_minimum.md"
+    },
+    {
+      "label": "LoRA Training Provably Converges to a Low-Rank Global Minimum (arXiv:2502.09376)",
+      "file_type": "document",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L7",
+      "id": "finding_literature_lora_training_converges_lowrank_global_minimum_lora_training_provably_converges_to_a_low_rank_global_minimum_arxiv_2502_09376",
+      "community": 65,
+      "norm_label": "lora training provably converges to a low-rank global minimum (arxiv:2502.09376)"
+    },
+    {
+      "label": "Core finding",
+      "file_type": "document",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L9",
+      "id": "finding_literature_lora_training_converges_lowrank_global_minimum_core_finding",
+      "community": 65,
+      "norm_label": "core finding"
+    },
+    {
+      "label": "What this proves for the TRS framework",
+      "file_type": "document",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L16",
+      "id": "finding_literature_lora_training_converges_lowrank_global_minimum_what_this_proves_for_the_trs_framework",
+      "community": 65,
+      "norm_label": "what this proves for the trs framework"
+    },
+    {
+      "label": "Connection to OPLoRA / horizontal subbundle",
+      "file_type": "document",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L28",
+      "id": "finding_literature_lora_training_converges_lowrank_global_minimum_connection_to_oplora_horizontal_subbundle",
+      "community": 65,
+      "norm_label": "connection to oplora / horizontal subbundle"
+    },
+    {
+      "label": "What this does NOT say",
+      "file_type": "document",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L37",
+      "id": "finding_literature_lora_training_converges_lowrank_global_minimum_what_this_does_not_say",
+      "community": 65,
+      "norm_label": "what this does not say"
     },
     {
       "label": "multitask_grokking_invariant_manifold.md",
@@ -1391,7 +1580,7 @@
       "source_file": "finding_literature/multitask_grokking_invariant_manifold.md",
       "source_location": "L1",
       "id": "finding_literature_multitask_grokking_invariant_manifold_md",
-      "community": 60,
+      "community": 66,
       "norm_label": "multitask_grokking_invariant_manifold.md"
     },
     {
@@ -1400,7 +1589,7 @@
       "source_file": "finding_literature/multitask_grokking_invariant_manifold.md",
       "source_location": "L7",
       "id": "finding_literature_multitask_grokking_invariant_manifold_the_geometry_of_multi_task_grokking_transverse_instability_superposition_and_weight_decay_phase_structure_arxiv_2602_18523",
-      "community": 60,
+      "community": 66,
       "norm_label": "the geometry of multi-task grokking: transverse instability, superposition, and weight decay phase structure (arxiv:2602.18523)"
     },
     {
@@ -1409,7 +1598,7 @@
       "source_file": "finding_literature/multitask_grokking_invariant_manifold.md",
       "source_location": "L9",
       "id": "finding_literature_multitask_grokking_invariant_manifold_core_finding",
-      "community": 60,
+      "community": 66,
       "norm_label": "core finding"
     },
     {
@@ -1418,7 +1607,7 @@
       "source_file": "finding_literature/multitask_grokking_invariant_manifold.md",
       "source_location": "L14",
       "id": "finding_literature_multitask_grokking_invariant_manifold_key_geometric_claims",
-      "community": 60,
+      "community": 66,
       "norm_label": "key geometric claims"
     },
     {
@@ -1427,7 +1616,7 @@
       "source_file": "finding_literature/multitask_grokking_invariant_manifold.md",
       "source_location": "L21",
       "id": "finding_literature_multitask_grokking_invariant_manifold_connection_to_fiber_bundle_theory",
-      "community": 60,
+      "community": 66,
       "norm_label": "connection to fiber bundle theory"
     },
     {
@@ -1436,7 +1625,7 @@
       "source_file": "finding_literature/multitask_grokking_invariant_manifold.md",
       "source_location": "L29",
       "id": "finding_literature_multitask_grokking_invariant_manifold_what_they_do_not_say",
-      "community": 60,
+      "community": 66,
       "norm_label": "what they do not say"
     },
     {
@@ -1445,7 +1634,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L1",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_md",
-      "community": 53,
+      "community": 56,
       "norm_label": "oplora_orthogonal_projection_forgetting.md"
     },
     {
@@ -1454,7 +1643,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L7",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_oplora_orthogonal_projection_lora_prevents_catastrophic_forgetting_arxiv_2510_13003",
-      "community": 53,
+      "community": 56,
       "norm_label": "oplora: orthogonal projection lora prevents catastrophic forgetting (arxiv:2510.13003)"
     },
     {
@@ -1463,7 +1652,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L9",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_core_finding",
-      "community": 53,
+      "community": 56,
       "norm_label": "core finding"
     },
     {
@@ -1472,7 +1661,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L15",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_the_constraint",
-      "community": 53,
+      "community": 56,
       "norm_label": "the constraint"
     },
     {
@@ -1481,7 +1670,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L19",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_why_this_matters_for_fiber_bundle_theory",
-      "community": 53,
+      "community": 56,
       "norm_label": "why this matters for fiber bundle theory"
     },
     {
@@ -1490,7 +1679,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L26",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_what_they_do_not_do",
-      "community": 53,
+      "community": 56,
       "norm_label": "what they do not do"
     },
     {
@@ -1499,7 +1688,7 @@
       "source_file": "finding_literature/oplora_orthogonal_projection_forgetting.md",
       "source_location": "L31",
       "id": "finding_literature_oplora_orthogonal_projection_forgetting_experiments",
-      "community": 53,
+      "community": 56,
       "norm_label": "experiments"
     },
     {
@@ -1508,7 +1697,7 @@
       "source_file": "finding_literature/prompt_experiment_design.md",
       "source_location": "L1",
       "id": "finding_literature_prompt_experiment_design_md",
-      "community": 74,
+      "community": 79,
       "norm_label": "prompt_experiment_design.md"
     },
     {
@@ -1517,7 +1706,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L1",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_md",
-      "community": 54,
+      "community": 57,
       "norm_label": "rank_collapse_continual_learning_forgetting.md"
     },
     {
@@ -1526,7 +1715,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L7",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_why_do_neural_networks_forget_a_study_of_collapse_in_continual_learning_arxiv_2603_04580",
-      "community": 54,
+      "community": 57,
       "norm_label": "why do neural networks forget: a study of collapse in continual learning (arxiv:2603.04580)"
     },
     {
@@ -1535,7 +1724,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L9",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_core_finding",
-      "community": 54,
+      "community": 57,
       "norm_label": "core finding"
     },
     {
@@ -1544,7 +1733,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L15",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_what_they_measure",
-      "community": 54,
+      "community": 57,
       "norm_label": "what they measure"
     },
     {
@@ -1553,7 +1742,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L20",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_causal_direction",
-      "community": 54,
+      "community": 57,
       "norm_label": "causal direction"
     },
     {
@@ -1562,7 +1751,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L25",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_relevance_to_trs",
-      "community": 54,
+      "community": 57,
       "norm_label": "relevance to trs"
     },
     {
@@ -1571,7 +1760,7 @@
       "source_file": "finding_literature/rank_collapse_continual_learning_forgetting.md",
       "source_location": "L31",
       "id": "finding_literature_rank_collapse_continual_learning_forgetting_what_this_does_not_resolve",
-      "community": 54,
+      "community": 57,
       "norm_label": "what this does not resolve"
     },
     {
@@ -1580,7 +1769,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L1",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_md",
-      "community": 55,
+      "community": 58,
       "norm_label": "rank_tradeoffs_forgetting_svd_analysis.md"
     },
     {
@@ -1589,7 +1778,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L7",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_how_much_is_too_much_exploring_lora_rank_trade_offs_arxiv_2512_15634_dec_2024",
-      "community": 55,
+      "community": 58,
       "norm_label": "how much is too much? exploring lora rank trade-offs (arxiv:2512.15634, dec 2024)"
     },
     {
@@ -1598,7 +1787,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L9",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_core_finding",
-      "community": 55,
+      "community": 58,
       "norm_label": "core finding"
     },
     {
@@ -1607,7 +1796,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L12",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_rank_tested",
-      "community": 55,
+      "community": 58,
       "norm_label": "rank tested"
     },
     {
@@ -1616,7 +1805,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L15",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_spectral_finding",
-      "community": 55,
+      "community": 58,
       "norm_label": "spectral finding"
     },
     {
@@ -1625,7 +1814,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L18",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_key_connection_to_trs",
-      "community": 55,
+      "community": 58,
       "norm_label": "key connection to trs"
     },
     {
@@ -1634,7 +1823,7 @@
       "source_file": "finding_literature/rank_tradeoffs_forgetting_svd_analysis.md",
       "source_location": "L21",
       "id": "finding_literature_rank_tradeoffs_forgetting_svd_analysis_no_intruder_dimension_analysis",
-      "community": 55,
+      "community": 58,
       "norm_label": "no intruder dimension analysis"
     },
     {
@@ -1643,7 +1832,7 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L1",
       "id": "finding_literature_some_insights_lora_papers_md",
-      "community": 56,
+      "community": 59,
       "norm_label": "some_insights_lora_papers.md"
     },
     {
@@ -1652,7 +1841,7 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L1",
       "id": "finding_literature_some_insights_lora_papers_experiment_1_insights_from_lora_specific_papers",
-      "community": 56,
+      "community": 59,
       "norm_label": "experiment 1 insights from lora-specific papers"
     },
     {
@@ -1661,7 +1850,7 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L3",
       "id": "finding_literature_some_insights_lora_papers_from_asymmetryoflora_your_weight_space_representation_should_be_b_only",
-      "community": 56,
+      "community": 59,
       "norm_label": "from asymmetryoflora: your weight-space representation should be b-only"
     },
     {
@@ -1670,7 +1859,7 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L17",
       "id": "finding_literature_some_insights_lora_papers_from_adalora_the_geometry_is_not_uniform_layer_position_and_module_type_predict_information_density",
-      "community": 56,
+      "community": 59,
       "norm_label": "from adalora: the geometry is not uniform \u2014 layer position and module type predict information density"
     },
     {
@@ -1679,7 +1868,7 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L31",
       "id": "finding_literature_some_insights_lora_papers_from_symmetriesinwsl_your_distance_metric_must_match_what_you_re_predicting",
-      "community": 56,
+      "community": 59,
       "norm_label": "from symmetriesinwsl: your distance metric must match what you're predicting"
     },
     {
@@ -1688,7 +1877,7 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L55",
       "id": "finding_literature_some_insights_lora_papers_hidden_cross_paper_insights",
-      "community": 56,
+      "community": 59,
       "norm_label": "hidden cross-paper insights"
     },
     {
@@ -1697,8 +1886,71 @@
       "source_file": "finding_literature/some_insights_lora_papers.md",
       "source_location": "L75",
       "id": "finding_literature_some_insights_lora_papers_concrete_experiment_1_changes",
-      "community": 56,
+      "community": 59,
       "norm_label": "concrete experiment 1 changes"
+    },
+    {
+      "label": "spectral_dynamics_weights_grokking_rank.md",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L1",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_md",
+      "community": 60,
+      "norm_label": "spectral_dynamics_weights_grokking_rank.md"
+    },
+    {
+      "label": "Approaching Deep Learning through the Spectral Dynamics of Weights (arXiv:2408.11804)",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L7",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "community": 60,
+      "norm_label": "approaching deep learning through the spectral dynamics of weights (arxiv:2408.11804)"
+    },
+    {
+      "label": "Core finding",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L9",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_core_finding",
+      "community": 60,
+      "norm_label": "core finding"
+    },
+    {
+      "label": "Key empirical findings",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L16",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_key_empirical_findings",
+      "community": 60,
+      "norm_label": "key empirical findings"
+    },
+    {
+      "label": "Connection to TRS / intruder dim theory",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L25",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_connection_to_trs_intruder_dim_theory",
+      "community": 60,
+      "norm_label": "connection to trs / intruder dim theory"
+    },
+    {
+      "label": "Companion paper connection",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L40",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_companion_paper_connection",
+      "community": 60,
+      "norm_label": "companion paper connection"
+    },
+    {
+      "label": "What this does NOT say",
+      "file_type": "document",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L46",
+      "id": "finding_literature_spectral_dynamics_weights_grokking_rank_what_this_does_not_say",
+      "community": 60,
+      "norm_label": "what this does not say"
     },
     {
       "label": "spectral_geometry_lora_adapters_training_objective.md",
@@ -1706,7 +1958,7 @@
       "source_file": "finding_literature/spectral_geometry_lora_adapters_training_objective.md",
       "source_location": "L1",
       "id": "finding_literature_spectral_geometry_lora_adapters_training_objective_md",
-      "community": 61,
+      "community": 67,
       "norm_label": "spectral_geometry_lora_adapters_training_objective.md"
     },
     {
@@ -1715,7 +1967,7 @@
       "source_file": "finding_literature/spectral_geometry_lora_adapters_training_objective.md",
       "source_location": "L7",
       "id": "finding_literature_spectral_geometry_lora_adapters_training_objective_spectral_geometry_of_lora_adapters_encodes_training_objective_arxiv_2604_08844_april_2026",
-      "community": 61,
+      "community": 67,
       "norm_label": "spectral geometry of lora adapters encodes training objective (arxiv:2604.08844, april 2026)"
     },
     {
@@ -1724,7 +1976,7 @@
       "source_file": "finding_literature/spectral_geometry_lora_adapters_training_objective.md",
       "source_location": "L9",
       "id": "finding_literature_spectral_geometry_lora_adapters_training_objective_core_finding",
-      "community": 61,
+      "community": 67,
       "norm_label": "core finding"
     },
     {
@@ -1733,7 +1985,7 @@
       "source_file": "finding_literature/spectral_geometry_lora_adapters_training_objective.md",
       "source_location": "L12",
       "id": "finding_literature_spectral_geometry_lora_adapters_training_objective_connection_to_q_k_vs_v_o_asymmetry",
-      "community": 61,
+      "community": 67,
       "norm_label": "connection to q/k vs v/o asymmetry"
     },
     {
@@ -1742,7 +1994,7 @@
       "source_file": "finding_literature/spectral_geometry_lora_adapters_training_objective.md",
       "source_location": "L15",
       "id": "finding_literature_spectral_geometry_lora_adapters_training_objective_relevance_to_intruder_dimensions",
-      "community": 61,
+      "community": 67,
       "norm_label": "relevance to intruder dimensions"
     },
     {
@@ -1751,7 +2003,7 @@
       "source_file": "finding_literature/spectral_geometry_lora_adapters_training_objective.md",
       "source_location": "L18",
       "id": "finding_literature_spectral_geometry_lora_adapters_training_objective_key_methodology",
-      "community": 61,
+      "community": 67,
       "norm_label": "key methodology"
     },
     {
@@ -1760,7 +2012,7 @@
       "source_file": "finding_literature/spectral_surgery_lora_singular_directions.md",
       "source_location": "L1",
       "id": "finding_literature_spectral_surgery_lora_singular_directions_md",
-      "community": 62,
+      "community": 68,
       "norm_label": "spectral_surgery_lora_singular_directions.md"
     },
     {
@@ -1769,7 +2021,7 @@
       "source_file": "finding_literature/spectral_surgery_lora_singular_directions.md",
       "source_location": "L7",
       "id": "finding_literature_spectral_surgery_lora_singular_directions_spectral_surgery_training_free_refinement_of_lora_via_gradient_guided_singular_value_reweighting_arxiv_2603_03995",
-      "community": 62,
+      "community": 68,
       "norm_label": "spectral surgery: training-free refinement of lora via gradient-guided singular value reweighting (arxiv:2603.03995)"
     },
     {
@@ -1778,7 +2030,7 @@
       "source_file": "finding_literature/spectral_surgery_lora_singular_directions.md",
       "source_location": "L9",
       "id": "finding_literature_spectral_surgery_lora_singular_directions_core_finding",
-      "community": 62,
+      "community": 68,
       "norm_label": "core finding"
     },
     {
@@ -1787,7 +2039,7 @@
       "source_file": "finding_literature/spectral_surgery_lora_singular_directions.md",
       "source_location": "L14",
       "id": "finding_literature_spectral_surgery_lora_singular_directions_key_claim",
-      "community": 62,
+      "community": 68,
       "norm_label": "key claim"
     },
     {
@@ -1796,7 +2048,7 @@
       "source_file": "finding_literature/spectral_surgery_lora_singular_directions.md",
       "source_location": "L18",
       "id": "finding_literature_spectral_surgery_lora_singular_directions_connection_to_trs_intruder_dim_theory",
-      "community": 62,
+      "community": 68,
       "norm_label": "connection to trs / intruder dim theory"
     },
     {
@@ -1805,7 +2057,7 @@
       "source_file": "finding_literature/spectral_surgery_lora_singular_directions.md",
       "source_location": "L28",
       "id": "finding_literature_spectral_surgery_lora_singular_directions_what_they_do_not_do",
-      "community": 62,
+      "community": 68,
       "norm_label": "what they do not do"
     },
     {
@@ -2345,7 +2597,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L1",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_md",
-      "community": 27,
+      "community": 26,
       "norm_label": "synthesis_night_run_4_steele_holonomy.md"
     },
     {
@@ -2354,7 +2606,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L1",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_synthesis_night_run_iteration_4",
-      "community": 27,
+      "community": 26,
       "norm_label": "synthesis night run: iteration 4"
     },
     {
@@ -2363,7 +2615,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L2",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_steele_s_formula_holonomy_the_bridge_is_found",
-      "community": 27,
+      "community": 26,
       "norm_label": "steele's formula = holonomy. the bridge is found."
     },
     {
@@ -2372,7 +2624,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L7",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_the_breakthrough_steele_s_forgetting_formula_holonomy_formula",
-      "community": 27,
+      "community": 26,
       "norm_label": "the breakthrough: steele's forgetting formula = holonomy formula"
     },
     {
@@ -2381,7 +2633,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L10",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_codeblock_1",
-      "community": 27,
+      "community": 26,
       "norm_label": "code:block1 (f = \u03b1(1 \u2212 cos2\u03b8_min) + \u03b2)"
     },
     {
@@ -2390,7 +2642,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L35",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_the_holonomy_algorithm_adapted_to_weight_space",
-      "community": 27,
+      "community": 26,
       "norm_label": "the holonomy algorithm adapted to weight space"
     },
     {
@@ -2399,7 +2651,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L57",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_codeblock_2",
-      "community": 27,
+      "community": 26,
       "norm_label": "code:block2 (input:)"
     },
     {
@@ -2408,7 +2660,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L92",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_the_q_k_vs_v_o_asymmetry_a_geometric_explanation",
-      "community": 27,
+      "community": 26,
       "norm_label": "the q/k vs v/o asymmetry: a geometric explanation"
     },
     {
@@ -2417,7 +2669,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L132",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_intruder_dimensions_escaping_the_fiber_geometric_formalization",
-      "community": 27,
+      "community": 26,
       "norm_label": "intruder dimensions = \"escaping the fiber\" (geometric formalization)"
     },
     {
@@ -2426,7 +2678,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L162",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_new_critical_finding_filet_is_the_fisher_connection_in_practice",
-      "community": 27,
+      "community": 26,
       "norm_label": "new critical finding: filet is the fisher connection in practice"
     },
     {
@@ -2435,7 +2687,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L185",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_the_paper_s_theoretical_contribution_sharpened",
-      "community": 27,
+      "community": 26,
       "norm_label": "the paper's theoretical contribution \u2014 sharpened"
     },
     {
@@ -2444,7 +2696,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L212",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_new_experiment_filet_vs_random_vs_pissa_intruder_comparison",
-      "community": 27,
+      "community": 26,
       "norm_label": "new experiment: filet vs. random vs. pissa intruder comparison"
     },
     {
@@ -2453,7 +2705,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L226",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_updated_literature_to_download_iteration_4",
-      "community": 27,
+      "community": 26,
       "norm_label": "updated literature to download (iteration 4)"
     },
     {
@@ -2462,7 +2714,7 @@
       "source_file": "finding_literature/synthesis_night_run_4_steele_holonomy.md",
       "source_location": "L233",
       "id": "finding_literature_synthesis_night_run_4_steele_holonomy_current_state_of_the_theory_summary_of_4_synthesis_documents",
-      "community": 27,
+      "community": 26,
       "norm_label": "current state of the theory (summary of 4 synthesis documents)"
     },
     {
@@ -2687,7 +2939,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L1",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_md",
-      "community": 41,
+      "community": 42,
       "norm_label": "synthesis_night_run_7_fisher_degeneracy.md"
     },
     {
@@ -2696,7 +2948,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L9",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_synthesis_7_the_fisher_degeneracy_problem_gap_1",
-      "community": 41,
+      "community": 42,
       "norm_label": "synthesis 7: the fisher degeneracy problem (gap 1)"
     },
     {
@@ -2705,7 +2957,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L11",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_the_problem_statement",
-      "community": 41,
+      "community": 42,
       "norm_label": "the problem statement"
     },
     {
@@ -2714,7 +2966,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L47",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_defense_a_constant_rank_stratum_restriction",
-      "community": 41,
+      "community": 42,
       "norm_label": "defense a: constant-rank stratum restriction"
     },
     {
@@ -2723,7 +2975,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L97",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_defense_b_tikhonov_regularized_fisher",
-      "community": 41,
+      "community": 42,
       "norm_label": "defense b: tikhonov-regularized fisher"
     },
     {
@@ -2732,7 +2984,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L147",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_what_is_not_resolved_by_either_defense",
-      "community": 41,
+      "community": 42,
       "norm_label": "what is not resolved by either defense"
     },
     {
@@ -2741,7 +2993,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L176",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_implications_for_conjecture_2_holonomy_intruder_correspondence",
-      "community": 41,
+      "community": 42,
       "norm_label": "implications for conjecture 2 (holonomy-intruder correspondence)"
     },
     {
@@ -2750,7 +3002,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L208",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_summary_status_table",
-      "community": 41,
+      "community": 42,
       "norm_label": "summary status table"
     },
     {
@@ -2759,7 +3011,7 @@
       "source_file": "finding_literature/synthesis_night_run_7_fisher_degeneracy.md",
       "source_location": "L220",
       "id": "finding_literature_synthesis_night_run_7_fisher_degeneracy_paper_writing_implication",
-      "community": 41,
+      "community": 42,
       "norm_label": "paper writing implication"
     },
     {
@@ -3033,6 +3285,168 @@
       "norm_label": "summary"
     },
     {
+      "label": "synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L1",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_md",
+      "community": 22,
+      "norm_label": "synthesis_night_run_9_implicit_reg_bbp_grokking.md"
+    },
+    {
+      "label": "Synthesis 9: The Grand Chain \u2014 Implicit Regularization, BBP Transition, and Grokking as Horizontal Subbundle Return",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L1",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "community": 22,
+      "norm_label": "synthesis 9: the grand chain \u2014 implicit regularization, bbp transition, and grokking as horizontal subbundle return"
+    },
+    {
+      "label": "The Chain",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L9",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_the_chain",
+      "community": 22,
+      "norm_label": "the chain"
+    },
+    {
+      "label": "code:block1 (Nuclear norm minimization (Gunasekar 1705.09280))",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L14",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_codeblock_1",
+      "community": 22,
+      "norm_label": "code:block1 (nuclear norm minimization (gunasekar 1705.09280))"
+    },
+    {
+      "label": "1. Nuclear Norm Minimization = Horizontal Subbundle Variational Principle",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L44",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_1_nuclear_norm_minimization_horizontal_subbundle_variational_principle",
+      "community": 22,
+      "norm_label": "1. nuclear norm minimization = horizontal subbundle variational principle"
+    },
+    {
+      "label": "2. BBP = MP = TRS = HT-SR: Four-Way Equivalence of a Single Threshold",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L74",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_2_bbp_mp_trs_ht_sr_four_way_equivalence_of_a_single_threshold",
+      "community": 22,
+      "norm_label": "2. bbp = mp = trs = ht-sr: four-way equivalence of a single threshold"
+    },
+    {
+      "label": "3. Grokking = Transition from Vertical Fiber to Horizontal Subbundle",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L108",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_3_grokking_transition_from_vertical_fiber_to_horizontal_subbundle",
+      "community": 22,
+      "norm_label": "3. grokking = transition from vertical fiber to horizontal subbundle"
+    },
+    {
+      "label": "Anti-grokking in this framework",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L136",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_anti_grokking_in_this_framework",
+      "community": 22,
+      "norm_label": "anti-grokking in this framework"
+    },
+    {
+      "label": "4. The Slow Fisher Mode Connection",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L149",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_4_the_slow_fisher_mode_connection",
+      "community": 22,
+      "norm_label": "4. the slow fisher mode connection"
+    },
+    {
+      "label": "5. What These Connections Imply for Each Community in the Graph",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L175",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_5_what_these_connections_imply_for_each_community_in_the_graph",
+      "community": 22,
+      "norm_label": "5. what these connections imply for each community in the graph"
+    },
+    {
+      "label": "HT-SR Community (Community 21)",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L177",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_ht_sr_community_community_21",
+      "community": 22,
+      "norm_label": "ht-sr community (community 21)"
+    },
+    {
+      "label": "SLT/LLC Community (Community 17)",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L190",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_slt_llc_community_community_17",
+      "community": 22,
+      "norm_label": "slt/llc community (community 17)"
+    },
+    {
+      "label": "Grokking Community (Communities 8, 16, 17)",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L201",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_grokking_community_communities_8_16_17",
+      "community": 22,
+      "norm_label": "grokking community (communities 8, 16, 17)"
+    },
+    {
+      "label": "6. What Is Still Missing",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L210",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_6_what_is_still_missing",
+      "community": 22,
+      "norm_label": "6. what is still missing"
+    },
+    {
+      "label": "The RLCT of the Fiber Bundle Singularity",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L212",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_the_rlct_of_the_fiber_bundle_singularity",
+      "community": 22,
+      "norm_label": "the rlct of the fiber bundle singularity"
+    },
+    {
+      "label": "BBP for W\u2080 + \u0394W (not just \u0394W alone)",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L220",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_bbp_for_w_w_not_just_w_alone",
+      "community": 22,
+      "norm_label": "bbp for w0 + \u03b4w (not just \u03b4w alone)"
+    },
+    {
+      "label": "Implicit Regularization for Non-Zero B Initialization",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L226",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_implicit_regularization_for_non_zero_b_initialization",
+      "community": 22,
+      "norm_label": "implicit regularization for non-zero b initialization"
+    },
+    {
+      "label": "7. Summary",
+      "file_type": "document",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L233",
+      "id": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_7_summary",
+      "community": 22,
+      "norm_label": "7. summary"
+    },
+    {
       "label": "NeurIPS Workshop Target Venue",
       "file_type": "document",
       "source_file": "finding_literature/prompt_experiment_design.md",
@@ -3041,7 +3455,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 75,
+      "community": 80,
       "norm_label": "neurips workshop target venue",
       "id": "prompt_neurips_workshop_target"
     },
@@ -3054,7 +3468,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "weight-space signal (lora parameter coordinate)",
       "id": "prompt_weight_space_signal"
     },
@@ -3067,7 +3481,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "behavioral signal (benchmark score vector)",
       "id": "prompt_behavioral_signal"
     },
@@ -3080,7 +3494,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "dual-signal framing (weight-space + behavioral combined)",
       "id": "prompt_dual_signal_framing"
     },
@@ -3093,7 +3507,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "lora training pipeline (infrastructure)",
       "id": "prompt_lora_training_pipeline"
     },
@@ -3106,7 +3520,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "benchmark evaluation pipeline",
       "id": "prompt_benchmark_eval_pipeline"
     },
@@ -3119,7 +3533,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "weight-space representation extraction method",
       "id": "prompt_weight_space_repr_method"
     },
@@ -3132,7 +3546,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 76,
+      "community": 81,
       "norm_label": "predictive demonstration (downstream task)",
       "id": "prompt_predictive_demonstration"
     },
@@ -3145,7 +3559,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "asymmetryoflora paper",
       "id": "lora_insights_asymmetry_paper"
     },
@@ -3158,7 +3572,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "b matrix clusters by task; a matrix does not",
       "id": "lora_insights_b_matrix_task_clustering"
     },
@@ -3171,7 +3585,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "adalora paper",
       "id": "lora_insights_adalora_paper"
     },
@@ -3184,7 +3598,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "ffn top layers carry more task-specific singular values",
       "id": "lora_insights_ffn_top_layers_signal"
     },
@@ -3197,7 +3611,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "symmetriesinwsl paper",
       "id": "lora_insights_symmetries_wsl_paper"
     },
@@ -3210,7 +3624,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "symmetry hierarchy: gl_r vs o(r) vs coordinate-specific",
       "id": "lora_insights_symmetry_hierarchy"
     },
@@ -3223,7 +3637,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "three distance metrics experiment (raw / gl_r-invariant / o(r)-invariant)",
       "id": "lora_insights_three_distance_metrics"
     },
@@ -3236,7 +3650,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "canonical representation: svd spectrum of b per layer with importance weighting",
       "id": "lora_insights_canonical_representation"
     },
@@ -3249,7 +3663,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 57,
+      "community": 61,
       "norm_label": "benchmark score invariant to large family of weight-space transformations",
       "id": "lora_insights_benchmark_invariance"
     },
@@ -3262,7 +3676,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "effective rank as confound and covariate control",
       "id": "lora_insights_effective_rank_confound"
     },
@@ -3275,7 +3689,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "a matrix seed variation as cross-seed robustness ablation",
       "id": "lora_insights_a_matrix_seed_ablation"
     },
@@ -3288,7 +3702,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 36,
+      "community": 37,
       "norm_label": "concrete experiment 1 design changes table",
       "id": "lora_insights_experiment1_changes_table"
     },
@@ -4042,7 +4456,7 @@
       "captured_at": null,
       "author": "Si et al. 2025",
       "contributor": null,
-      "community": 69,
+      "community": 74,
       "norm_label": "top singular vectors reorient during fine-tuning",
       "id": "weight_spectra_model_adaptation_top_singular_vector_reorientation"
     },
@@ -4055,7 +4469,7 @@
       "captured_at": null,
       "author": "Si et al. 2025",
       "contributor": null,
-      "community": 69,
+      "community": 74,
       "norm_label": "spectral stability of non-dominant subspace during fine-tuning",
       "id": "weight_spectra_model_adaptation_spectral_stability"
     },
@@ -4107,7 +4521,7 @@
       "captured_at": null,
       "author": "Si et al. 2025",
       "contributor": null,
-      "community": 69,
+      "community": 74,
       "norm_label": "task-specific knowledge injected into low-dimensional subspace",
       "id": "weight_spectra_model_adaptation_task_specific_low_dim_subspace"
     },
@@ -4176,7 +4590,7 @@
       "author": "barsatKhadka",
       "contributor": "claude-sonnet-4-6",
       "rationale": "LoRA B-matrix singular directions that are novel relative to the base model pretrained weight directions. God node with degree 13 in the existing knowledge graph. High TRS = high intruder dimension content.",
-      "community": 37,
+      "community": 0,
       "norm_label": "intruder dimensions",
       "id": "BIG_IDEAS_intruder_dimensions"
     },
@@ -7030,7 +7444,7 @@
       "captured_at": null,
       "author": "Yayuan Li, Ze Peng, Jian Zhang, Jintao Guo, Yue Duan, Yinghuan Shi",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "spectral over-accumulation in model merging (li et al. 2026)",
       "id": "spectral_overacc_paper"
     },
@@ -7043,7 +7457,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "spectral over-counting / over-accumulation",
       "id": "spectral_overacc_spectral_over_counting"
     },
@@ -7056,7 +7470,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 63,
       "norm_label": "singular value calibration (svc)",
       "id": "spectral_overacc_svc"
     },
@@ -7069,7 +7483,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 63,
       "norm_label": "model merging (weight space addition)",
       "id": "spectral_overacc_model_merging"
     },
@@ -7082,7 +7496,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 63,
       "norm_label": "task matrix (weight difference per layer)",
       "id": "spectral_overacc_task_matrix"
     },
@@ -7095,7 +7509,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 63,
       "norm_label": "task vector (fine-tuned minus pre-trained weights)",
       "id": "spectral_overacc_task_vector"
     },
@@ -7121,7 +7535,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "subspace overlap (column-space overlap in merged basis)",
       "id": "spectral_overacc_subspace_overlap"
     },
@@ -7134,7 +7548,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "projection mismatch (inter-task interference measure)",
       "id": "spectral_overacc_projection_mismatch"
     },
@@ -7147,7 +7561,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 63,
       "norm_label": "singular value decomposition (svd) for task analysis",
       "id": "spectral_overacc_svd"
     },
@@ -7160,7 +7574,7 @@
       "captured_at": null,
       "author": "Gabriel Ilharco et al.",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "task arithmetic (ilharco et al. 2022)",
       "id": "spectral_overacc_task_arithmetic"
     },
@@ -7173,7 +7587,7 @@
       "captured_at": null,
       "author": "Prateek Yadav et al.",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "ties merging (yadav et al. 2023)",
       "id": "spectral_overacc_ties_merging"
     },
@@ -7186,7 +7600,7 @@
       "captured_at": null,
       "author": "Le Yu et al.",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "dare merging (yu et al. 2024)",
       "id": "spectral_overacc_dare"
     },
@@ -7199,7 +7613,7 @@
       "captured_at": null,
       "author": "Antonio Andrea Gargiulo et al.",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "tsv-merge (gargiulo et al. 2025) - cited by svc paper",
       "id": "spectral_overacc_tsvm"
     },
@@ -7212,7 +7626,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "shared knowledge (cross-task aligned components)",
       "id": "spectral_overacc_shared_knowledge"
     },
@@ -7225,7 +7639,7 @@
       "captured_at": null,
       "author": "Dawid Marczak et al.",
       "contributor": null,
-      "community": 22,
+      "community": 63,
       "norm_label": "iso-cts merging (marczak et al. 2025)",
       "id": "spectral_overacc_iso_cts"
     },
@@ -7602,7 +8016,7 @@
       "captured_at": null,
       "author": "Antonio Andrea Gargiulo, Donato Crisostomi, Maria Sofia Bucarelli, Simone Scardapane, Fabrizio Silvestri, Emanuele Rodola",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "task singular vectors: reducing task interference in model merging (gargiulo et al. 2025)",
       "id": "tsv_paper"
     },
@@ -7615,7 +8029,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "task singular vectors (tsv)",
       "id": "tsv_task_singular_vectors"
     },
@@ -7628,7 +8042,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "singular task interference (sti) metric",
       "id": "tsv_singular_task_interference"
     },
@@ -7641,7 +8055,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "tsv-compress (tsv-c): 10x compression retaining 99% accuracy",
       "id": "tsv_compress"
     },
@@ -7654,7 +8068,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "tsv-merge (tsv-m): low-rank + interference reduction merging",
       "id": "tsv_merge"
     },
@@ -7667,7 +8081,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 63,
       "norm_label": "low-rank nature of per-layer task matrices",
       "id": "tsv_low_rank_task_matrix"
     },
@@ -7680,7 +8094,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "whitening / procrustes orthogonalization for decorrelating tsvs",
       "id": "tsv_whitening_decorrelation"
     },
@@ -7693,7 +8107,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "per-layer task interference pattern (high in early, low in deep layers)",
       "id": "tsv_layer_interference_pattern"
     },
@@ -7706,7 +8120,7 @@
       "captured_at": null,
       "author": "Gabriel Ilharco et al.",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "task arithmetic (ilharco et al. 2022) - referenced in tsv paper",
       "id": "tsv_task_arithmetic_ref"
     },
@@ -7719,7 +8133,7 @@
       "captured_at": null,
       "author": "Ke Wang et al.",
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "consensus task arithmetic (wang et al. 2024)",
       "id": "tsv_consensus_ta"
     },
@@ -7732,7 +8146,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "vit clip models (vit-b/32, vit-b/16, vit-l/14) as merging backbone",
       "id": "tsv_vit_clip"
     },
@@ -8540,7 +8954,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "universal weight subspace",
       "id": "universal_weight_subspace_concept"
     },
@@ -8657,7 +9071,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "cross-architecture subspace gap",
       "id": "cross_architecture_gap_concept"
     },
@@ -8696,7 +9110,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "universal subspace for model compression (100x memory reduction)",
       "id": "subspace_memory_compression"
     },
@@ -8722,7 +9136,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "w2t framework (weight-to-token)",
       "id": "w2t_framework"
     },
@@ -8761,7 +9175,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "rank-wise singular decomposition as canonical object of lora",
       "id": "rank_wise_svd_canonical_object"
     },
@@ -8800,7 +9214,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "w2t tokenization (rank-component to token mapping)",
       "id": "w2t_tokenization"
     },
@@ -8813,7 +9227,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "rank-level transformer (f_rank) in w2t",
       "id": "rank_level_transformer"
     },
@@ -8826,7 +9240,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "position-level transformer (f_pos) in w2t",
       "id": "position_level_transformer"
     },
@@ -8839,7 +9253,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "sigma-guided weighted pooling in w2t",
       "id": "sigma_guided_pooling"
     },
@@ -8852,7 +9266,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "w2t attribute classification task",
       "id": "w2t_attribute_classification"
     },
@@ -8865,7 +9279,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "w2t performance prediction task",
       "id": "w2t_performance_prediction"
     },
@@ -8878,7 +9292,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "w2t adapter retrieval task",
       "id": "w2t_adapter_retrieval"
     },
@@ -8891,7 +9305,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "glnet (gl(r)-equivariant baseline for lora)",
       "id": "glnet_baseline"
     },
@@ -8904,7 +9318,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "weight-space embedding of lora checkpoints",
       "id": "weight_space_embedding_lora"
     },
@@ -8917,7 +9331,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "base-model transfer (sd1.4 to sd1.5) in w2t",
       "id": "base_model_transfer_w2t"
     },
@@ -8930,7 +9344,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 18,
       "norm_label": "wsl taxonomy: wsu / wsr / wsg",
       "id": "wsl_taxonomy"
     },
@@ -8956,7 +9370,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "weight space representation (wsr)",
       "id": "wsr_concept"
     },
@@ -8969,7 +9383,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "weight space generation (wsg)",
       "id": "wsg_concept"
     },
@@ -8995,7 +9409,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "functional equivariance in weight space",
       "id": "functional_equivariance_wsu"
     },
@@ -9008,7 +9422,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "model-based weight space representation",
       "id": "model_based_representation"
     },
@@ -9021,7 +9435,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "model-free (probe-based) weight space representation",
       "id": "model_free_representation"
     },
@@ -9034,7 +9448,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "hypernetworks for weight space generation",
       "id": "hypernetworks_wsg"
     },
@@ -9047,7 +9461,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 36,
       "norm_label": "generative models for weight space generation",
       "id": "generative_models_wsg"
     },
@@ -9060,7 +9474,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 36,
       "norm_label": "diffusion-based weight generation",
       "id": "diffusion_based_wsg"
     },
@@ -9073,7 +9487,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "foundation models as objects in weight space",
       "id": "foundation_models_weight_space"
     },
@@ -9099,7 +9513,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "deep weight-space networks (dwsnets)",
       "id": "dwsnets_concept"
     },
@@ -9112,7 +9526,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "neural functional networks (nfn)",
       "id": "nfn_concept"
     },
@@ -9125,7 +9539,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "graph metanetworks (gmns) for weight space",
       "id": "graph_metanetworks"
     },
@@ -9138,7 +9552,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "universal neural functionals (unfs)",
       "id": "universal_neural_functionals"
     },
@@ -9151,7 +9565,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "behavior prediction from weight representations",
       "id": "behavior_prediction_wsr"
     },
@@ -9164,7 +9578,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "model retrieval in weight space",
       "id": "model_retrieval_wsr"
     },
@@ -9177,7 +9591,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "model editing via weight space",
       "id": "model_editing_wsr"
     },
@@ -9346,7 +9760,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "spectral bias of neural networks (low-frequency learning)",
       "id": "spectral_bias_concept"
     },
@@ -9359,7 +9773,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "implicit regularization via shared subspace",
       "id": "implicit_regularization_concept"
     },
@@ -9398,7 +9812,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "implicit neural representations (inrs)",
       "id": "implicit_neural_representations"
     },
@@ -9411,7 +9825,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "model unification via weight space",
       "id": "model_unification_concept"
     },
@@ -9424,7 +9838,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "federated learning via weight space generation",
       "id": "federated_learning_wsl"
     },
@@ -9437,7 +9851,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "neural architecture search via weight space generation",
       "id": "nas_wsl"
     },
@@ -9450,7 +9864,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "open question: universal architecture-agnostic weight space learner",
       "id": "open_question_universal_weight_learner"
     },
@@ -9463,7 +9877,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 37,
+      "community": 47,
       "norm_label": "lora as universal low-rank adaptation module for wsl",
       "id": "lora_as_universal_module"
     },
@@ -9476,7 +9890,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "probelog (probe-based model representation)",
       "id": "probelog_concept"
     },
@@ -9489,7 +9903,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "probegen (deep linear probe generator)",
       "id": "probegen_concept"
     },
@@ -9502,7 +9916,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 46,
+      "community": 34,
       "norm_label": "scale-gmn (scaling + permutation equivariant gnn)",
       "id": "scale_gmn_concept"
     },
@@ -9515,7 +9929,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 36,
       "norm_label": "sane (sequential autoencoding for network weights)",
       "id": "sane_concept"
     },
@@ -9528,7 +9942,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 36,
       "norm_label": "dnd (diffusion for lora via task vectors)",
       "id": "dnd_concept"
     },
@@ -9541,7 +9955,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 65,
+      "community": 36,
       "norm_label": "icm-lora (conditional vae for lora weights)",
       "id": "icm_lora_concept"
     },
@@ -9554,7 +9968,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 34,
+      "community": 36,
       "norm_label": "hyperdreambooth (hypernetwork for lora initialization)",
       "id": "hyperdreambooth_concept"
     },
@@ -9684,7 +10098,7 @@
       "captured_at": null,
       "author": "Zehong Wang et al.",
       "contributor": null,
-      "community": 77,
+      "community": 82,
       "norm_label": "wang et al. 2026a (molecular representations in implicit functional space)",
       "id": "wang_2025_molecular_representations"
     },
@@ -9749,7 +10163,7 @@
       "captured_at": null,
       "author": "Haobo Zhang, Jiayu Zhou",
       "contributor": null,
-      "community": 78,
+      "community": 83,
       "norm_label": "unraveling lora interference: orthogonal subspaces for robust model merging",
       "id": "lora_interference_orthogonal_subspaces_paper"
     },
@@ -9762,7 +10176,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "osrm: orthogonal subspaces for robust model merging",
       "id": "lora_interference_osrm_method"
     },
@@ -9775,7 +10189,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "parameter-data interaction in lora model merging",
       "id": "lora_interference_parameter_data_interaction"
     },
@@ -9788,7 +10202,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "lora subspace constraint before fine-tuning",
       "id": "lora_interference_lora_subspace_constraint"
     },
@@ -9801,7 +10215,7 @@
       "captured_at": null,
       "author": "Ilharco et al. 2022",
       "contributor": null,
-      "community": 79,
+      "community": 84,
       "norm_label": "task arithmetic (ta) model merging method",
       "id": "lora_interference_task_arithmetic"
     },
@@ -9814,7 +10228,7 @@
       "captured_at": null,
       "author": "Yadav et al. 2024",
       "contributor": null,
-      "community": 80,
+      "community": 85,
       "norm_label": "ties merging method",
       "id": "lora_interference_ties_merging"
     },
@@ -9827,7 +10241,7 @@
       "captured_at": null,
       "author": "Huang et al. 2024",
       "contributor": null,
-      "community": 81,
+      "community": 86,
       "norm_label": "emr adaptive model merging",
       "id": "lora_interference_emr_merging"
     },
@@ -9840,7 +10254,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "eigenvector-based lora initialization via sample covariance",
       "id": "lora_interference_eigenvector_init"
     },
@@ -9853,7 +10267,7 @@
       "captured_at": null,
       "author": "Liu 2019",
       "contributor": null,
-      "community": 82,
+      "community": 87,
       "norm_label": "roberta-large experimental model",
       "id": "lora_interference_roberta_large"
     },
@@ -9866,7 +10280,7 @@
       "captured_at": null,
       "author": "Wang et al. 2019",
       "contributor": null,
-      "community": 83,
+      "community": 88,
       "norm_label": "glue benchmark evaluation suite",
       "id": "lora_interference_glue_benchmark"
     },
@@ -9879,7 +10293,7 @@
       "captured_at": null,
       "author": "Uijeong Jang, Jason D. Lee, Ernest K. Ryu",
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "lora training in the ntk regime has no spurious local minima",
       "id": "lora_ntk_paper"
     },
@@ -9892,7 +10306,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "neural tangent kernel (ntk) regime for lora fine-tuning",
       "id": "lora_ntk_ntk_regime"
     },
@@ -9905,7 +10319,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "no spurious local minima in lora with sufficient rank",
       "id": "lora_ntk_no_spurious_minima"
     },
@@ -9918,7 +10332,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "low-rank solution existence for full fine-tuning in ntk regime",
       "id": "lora_ntk_low_rank_solution_exists"
     },
@@ -9931,7 +10345,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "low-rank lora solution generalization guarantee",
       "id": "lora_ntk_generalization_guarantee"
     },
@@ -9944,7 +10358,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "weight decay on lora as nuclear norm regularization",
       "id": "lora_ntk_weight_decay_nuclear_norm"
     },
@@ -9957,7 +10371,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "rademacher complexity generalization bounds for lora",
       "id": "lora_ntk_rademacher_complexity"
     },
@@ -9970,7 +10384,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "rank threshold r >= sqrt(n) eliminates spurious minima",
       "id": "lora_ntk_rank_threshold"
     },
@@ -9983,7 +10397,7 @@
       "captured_at": null,
       "author": "Jiashun Cheng, Aochuan Chen, Nuo Chen, Ziqi Gao, Yuhan Li, Jia Li, Fugee Tsung",
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "revisiting lora through the lens of parameter redundancy: spectral encoding helps",
       "id": "lora_redundancy_paper"
     },
@@ -9996,7 +10410,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "selora: spectral-encoding low-rank adaptation",
       "id": "lora_redundancy_selora"
     },
@@ -10009,7 +10423,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "sparsity property of lora parameters",
       "id": "lora_redundancy_sparsity_property"
     },
@@ -10022,7 +10436,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "rank redundancy in lora fine-tuning",
       "id": "lora_redundancy_rank_redundancy"
     },
@@ -10035,7 +10449,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "density redundancy in lora fine-tuning",
       "id": "lora_redundancy_density_redundancy"
     },
@@ -10048,7 +10462,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "fourier encoding for lora spectral re-parameterization",
       "id": "lora_redundancy_fourier_encoding"
     },
@@ -10061,7 +10475,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "wavelet encoding for lora spectral re-parameterization",
       "id": "lora_redundancy_wavelet_encoding"
     },
@@ -10074,7 +10488,7 @@
       "captured_at": null,
       "author": "Junxuan Wang, Xuyang Ge, Wentao Shu, Qiong Tang, Yunhua Zhou, Zhengfu He, Xipeng Qiu",
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "towards universality: studying mechanistic similarity across language model architectures",
       "id": "mechanistic_similarity_paper"
     },
@@ -10087,7 +10501,7 @@
       "captured_at": null,
       "author": "Olah et al. 2020",
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "universality hypothesis in mechanistic interpretability",
       "id": "mechanistic_similarity_universality_hypothesis"
     },
@@ -10100,7 +10514,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "sparse autoencoders (saes) for interpretable feature extraction",
       "id": "mechanistic_similarity_sparse_autoencoders"
     },
@@ -10113,7 +10527,7 @@
       "captured_at": null,
       "author": "Gu and Dao 2023",
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "mamba state space model architecture",
       "id": "mechanistic_similarity_mamba_architecture"
     },
@@ -10126,7 +10540,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "off-by-one preference motif in mamba ssm",
       "id": "mechanistic_similarity_off_by_one"
     },
@@ -10139,7 +10553,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "max pairwise pearson correlation (mppc) feature similarity metric",
       "id": "mechanistic_similarity_mppc_metric"
     },
@@ -10152,7 +10566,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 58,
+      "community": 62,
       "norm_label": "induction circuits in transformers and mamba",
       "id": "mechanistic_similarity_induction_circuits"
     },
@@ -10165,7 +10579,7 @@
       "captured_at": null,
       "author": "Hu et al. 2021",
       "contributor": null,
-      "community": 18,
+      "community": 19,
       "norm_label": "lora: low-rank adaptation of large language models (hu et al. 2021)",
       "id": "lora_hu2021"
     },
@@ -10269,7 +10683,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 84,
+      "community": 89,
       "norm_label": "singular values as task signatures",
       "id": "gradient_space_lora_task_discovery_svd_singular_values"
     },
@@ -10347,7 +10761,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 85,
+      "community": 90,
       "norm_label": "svd-based weight compression",
       "id": "sane_scalable_versatile_weight_space_learning_svd_compression"
     },
@@ -10763,7 +11177,7 @@
       "captured_at": null,
       "author": "Anish Lakkapragada",
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "using slt to understand grokking and phase transitions in neural networks",
       "id": "slt_paper"
     },
@@ -10776,7 +11190,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "singular learning theory (slt) from algebraic geometry",
       "id": "slt_singular_learning_theory"
     },
@@ -10789,7 +11203,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "local learning coefficient (llc) as complexity measure",
       "id": "slt_local_learning_coefficient"
     },
@@ -10802,7 +11216,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "slt free energy (fn) for phase transition timing",
       "id": "slt_free_energy"
     },
@@ -10815,7 +11229,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "grokking: delayed generalization phase transition",
       "id": "slt_grokking"
     },
@@ -10828,7 +11242,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "arrhenius reaction rate hypothesis for grokking time",
       "id": "slt_arrhenius_hypothesis"
     },
@@ -10841,7 +11255,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "modulo arithmetic network (grokking testbed)",
       "id": "slt_modulo_arithmetic"
     },
@@ -10854,7 +11268,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "anthropic toy models of superposition (tms) phase transitions",
       "id": "slt_toy_models_superposition"
     },
@@ -10867,7 +11281,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "stochastic gradient langevin dynamics (sgld) for llc estimation",
       "id": "slt_sgld"
     },
@@ -10906,7 +11320,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "model merging without extra training",
       "id": "concept_model_merging"
     },
@@ -10945,7 +11359,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 39,
+      "community": 40,
       "norm_label": "singular statistical models (non-identifiable neural networks)",
       "id": "concept_singular_models"
     },
@@ -11465,7 +11879,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "task arithmetic (ta): model merging via task vectors",
       "id": "tsv_task_arithmetic"
     },
@@ -11478,7 +11892,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "low-rank nature of layer task matrices",
       "id": "tsv_lowrank_layer_matrices"
     },
@@ -11491,7 +11905,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 22,
+      "community": 27,
       "norm_label": "whitening transformation for tsv decorrelation",
       "id": "tsv_whitening_transformation"
     },
@@ -11504,7 +11918,7 @@
       "captured_at": null,
       "author": "Prakhar Kaushik, Shravan Chaudhari, Ankit Vaidya, Rama Chellappa, Alan Yuille",
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "the universal weight subspace hypothesis",
       "id": "uwsh_paper"
     },
@@ -11517,7 +11931,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "universal weight subspace: shared low-rank subspace across neural networks",
       "id": "uwsh_universal_subspace"
     },
@@ -11530,7 +11944,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "truncated zero-centered higher-order svd (hosvd) for subspace analysis",
       "id": "uwsh_hosvd"
     },
@@ -11543,7 +11957,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "spectral convergence of neural networks to shared subspaces",
       "id": "uwsh_spectral_convergence"
     },
@@ -11556,7 +11970,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 91,
       "norm_label": "task second-moment operator for shared subspace recovery",
       "id": "uwsh_task_second_moment"
     },
@@ -11569,7 +11983,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "lora adapters as universal subspace evidence (500 mistral-7b loras)",
       "id": "uwsh_lora_adapters"
     },
@@ -11582,7 +11996,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "gl(r) reparameterization symmetry in lora factorization",
       "id": "w2t_gl_symmetry"
     },
@@ -11595,7 +12009,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "canonical lora decomposition via qr-svd",
       "id": "w2t_canonical_decomp"
     },
@@ -11608,7 +12022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
+      "community": 18,
       "norm_label": "rank-level transformer for lora token modeling",
       "id": "w2t_rank_level_transformer"
     },
@@ -11699,7 +12113,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "singular value decomposition applied to weight space analysis",
       "id": "concept_svd_weight_space"
     },
@@ -11712,7 +12126,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 26,
+      "community": 38,
       "norm_label": "low-rank adaptation (lora) for parameter-efficient fine-tuning",
       "id": "concept_lora_adaptation"
     },
@@ -11725,7 +12139,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 45,
+      "community": 48,
       "norm_label": "task interference in multi-task model merging",
       "id": "concept_task_interference"
     },
@@ -11739,7 +12153,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Departure of LoRA B-matrix singular values from Marchenko-Pastur null distribution. Architecture-agnostic because MP depends only on matrix aspect ratio, GL_r-invariant because singular values are coordinate-free. Statistically optimal by spiked RMT: computing TRS = computing maximum likelihood estimate of task-specific information.",
-      "community": 42,
+      "community": 44,
       "norm_label": "task residual spectrum (trs)",
       "id": "big_ideas_trs"
     },
@@ -11767,7 +12181,7 @@
       "author": null,
       "contributor": null,
       "rationale": "500+ Mistral-7B LoRAs converge to shared 16-dim spectral subspace (arXiv:2512.05117, Theorem 2.5, rate O(1/sqrt(T))). Represents architecture-specific prior for LoRA adaptation. Two-level TRS: departure from MP (remove noise) then departure from universal subspace (remove architecture prior).",
-      "community": 47,
+      "community": 49,
       "norm_label": "universal weight subspace",
       "id": "big_ideas_universal_subspace"
     },
@@ -11781,7 +12195,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Above-MP, pre-trained aligned, outside universal subspace. The task-specific signal that predicts downstream task performance. Defined as: sigma_i > sigma_MP AND cos(u_i, U_0) > tau_align AND cos(u_i, U_universal) < tau_universal.",
-      "community": 64,
+      "community": 70,
       "norm_label": "genuine trs",
       "id": "big_ideas_genuine_trs"
     },
@@ -11795,7 +12209,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Near-zero singular values of delta-W encode deliberate capability suppression. Distinct from near-zero of W_0 (minor subspace = free space). Predicts capability loss.",
-      "community": 64,
+      "community": 70,
       "norm_label": "near-zero suppression dimensions",
       "id": "big_ideas_suppression_dims"
     },
@@ -11809,7 +12223,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Within-MP singular values \u2014 noise or task-general domain adaptation. Subspace-Boosted (2506.16506) proves mathematically that MP null = limit of common LoRA subspace as N\u2192inf. Common subspace singular values stay at O(1) under averaging.",
-      "community": 64,
+      "community": 70,
       "norm_label": "mp bulk",
       "id": "big_ideas_mp_bulk"
     },
@@ -11823,7 +12237,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Complete theory: delta-W decomposes into (1) Genuine TRS (above-MP, aligned, non-universal), (2) Intruder Dims (above-MP, unaligned), (3) Universal/Task-General (above-MP, aligned, in universal subspace), (4) Suppression Dims (near-zero). Approximately orthogonal for large models (>7B). Each component additively contributes to distinct behavioral outcomes.",
-      "community": 64,
+      "community": 70,
       "norm_label": "four-way spectral decomposition",
       "id": "big_ideas_four_way_decomp"
     },
@@ -11879,7 +12293,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Orthogonality condition between TRS components enables zero task interference. OSRM confirms: orthogonal B-subspaces = zero task interference. TRS distance = principal angle between task gradient subspaces = predictor of catastrophic forgetting.",
-      "community": 48,
+      "community": 50,
       "norm_label": "weight disentanglement via trs orthogonality",
       "id": "big_ideas_weight_disentangle"
     },
@@ -11893,7 +12307,7 @@
       "author": null,
       "contributor": null,
       "rationale": "From Steele (arXiv:2603.02224): forgetting governed by minimum principal angle between gradient subspaces. TRS distance approximates this principal angle. Tasks with similar TRS (small TRS distance) will have overlapping gradient subspaces -> high forgetting.",
-      "community": 48,
+      "community": 50,
       "norm_label": "forgetting geometry theorem",
       "id": "big_ideas_forgetting_geometry"
     },
@@ -11935,7 +12349,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Individual TRS (task-specific signal, decays O(1/sqrt(N)) under averaging) vs population PCA (common subspace, stays O(1)). Subspace-Boosted proves mathematically these are complementary: common subspace = MP null limit, TRS = exactly what averaging destroys.",
-      "community": 64,
+      "community": 70,
       "norm_label": "spectral-population duality",
       "id": "big_ideas_spectral_population_duality"
     },
@@ -11949,7 +12363,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Naive SVD of B has infinite factorization ambiguity. W2T (2603.15990): QR decomposition of B then SVD of R gives canonical unique representation. Canonical TRS = log(sigma_i(R) / lambda_MP_edge). Resolves factorization ambiguity for reliable cross-architecture comparison.",
-      "community": 67,
+      "community": 72,
       "norm_label": "canonical trs via qr+svd",
       "id": "big_ideas_canonical_trs"
     },
@@ -11963,7 +12377,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Spiked RMT paper (2410.18938): optimal Bayes estimator of learned signal = Marchenko-Pastur shrinkage. Computing TRS = computing maximum likelihood estimate of task-specific information. TRS >= any other spectral fingerprint in task information content by Gauss-Markov theorem.",
-      "community": 42,
+      "community": 44,
       "norm_label": "trs as optimal bayes estimator",
       "id": "big_ideas_trs_bayes_estimator"
     },
@@ -11977,7 +12391,7 @@
       "author": null,
       "contributor": null,
       "rationale": "AlphaLoRA alpha (base model training quality) x TRS (task adaptation strength). Gold layers: high alpha + high TRS. Dormant: high alpha + low TRS. Rescued: low alpha + high TRS (LoRA compensated bad base training). Noise: low alpha + low TRS. No paper has proposed this 2D criterion.",
-      "community": 70,
+      "community": 75,
       "norm_label": "2d layer selection map (alpha x trs)",
       "id": "big_ideas_2d_layer_map"
     },
@@ -11991,7 +12405,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Standard MP is wrong null for trained networks. HTMP (2506.03470) parameterized by kappa (eigenvalue repulsion). TRS_HTMP = departure from HTMP null = purely task-specific (no training artifact). 2D task fingerprint: (kappa, TRS_HTMP) = task component count + task signal strength.",
-      "community": 66,
+      "community": 71,
       "norm_label": "trs_htmp next-generation fingerprint",
       "id": "big_ideas_trs_htmp"
     },
@@ -12005,7 +12419,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Find task ordering maximizing minimum pairwise TRS distance between consecutive tasks -> minimizes catastrophic forgetting. Equivalent to maximum weight Hamiltonian path on TRS distance graph. Greedy: always pick task with maximum TRS distance from current task.",
-      "community": 48,
+      "community": 50,
       "norm_label": "trs-based continual learning curriculum",
       "id": "big_ideas_trs_continual_curriculum"
     },
@@ -12019,7 +12433,7 @@
       "author": null,
       "contributor": null,
       "rationale": "LoL paradigm (2410.04207) shows task properties learnable from LoRA weights. TRS is canonical GL_r-invariant feature for LoL. Protocol: given any LoRA checkpoint, compute canonical TRS, run LoL meta-prediction, output: task label, training data characteristics, performance estimate, harmful fine-tune detection.",
-      "community": 67,
+      "community": 72,
       "norm_label": "zero-shot lora audit via lol + trs",
       "id": "big_ideas_lol_trs_audit"
     },
@@ -12033,7 +12447,7 @@
       "author": null,
       "contributor": null,
       "rationale": "TRS (MP null) and SVC (Singular Value Calibration) are special cases of Bayesian spectral calibration. Hierarchy: MP null subset universal subspace null subset empirical shared null. MP null = maximum entropy prior, most generalizable (works any architecture, any task distribution).",
-      "community": 42,
+      "community": 44,
       "norm_label": "bayesian spectral calibration unification",
       "id": "synthesis_bayesian_spectral_calib"
     },
@@ -12059,7 +12473,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 87,
+      "community": 92,
       "norm_label": "aristotelian view of convergence (2602.14486)",
       "id": "findings_aristotelian_paper"
     },
@@ -12085,7 +12499,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "small singular values matter rmt (2410.17770)",
       "id": "findings_rmt_paper"
     },
@@ -12098,7 +12512,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 47,
+      "community": 49,
       "norm_label": "universal weight subspace hypothesis (2512.05117)",
       "id": "findings_universal_subspace_paper"
     },
@@ -12111,7 +12525,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 72,
       "norm_label": "w2t lora weights know task (2603.15990)",
       "id": "findings_w2t_paper"
     },
@@ -12124,7 +12538,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 88,
+      "community": 93,
       "norm_label": "cross-lora data-free transfer (2508.05232)",
       "id": "findings_crosslora_paper"
     },
@@ -12150,7 +12564,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 67,
+      "community": 72,
       "norm_label": "learning on loras gl-equivariant (2410.04207)",
       "id": "findings_lol_paper"
     },
@@ -12163,7 +12577,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "spectral over-accumulation merging (2602.05536)",
       "id": "findings_spectral_overaccum_paper"
     },
@@ -12176,7 +12590,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 48,
+      "community": 50,
       "norm_label": "subspace geometry catastrophic forgetting (2603.02224)",
       "id": "findings_subspace_geom_paper"
     },
@@ -12189,7 +12603,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "spiked rmt task learning features (2410.18938)",
       "id": "findings_spiked_rmt_paper"
     },
@@ -12202,7 +12616,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "no task left behind isotropic merging (2502.04959)",
       "id": "findings_isotropic_merging_paper"
     },
@@ -12215,7 +12629,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 75,
       "norm_label": "spectrum mp-null layer selection (2406.06623)",
       "id": "findings_spectrum_paper"
     },
@@ -12228,7 +12642,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 70,
+      "community": 75,
       "norm_label": "alphalora ht-sr layer quality (2410.10054)",
       "id": "findings_alphalora_paper"
     },
@@ -12241,7 +12655,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "gradientspace svd task clusters (2512.06678)",
       "id": "findings_gradientspace_paper"
     },
@@ -12254,7 +12668,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 42,
+      "community": 44,
       "norm_label": "mtlora spectral task regularization (2603.01526)",
       "id": "findings_mtlora_paper"
     },
@@ -12267,7 +12681,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 64,
+      "community": 70,
       "norm_label": "subspace-boosted merging rank collapse (2506.16506)",
       "id": "findings_subspace_boosted_paper"
     },
@@ -12280,7 +12694,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 66,
+      "community": 71,
       "norm_label": "htmp heavy-tailed mechanistic universality (2506.03470)",
       "id": "findings_htmp_paper"
     },
@@ -12293,7 +12707,7 @@
       "captured_at": null,
       "author": "Bohdal et al.",
       "contributor": null,
-      "community": 47,
+      "community": 49,
       "norm_label": "d2c data-driven adapter clustering and merging (2601.17441)",
       "id": "d2c_paper"
     },
@@ -12307,7 +12721,7 @@
       "author": null,
       "contributor": null,
       "rationale": "K-Means w/ SVD clustering uses cosine similarities of SVD features extracted from LoRAs. Clusters are predominantly by task (not language). Task-homogeneous clusters achieve stronger merging performance. Empirical confirmation that SVD features encode task identity.",
-      "community": 47,
+      "community": 49,
       "norm_label": "svd features for lora clustering",
       "id": "d2c_svd_features"
     },
@@ -12321,7 +12735,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Iterative data-driven clustering with n=10 examples per task. Outperforms random/K-Means by 2.1-4.5%. On-device LLM deployment under 12.5% storage budget. Agnostic to merging technique (TIES or linear).",
-      "community": 47,
+      "community": 49,
       "norm_label": "d2c iterative clustering algorithm",
       "id": "d2c_method"
     },
@@ -12334,7 +12748,7 @@
       "captured_at": null,
       "author": "Salama et al., Hebrew University",
       "contributor": null,
-      "community": 63,
+      "community": 69,
       "norm_label": "dsire dataset size recovery from lora (2406.19395)",
       "id": "dsire_paper"
     },
@@ -12348,7 +12762,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Frobenius norm of LoRA matrices negatively correlated with fine-tuning dataset size (models overfit faster on smaller datasets). Singular values more discriminative than scalar Frobenius norm. Layer-wise spectra vary: up layers more discriminative than down layers. NTK prediction: effective rank ~ sqrt(N) connects directly.",
-      "community": 63,
+      "community": 69,
       "norm_label": "lora spectrum encodes dataset size",
       "id": "dsire_spectrum_dataset_size"
     },
@@ -12361,7 +12775,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 63,
+      "community": 69,
       "norm_label": "lora-wise benchmark",
       "id": "dsire_lora_wise_benchmark"
     },
@@ -12374,7 +12788,7 @@
       "captured_at": null,
       "author": "Gu et al.",
       "contributor": null,
-      "community": 48,
+      "community": 50,
       "norm_label": "eblora spectral imbalance forgetting (2602.00722)",
       "id": "eblora_paper"
     },
@@ -12388,7 +12802,7 @@
       "author": null,
       "contributor": null,
       "rationale": "LoRA update matrices exhibit long-tailed singular value spectra: few dominant components absorb most adaptation energy. Imbalanced updates: (i) more likely to disrupt pre-trained knowledge, (ii) more vulnerable to interference from subsequent tasks. Variance of singular values increases throughout training.",
-      "community": 48,
+      "community": 50,
       "norm_label": "spectral imbalance in lora updates",
       "id": "eblora_spectral_imbalance"
     },
@@ -12402,7 +12816,7 @@
       "author": null,
       "contributor": null,
       "rationale": "EBLoRA factorizes delta-W_t = s_t U_t V_t^T, decoupling magnitude (s_t) from directional structure (U_t, V_t orthonormal on Stiefel manifold). Explicit balance among rank-one components. Maximally isotropic LoRA: all singular values equal to 1 before s_t scaling. TRS of standard LoRA = distance from Stiefel manifold in spectral space.",
-      "community": 48,
+      "community": 50,
       "norm_label": "stiefel manifold optimization for balanced lora",
       "id": "eblora_stiefel_manifold"
     },
@@ -12416,7 +12830,7 @@
       "author": null,
       "contributor": null,
       "rationale": "G_{t-1}^T U_t = 0 prevents new task from allocating update directions along previously sensitive gradient modes. Combined with energy balancing achieves MFN 72.8%, BWT -2.0, FWT 34.6% on UCIT benchmark, outperforming all baselines.",
-      "community": 48,
+      "community": 50,
       "norm_label": "gradient orthogonality constraint (eblora)",
       "id": "eblora_gradient_orthogonality"
     },
@@ -12429,7 +12843,7 @@
       "captured_at": null,
       "author": "Kaushik et al., Johns Hopkins",
       "contributor": null,
-      "community": 47,
+      "community": 49,
       "norm_label": "eigenlorax recycling adapters principal subspace (2502.04700)",
       "id": "eigenloreax_paper"
     },
@@ -12443,7 +12857,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Recycles pretrained LoRAs to extract top-K principal components via SVD/PCA of stacked LoRA weight matrices. Task-specific weights lie within shared principal subspace. 100x fewer parameters than LoRA, 2x faster convergence. Direct application of Universal Weight Subspace Hypothesis. Top-16 PCs contain most information from 4000+ components for 500 LoRAs.",
-      "community": 47,
+      "community": 49,
       "norm_label": "eigenlorax task-invariant principal subspace",
       "id": "eigenloreax_principal_subspace"
     },
@@ -12457,7 +12871,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Risk bound: ||W*_{d+1} - W_{d+1}||_F^2 <= C1*(sqrt(K)/sqrt(s_t)) + C2. Upper bound tighter when new task lies in shared principal subspace. Rademacher complexity of low-rank class H_{W_E} bounded by O(sqrt(K)||W_E||_F / sqrt(s_t)).",
-      "community": 47,
+      "community": 49,
       "norm_label": "eigenlorax generalization bound theorem 3.6",
       "id": "eigenloreax_theorem"
     },
@@ -12470,7 +12884,7 @@
       "captured_at": null,
       "author": "Kothapalli et al., NYU/Dartmouth",
       "contributor": null,
-      "community": 66,
+      "community": 71,
       "norm_label": "from spikes to heavy tails spectral evolution (2406.04657)",
       "id": "spikes_to_ht_paper"
     },
@@ -12484,7 +12898,7 @@
       "author": null,
       "contributor": null,
       "rationale": "ESD evolves: MP (random init) -> Bulk+Spike (one large-eta step) -> Bulk-Decay -> Heavy-Tailed. Spike aligned with task direction beta*. Spectral gap determines HT emergence speed. FB-Adam needs much smaller eta than GD for spike (eta=1 sufficient for FB-Adam vs eta=2000 for GD). PL_alpha in range (2, 2.5) correlates with good generalization. Spike emerges at threshold Theta(1/sqrt(h)) for FB-Adam.",
-      "community": 66,
+      "community": 71,
       "norm_label": "mp to spike to heavy-tail esd pathway",
       "id": "spikes_to_ht_pathway"
     },
@@ -12498,7 +12912,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Spike emergence threshold scales as Theta(1/sqrt(h)) for FB-Adam. Wider architectures (larger h) need larger eta to create spikes. Cross-architecture TRS comparison must control for spectral maturity (whether Bulk+Spike transition occurred). Fix: TRS/PL_Alpha = phase-normalized spectral fingerprint.",
-      "community": 66,
+      "community": 71,
       "norm_label": "spectral maturity cross-architecture confound",
       "id": "spikes_to_ht_spectral_maturity"
     },
@@ -12511,7 +12925,7 @@
       "captured_at": null,
       "author": "Ed-dib et al., NYU/Nace.AI",
       "contributor": null,
-      "community": 63,
+      "community": 69,
       "norm_label": "gelora geometric adaptive ranks intrinsic dim (2412.09250)",
       "id": "gelora_paper"
     },
@@ -12525,7 +12939,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Theorem: LoRA rank r_i >= max(d_{i+1} - d_i, 0), where d_i is intrinsic dimension of data manifold at input of block i. Minimum TRS effective rank = intrinsic dimensionality expansion between consecutive blocks. Architecture-agnostic: same task -> similar d_i profile -> similar TRS rank profile across architectures.",
-      "community": 63,
+      "community": 69,
       "norm_label": "gelora rank bound theorem 3.2",
       "id": "gelora_rank_bound_theorem"
     },
@@ -12539,7 +12953,7 @@
       "author": null,
       "contributor": null,
       "rationale": "Two-nearest-neighbors (TwoNN) method estimates intrinsic dimension d_i at each transformer block. Intrinsic dimensions vary by task and layer. Conjecture 3.1: gap between intrinsic dimension and transformer rank decreases as fine-tuning progresses (TRS compression curve = TRS decreases with training, reflecting generalization).",
-      "community": 63,
+      "community": 69,
       "norm_label": "intrinsic dimensionality profile across layers",
       "id": "gelora_intrinsic_dim"
     },
@@ -12552,7 +12966,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 73,
       "norm_label": "running synthesis document",
       "id": "synthesis_doc"
     },
@@ -12565,7 +12979,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 73,
       "norm_label": "big_ideas synthesis document",
       "id": "big_ideas_doc"
     },
@@ -12578,7 +12992,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 73,
       "norm_label": "night run 2 critical revision document",
       "id": "critical_revision_doc"
     },
@@ -12591,7 +13005,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 68,
+      "community": 73,
       "norm_label": "literature findings document",
       "id": "findings_doc"
     },
@@ -12703,7 +13117,7 @@
         "Lottery Ticket"
       ],
       "key_contribution": "Catalog of 16 new papers supporting and extending TRS theory across 8 thematic categories.",
-      "community": 89,
+      "community": 94,
       "norm_label": "new papers found: night run may 2026",
       "id": "new_papers_found_doc"
     },
@@ -13124,7 +13538,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "q/k vs v/o spectral asymmetry in trs (idea 23)",
       "id": "big_ideas_qk_asymmetry"
     },
@@ -13137,7 +13551,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 72,
+      "community": 77,
       "norm_label": "optimal rank = sqrt(n) for intruder-free fine-tuning (idea 24)",
       "id": "big_ideas_optimal_rank_sqrt_n"
     },
@@ -13215,7 +13629,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "claim 6: v-layer trs dominance (synthesis 3)",
       "id": "synth3_vlayer_dominance_claim"
     },
@@ -13293,7 +13707,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "q/k layers = connection 1-form (curvature)",
       "id": "synth4_qk_connection_1form"
     },
@@ -13306,7 +13720,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "v/o layers = parallel transport (flat)",
       "id": "synth4_vo_parallel_transport"
     },
@@ -13501,7 +13915,7 @@
       "captured_at": "2025-06-03",
       "author": "Matteo Saponati, Pascal Sager, Pau Vilimelis Aceituno, Thilo Stadelmann, Benjamin Grewe",
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "underlying structures of self-attention: symmetry, directionality, emergent dynamics (arxiv:2502.10927)",
       "id": "paper_self_attention_structures"
     },
@@ -13514,7 +13928,7 @@
       "captured_at": "2025-06-03",
       "author": "Saponati et al.",
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "w_qk = w_q * w_k^t as bilinear form defining metric in embedding space",
       "id": "paper_self_attention_wqk_bilinear"
     },
@@ -13527,7 +13941,7 @@
       "captured_at": "2025-06-03",
       "author": "Saponati et al.",
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "autoregressive training induces column dominance / directionality in w_qk (theorem 2.3)",
       "id": "paper_self_attention_autoregressive_directionality"
     },
@@ -13540,7 +13954,7 @@
       "captured_at": "2025-06-03",
       "author": "Saponati et al.",
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "bidirectional training induces symmetry in w_qk (theorem 2.4)",
       "id": "paper_self_attention_bidirectional_symmetry"
     },
@@ -13553,7 +13967,7 @@
       "captured_at": "2025-06-03",
       "author": "Saponati et al.",
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "symmetry score and directionality score for square matrices (definitions 3.1-3.2)",
       "id": "paper_self_attention_symmetry_score"
     },
@@ -13592,7 +14006,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 72,
+      "community": 77,
       "norm_label": "lora training in ntk regime: optimal rank ~sqrt(n) (arxiv:2402.11867)",
       "id": "new_papers_ntk_lora_rank"
     },
@@ -13657,7 +14071,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 40,
+      "community": 41,
       "norm_label": "spectral lifecycle of transformer training: q/k vs v/o asymmetry (arxiv:2604.22778)",
       "id": "new_papers_spectral_lifecycle"
     },
@@ -14094,7 +14508,7 @@
       "label": "Open Empirical Question: U_W0 vs U_S* Principal Angles",
       "file_type": "rationale",
       "source_file": "finding_literature/conjecture_universal_subspace_trs_bridge.md",
-      "community": 37,
+      "community": 0,
       "norm_label": "open empirical question: u_w0 vs u_s* principal angles",
       "id": "conjecture_us_trs_reference_frame_gap"
     },
@@ -14102,7 +14516,7 @@
       "label": "OPLoRA: Projects LoRA Updates Orthogonal to W0 Top Singular Vectors",
       "file_type": "paper",
       "source_file": "arXiv:2510.13003",
-      "community": 37,
+      "community": 0,
       "norm_label": "oplora: projects lora updates orthogonal to w0 top singular vectors",
       "id": "opLora_w0_orthogonal_projection"
     },
@@ -15189,6 +15603,66 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_md",
+      "target": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "target": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_core_finding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "target": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_the_bbp_transition_formula_for_gradient_matrices",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "target": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_why_this_matters_bbp_mp_trs_ht_sr_four_way_equivalence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "target": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_connection_to_lora_rank_selection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/dp_sgd_gradient_denoising_bbp_finetuning.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_sample_efficient_differentially_private_fine_tuning_via_gradient_matrix_denoising_arxiv_2510_01137",
+      "target": "finding_literature_dp_sgd_gradient_denoising_bbp_finetuning_what_this_does_not_say",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "finding_literature/experiment_design_reference_frame_measurement.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -15415,6 +15889,126 @@
       "confidence_score": 1.0,
       "source": "finding_literature_frechet_averages_quotient_manifold_merging_generalizing_the_geometry_of_model_merging_through_fr_chet_averages_arxiv_2604_27155",
       "target": "finding_literature_frechet_averages_quotient_manifold_merging_what_they_do_not_say"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_md",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_core_finding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_main_theorem_informal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_connection_to_marchenko_pastur_trs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_connection_to_lora",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_why_this_is_foundational_for_the_trs_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/implicit_regularization_matrix_factorization_gunasekar.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_implicit_regularization_in_matrix_factorization_arxiv_1705_09280",
+      "target": "finding_literature_implicit_regularization_matrix_factorization_gunasekar_what_this_does_not_say",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "finding_literature_lora_training_converges_lowrank_global_minimum_md",
+      "target": "finding_literature_lora_training_converges_lowrank_global_minimum_lora_training_provably_converges_to_a_low_rank_global_minimum_arxiv_2502_09376",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "finding_literature_lora_training_converges_lowrank_global_minimum_lora_training_provably_converges_to_a_low_rank_global_minimum_arxiv_2502_09376",
+      "target": "finding_literature_lora_training_converges_lowrank_global_minimum_core_finding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "finding_literature_lora_training_converges_lowrank_global_minimum_lora_training_provably_converges_to_a_low_rank_global_minimum_arxiv_2502_09376",
+      "target": "finding_literature_lora_training_converges_lowrank_global_minimum_what_this_proves_for_the_trs_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "finding_literature_lora_training_converges_lowrank_global_minimum_lora_training_provably_converges_to_a_low_rank_global_minimum_arxiv_2502_09376",
+      "target": "finding_literature_lora_training_converges_lowrank_global_minimum_connection_to_oplora_horizontal_subbundle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/lora_training_converges_lowrank_global_minimum.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "finding_literature_lora_training_converges_lowrank_global_minimum_lora_training_provably_converges_to_a_low_rank_global_minimum_arxiv_2502_09376",
+      "target": "finding_literature_lora_training_converges_lowrank_global_minimum_what_this_does_not_say",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15705,6 +16299,66 @@
       "confidence_score": 1.0,
       "source": "finding_literature_some_insights_lora_papers_experiment_1_insights_from_lora_specific_papers",
       "target": "finding_literature_some_insights_lora_papers_concrete_experiment_1_changes"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "finding_literature_spectral_dynamics_weights_grokking_rank_md",
+      "target": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "target": "finding_literature_spectral_dynamics_weights_grokking_rank_core_finding",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "target": "finding_literature_spectral_dynamics_weights_grokking_rank_key_empirical_findings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "target": "finding_literature_spectral_dynamics_weights_grokking_rank_connection_to_trs_intruder_dim_theory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "target": "finding_literature_spectral_dynamics_weights_grokking_rank_companion_paper_connection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/spectral_dynamics_weights_grokking_rank.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "finding_literature_spectral_dynamics_weights_grokking_rank_approaching_deep_learning_through_the_spectral_dynamics_of_weights_arxiv_2408_11804",
+      "target": "finding_literature_spectral_dynamics_weights_grokking_rank_what_this_does_not_say",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16812,9 +17466,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_md",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions"
     },
     {
       "relation": "contains",
@@ -16822,9 +17476,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_co_discovery_or_prediction_how_six_papers_converge_on_the_fiber_bundle_picture",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_co_discovery_or_prediction_how_six_papers_converge_on_the_fiber_bundle_picture"
     },
     {
       "relation": "contains",
@@ -16832,9 +17486,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_the_central_question",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_the_central_question"
     },
     {
       "relation": "contains",
@@ -16842,9 +17496,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_1_oplora_operational_confirmation_of_the_horizontal_subbundle_constraint",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_1_oplora_operational_confirmation_of_the_horizontal_subbundle_constraint"
     },
     {
       "relation": "contains",
@@ -16852,9 +17506,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation"
     },
     {
       "relation": "contains",
@@ -16862,9 +17516,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L119",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_3_fr_chet_averages_independent_confirmation_of_w_g_from_model_merging",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_3_fr_chet_averages_independent_confirmation_of_w_g_from_model_merging"
     },
     {
       "relation": "contains",
@@ -16872,9 +17526,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_4_spectral_surgery_and_multi_task_grokking_empirical_evidence_for_signal_vs_intruder",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_4_spectral_surgery_and_multi_task_grokking_empirical_evidence_for_signal_vs_intruder"
     },
     {
       "relation": "contains",
@@ -16882,9 +17536,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_5_the_mechanistic_story_in_full",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_5_the_mechanistic_story_in_full"
     },
     {
       "relation": "contains",
@@ -16892,9 +17546,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L234",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_6_what_our_framework_provides_that_none_of_these_papers_have",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_6_what_our_framework_provides_that_none_of_these_papers_have"
     },
     {
       "relation": "contains",
@@ -16902,9 +17556,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L262",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_7_positioning_the_paper",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_7_positioning_the_paper"
     },
     {
       "relation": "contains",
@@ -16912,9 +17566,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L295",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_8_open_questions_after_this_synthesis",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_8_open_questions_after_this_synthesis"
     },
     {
       "relation": "contains",
@@ -16922,9 +17576,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L320",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_synthesis_8_the_mechanistic_story_of_intruder_dimensions",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_summary",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_summary"
     },
     {
       "relation": "contains",
@@ -16932,9 +17586,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_1_oplora_operational_confirmation_of_the_horizontal_subbundle_constraint",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_oplora_does",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_oplora_does"
     },
     {
       "relation": "contains",
@@ -16942,9 +17596,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_1_oplora_operational_confirmation_of_the_horizontal_subbundle_constraint",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_this_says_in_bundle_language",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_this_says_in_bundle_language"
     },
     {
       "relation": "contains",
@@ -16952,9 +17606,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_1_oplora_operational_confirmation_of_the_horizontal_subbundle_constraint",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_prediction_status",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_prediction_status"
     },
     {
       "relation": "contains",
@@ -16962,9 +17616,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_1_oplora_operational_confirmation_of_the_horizontal_subbundle_constraint",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_oplora_does_not_provide",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_oplora_does_not_provide"
     },
     {
       "relation": "contains",
@@ -16972,9 +17626,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_the_paper_does",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_the_paper_does"
     },
     {
       "relation": "contains",
@@ -16982,9 +17636,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_scope_caveat_essential",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_scope_caveat_essential"
     },
     {
       "relation": "contains",
@@ -16992,9 +17646,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_this_says_in_bundle_language_91",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_this_says_in_bundle_language_91"
     },
     {
       "relation": "contains",
@@ -17002,9 +17656,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_prediction_status_100",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_prediction_status_100"
     },
     {
       "relation": "contains",
@@ -17012,9 +17666,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L107",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_2_alignment_collapse_the_quartic_law_for_intruder_dim_accumulation",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_combined_with_oplora",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_combined_with_oplora"
     },
     {
       "relation": "contains",
@@ -17022,9 +17676,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_3_fr_chet_averages_independent_confirmation_of_w_g_from_model_merging",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_the_paper_does_121",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_the_paper_does_121"
     },
     {
       "relation": "contains",
@@ -17032,9 +17686,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_3_fr_chet_averages_independent_confirmation_of_w_g_from_model_merging",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_this_says_in_bundle_language_127",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_this_says_in_bundle_language_127"
     },
     {
       "relation": "contains",
@@ -17042,9 +17696,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_3_fr_chet_averages_independent_confirmation_of_w_g_from_model_merging",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_prediction_status_140",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_prediction_status_140"
     },
     {
       "relation": "contains",
@@ -17052,9 +17706,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_3_fr_chet_averages_independent_confirmation_of_w_g_from_model_merging",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_fr_chet_averages_does_not_say",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_what_fr_chet_averages_does_not_say"
     },
     {
       "relation": "contains",
@@ -17062,9 +17716,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_4_spectral_surgery_and_multi_task_grokking_empirical_evidence_for_signal_vs_intruder",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_spectral_surgery_2603_03995",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_spectral_surgery_2603_03995"
     },
     {
       "relation": "contains",
@@ -17072,9 +17726,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L175",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_4_spectral_surgery_and_multi_task_grokking_empirical_evidence_for_signal_vs_intruder",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_multi_task_grokking_2602_18523",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_multi_task_grokking_2602_18523"
     },
     {
       "relation": "contains",
@@ -17082,9 +17736,9 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_4_spectral_surgery_and_multi_task_grokking_empirical_evidence_for_signal_vs_intruder",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_rank_collapse_2603_04580",
-      "confidence_score": 1.0
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_rank_collapse_2603_04580"
     },
     {
       "relation": "contains",
@@ -17092,8 +17746,178 @@
       "source_file": "finding_literature/synthesis_night_run_8_mechanistic_intruder_dims.md",
       "source_location": "L277",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_7_positioning_the_paper",
-      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_priority_table",
+      "target": "finding_literature_synthesis_night_run_8_mechanistic_intruder_dims_priority_table"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_md",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_the_chain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_1_nuclear_norm_minimization_horizontal_subbundle_variational_principle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_2_bbp_mp_trs_ht_sr_four_way_equivalence_of_a_single_threshold",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_3_grokking_transition_from_vertical_fiber_to_horizontal_subbundle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_4_the_slow_fisher_mode_connection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_5_what_these_connections_imply_for_each_community_in_the_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L210",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_6_what_is_still_missing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L233",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_synthesis_9_the_grand_chain_implicit_regularization_bbp_transition_and_grokking_as_horizontal_subbundle_return",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_7_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_the_chain",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_codeblock_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_3_grokking_transition_from_vertical_fiber_to_horizontal_subbundle",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_anti_grokking_in_this_framework",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_5_what_these_connections_imply_for_each_community_in_the_graph",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_ht_sr_community_community_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L190",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_5_what_these_connections_imply_for_each_community_in_the_graph",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_slt_llc_community_community_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L201",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_5_what_these_connections_imply_for_each_community_in_the_graph",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_grokking_community_communities_8_16_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_6_what_is_still_missing",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_the_rlct_of_the_fiber_bundle_singularity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L220",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_6_what_is_still_missing",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_bbp_for_w_w_not_just_w_alone",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "finding_literature/synthesis_night_run_9_implicit_reg_bbp_grokking.md",
+      "source_location": "L226",
+      "weight": 1.0,
+      "source": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_6_what_is_still_missing",
+      "target": "finding_literature_synthesis_night_run_9_implicit_reg_bbp_grokking_implicit_regularization_for_non_zero_b_initialization",
       "confidence_score": 1.0
     },
     {
@@ -29004,5 +29828,5 @@
       "source_file": "finding_literature/ewc_lora_fisher_regularization_low_rank_cl.pdf"
     }
   ],
-  "built_at_commit": "e5f7539c94b8fb05914eb8fac1a6bd0c7c83e7b3"
+  "built_at_commit": "c4b3af3e11da1e2b02337825e3ab3d7db595bf4a"
 }
