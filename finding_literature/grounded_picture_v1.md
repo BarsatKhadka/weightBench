@@ -260,13 +260,77 @@ all doing the same correction from different angles, synthesis 13 and 18).
 
 ---
 
+## Step 9: Why Small SVs of W₀ Are Where Fine-Tuning Belongs
+
+This is a mechanistic explanation, not just a geometric observation.
+
+W₀ is a linear map from input activations x to output. The SVD of W₀ decomposes this map into:
+    Large SVs: respond to directions where x has large variance (common input patterns)
+    Small SVs: respond to directions where x has small variance (rare input patterns)
+
+**Key result (small_singular_values_rmt_transformers.pdf, Equations 6-7):**
+The k-th singular vector v_k of W₀ has overlap with the k-th eigenvector of the
+activation covariance matrix C = E[xx^T]. The overlap is proportional to the
+corresponding eigenvalue of C.
+
+In plain English: the large SVs of W₀ respond to the common, frequent input patterns.
+The small SVs respond to the rare, specific input patterns.
+
+**Now: what is fine-tuning trying to do?**
+Fine-tuning a specific task (say, medical question answering) = learning to process
+inputs that are RARE in the pretraining distribution (medical text is a tiny fraction of
+general web text). Task-specific inputs are, by definition, rare in the pretrained model's
+activation distribution.
+
+Therefore: fine-tuning should update the SMALL-SV directions of W₀
+(the directions where rare/task-specific inputs activate the network).
+Updating large-SV directions = corrupting the handling of common patterns = forgetting.
+
+This gives a principled, mechanistic justification for the OPLoRA constraint and the Region A/B split:
+- Region A (large SVs of W₀) = common input handlers = do not fine-tune
+- Region B (small SVs of W₀) = rare/specific input handlers = fine-tune here
+
+**Compression result that confirms this:**
+TSV-Compress (task_singular_vectors_merge_interference.pdf):
+    10x parameter compression while retaining 99% accuracy
+
+If you keep only the "Task Singular Vectors" (the genuine Region 2 directions), you retain
+99% of task performance with 10× fewer parameters. The Region 1 and noise components are
+genuinely expendable.
+
+---
+
+## Step 10: The Layer-Wise Pattern
+
+Interference between tasks is not uniform across layers.
+
+**Measurement (task_singular_vectors_merge_interference.pdf):**
+    Early layers: high inter-task interference
+    Deep layers: low inter-task interference
+
+This is consistent with what we know about transformer layers:
+- Early layers: process syntax, basic semantics = shared across all language tasks = Region 1
+- Deep layers: process task-specific concepts, reasoning patterns = Region 2
+
+**Prediction:** d_task should be SMALLER in early layers (less Region 2) and LARGER in deep layers.
+GELoRA's intrinsic dimensionality profile shows exactly this pattern (layer-wise d_task varies).
+
+**Engineering implication:** Do not use the same LoRA rank r for every layer.
+Use small r in early layers (where Region 2 is small and interference is high)
+and larger r in deep layers (where Region 2 is large and interference is low).
+This is what GELoRA does, and why it achieves the same performance with 47% fewer parameters.
+
+---
+
 ## The Complete Architecture of the Theory
 
-Everything above follows from three measurements:
+Everything above follows from five measurements:
 
-    Fact 1: ρ = 0.971    (intruder dims ↔ forgetting, causal)
-    Fact 2: 89%          (top-20% SVs shared across all tasks)
-    Fact 3: 74%          (top features shared across architectures)
+    Fact 1: ρ = 0.971       (intruder dims ↔ forgetting, causal; Shuttleworth 2410.21228)
+    Fact 2: 89%             (top-20% SVs shared across all tasks; mtLoRA 2603.01526)
+    Fact 3: 74%             (top features shared across architectures; MPPC Pythia vs Mamba)
+    Fact 4: 10x at 99%      (task SVs = all task info; TSV-Compress, Gargiulo 2025)
+    Fact 5: high/low layers  (early=high interference, deep=low; TSV paper)
 
 And one theorem:
 
