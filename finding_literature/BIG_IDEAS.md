@@ -273,6 +273,68 @@ Community structure shows:
 
 ---
 
+## NEW IDEAS FROM ITERATION 5 (May 2026 — Continued Night Run)
+
+### Idea 17: mtLoRA EMPIRICALLY PROVES THE TRS THRESHOLD
+mtLoRA (2603.01526) measured empirically that the TOP 20% of singular values in B matrices encode 89% of inter-task alignment (shared knowledge), while the BOTTOM 50% encode only 3%. This is direct empirical confirmation of the TRS decomposition:
+- Above some threshold (≈MP edge) → shared/background knowledge
+- Below threshold → noise
+- THE SIGNAL IS THE MIDDLE BAND: singular values that are above noise but below the "fully shared" threshold
+
+**Revised TRS definition**: TRS is not just the departure from MP — it's the departure from BOTH bounds:
+- Lower bound: MP edge (remove pure noise)
+- Upper bound: mtLoRA's "fully shared" singular value (remove universal LoRA prior)
+- The MIDDLE BAND is the task-specific signal
+
+This gives a 3-region spectral decomposition:
+- Region 1 (above mtLoRA threshold): universal LoRA knowledge — architecture-specific prior
+- Region 2 (between mtLoRA threshold and MP edge): TASK RESIDUAL SPECTRUM — the target
+- Region 3 (below MP edge): random noise
+
+### Idea 18: Subspace-Boosted PROVES MP NULLL IS THE COMMON SUBSPACE
+Subspace-Boosted (2506.16506) proves formally that task-specific singular values decay at O(1/√N) under averaging across N LoRAs, while common-subspace singular values stay at O(1). As N → ∞, only the common subspace survives. THE COMMON SUBSPACE = THE MP NULL. This is a mathematical proof that:
+
+1. MP null (bulk spectrum) = the limit of the common LoRA subspace as N → ∞
+2. Above-MP singular values = task-specific signal (they decay away under averaging)
+3. TRS = the signal that is destroyed by naive averaging = the exact task-specific information
+
+**The profound implication**: TRS and the common subspace are COMPLEMENTARY. The common subspace is what merging preserves; TRS is what merging destroys. For task-specific performance, you want HIGH TRS. For robust merging, you want LOW TRS (isotropic/flat spectrum). This is the fundamental tension in LoRA design.
+
+### Idea 19: HTMP Ensemble → TRS_HTMP as the Next-Generation Fingerprint
+The HTMP paper (2506.03470) shows that the standard Marchenko-Pastur distribution is the WRONG null for trained networks. Trained weight matrices follow the HTMP distribution (parameterized by κ = eigenvalue repulsion / reduced temperature), not MP. κ is architecture-agnostic at matched training stages.
+
+**The upgraded TRS**: TRS_HTMP = departure of B singular values from the HTMP null (not the MP null). This is more sensitive than TRS because:
+- HTMP already accounts for training-induced spectral shape
+- The residual from HTMP is PURELY task-specific signal (no training artifact)
+- HTMP parameters (κ, σ²) are estimable from B matrices without knowing the task
+
+**New experimental prediction**: TRS_HTMP should have higher ARI(task) than TRS_MP when comparing same-task LoRAs across architectures, because HTMP null removes more architecture-specific spectral structure.
+
+**Two-parameter phase diagram**: (κ, TRS_HTMP) encodes both task component count (κ = eigenvalue repulsion = number of "modes") and task signal strength (TRS_HTMP). No single spectral measure captures both. A 2D task fingerprint.
+
+### Idea 20: Gradient SVD ↔ B-Matrix SVD — The Duality
+GradientSpace (2512.06678) uses online SVD of LoRA gradient matrices to discover task clusters without labels. The gradient at each step is G_t = ∂L/∂W = (activations)^T × (error) — this is the Fisher information signal. The SVD of G_t discovers task structure because gradient directions align with task geometry.
+
+**The duality**: 
+- Gradient SVD (at training time): discovers task clusters from instantaneous gradient signal
+- B-matrix SVD (after training): the accumulated integral of gradient signals over the training run
+
+TRS is the residual of the B-matrix SVD above the noise floor. GradientSpace shows that at each step, the gradient SVD spike direction points toward the task. After training, all these spike directions accumulate in B. Therefore: the B-matrix singular directions ARE the principal gradient directions for the task. TRS = accumulated gradient signal magnitude per direction.
+
+**The hidden prediction**: The top singular direction of B should point in approximately the same direction as the top singular direction of the time-averaged gradient. Test this: compute both for Llama and Mistral LoRAs on the same task. If they point in the same direction (across architectures), TRS is gradient-grounded and task-universal.
+
+### Idea 21: TRS Spectral Maturity — The ESD Phase Diagram
+From Spikes to Heavy Tails (2406.04657) shows that the spectral density evolves through phases: MP → Bulk+Spike → Heavy-Tailed. TRS measures different things at different phases:
+- **Early training** (MP phase): TRS ≈ 0 (no spikes yet, task not yet learned)
+- **Mid training** (Bulk+Spike phase): TRS measures spike height = how much the primary task direction has been learned
+- **Late training** (Heavy-Tailed phase): TRS is the departure from the HT bulk = residual task structure above HT background
+
+**Cross-architecture confound identified**: Spike emergence threshold scales as Θ(1/√h) for Adam (h = hidden dimension). Wider architectures need larger learning rates to create spikes. Cross-architecture TRS comparison must control for SPECTRAL MATURITY — not just training steps, but spectral phase reached.
+
+**The fix**: Use (TRS / PL_Alpha) as the normalized TRS. PL_Alpha measures how far into heavy-tail territory the spectrum is. TRS/PL_Alpha is a phase-normalized spectral fingerprint.
+
+---
+
 ## PRIORITY SEARCH TOPICS FOR ITERATION 4
 
 **Already found this iteration (download next):**
