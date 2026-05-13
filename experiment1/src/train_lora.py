@@ -177,7 +177,6 @@ def main() -> None:
 
     targs = TrainingArguments(
         output_dir=str(out_dir),
-        overwrite_output_dir=False,
         per_device_train_batch_size=train_cfg["per_device_batch_size"],
         gradient_accumulation_steps=train_cfg["grad_accum_steps"],
         learning_rate=train_cfg["learning_rate"],
