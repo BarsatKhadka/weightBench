@@ -23,7 +23,7 @@ lora:
     - down_proj
 
 train:
-  max_steps: 1000                    # per-task; tune per dataset size
+  max_steps: 2000                    # hellaswag focus: ~0.8 epoch, ~107 min on L40S
   per_device_batch_size: 4
   grad_accum_steps: 4                # effective batch 16
   learning_rate: 2.0e-4
