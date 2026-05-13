@@ -101,6 +101,16 @@ dimension count (by surgical manipulation), forgetting increases proportionally.
 This rules out the possibility that both intruder dims and forgetting are caused by a third factor.
 The intruder dims CAUSE the forgetting.
 
+**Why intruder dims form — the first theoretical mechanism (SRFM, arXiv:2410.18938):**
+After one gradient step, ΔW acquires a spike u·vᵀ where v aligns with the task target w*.
+If w* aligns with W₀'s dominant singular subspace → v is W₀-aligned → this spike IS an intruder dim.
+If w* is orthogonal to W₀'s dominant singular subspace → v is W₀-orthogonal → genuine TRS.
+
+In plain English: tasks that require updating what the pretrained model already does well
+(large-SV directions = heavily used universal patterns) produce intruder dims.
+Tasks that require genuinely new capabilities (small-SV directions = underused by W₀) produce
+genuine TRS. The degree of alignment between task and pretrained model determines forgetting.
+
 ---
 
 ## Step 3: The Top SVs Are Universal Across All Tasks
@@ -334,6 +344,19 @@ Use small r in early layers (where Region 2 is small and interference is high)
 and larger r in deep layers (where Region 2 is large and interference is low).
 This is what GELoRA does, and why it achieves the same performance with 47% fewer parameters.
 
+**A practical signal quality metric — Signal-to-Noise Ratio (SNR):**
+For any weight matrix's singular value spectrum, define:
+
+    SNR = (Σ_{above-MP} σᵢ) / (Σ_{below-MP} σᵢ)
+
+High SNR: the matrix has concentrated above-MP signal (strongly adapted to task).
+Low SNR: the matrix is mostly noise (little task-specific adaptation).
+
+Use SNR for layer selection: train only the layers with SNR above a threshold.
+This produces a principled answer to "which layers should LoRA target?" that does not
+require a held-out validation set — only the singular spectrum of the trained weights.
+(spectrum_snr_marchenko_pastur_training.pdf, Community 33)
+
 ---
 
 ## Step 11: Where Everything Lands — The Grassmannian
@@ -369,6 +392,12 @@ Singular values of B alone are NOT invariant (they change when G is not orthogon
 The ONLY invariant object is the column subspace of ΔW — a point on G(r, m).
 TRS (the above-MP subspace of ΔW) is the GL_r-invariant summary of the fine-tuning.
 
+Empirical confirmation (AsymmetryOfLoRA, in some-insights.md): B matrices cluster by task
+across seeds; A matrices do not. In practice (fixed initialization), A ≈ constant across tasks,
+so ΔW = BA ≈ B × constant, and the column subspace of ΔW ≈ column subspace of B.
+The GL_r invariance argument predicts exactly this: A encodes "which inputs to process,"
+B encodes "which task was learned" — and only B has task-specific information.
+
 **Foundation 3 — Cencov's Theorem (1982) + Fisher-Rao Metric:**
 Cencov's theorem: the Fisher-Rao metric is the UNIQUE Riemannian metric on the statistical
 manifold that is invariant under sufficient statistics (i.e., under all information-preserving
@@ -399,7 +428,16 @@ Every method that ignores TRS or uses a non-Grassmannian distance is provably su
 under these assumptions. This includes cosine similarity on raw weight deltas, L2 distance
 on LoRA factors, and most behavioral similarity measures.
 
-**The falsifying experiment (no training needed, ~30 min on CPU):**
+**Partial empirical confirmation (D2C paper, arXiv:2601.17441):**
+D2C clusters LoRA adapters using cosine similarity of SVD features (flattened singular vectors).
+Finding: "Clusters are predominantly by task (not language)."
+Task-homogeneous clusters achieve 2.1–4.5% stronger merging performance than random clusters.
+
+This is direct evidence that SVD features encode task identity. The D2C experiment is not
+cross-architecture (all same base model), but it confirms the clustering direction:
+SVD geometry clusters by task, not by other factors (language, training setup).
+
+**The remaining cross-architecture experiment (no training needed, ~30 min on CPU):**
 Take 5 LoRAs from LLaMA-3-8B fine-tuned on GSM8K math.
 Take 5 LoRAs from Mistral-7B fine-tuned on GSM8K math (same task, different architecture).
 Take 10 LoRAs from both models fine-tuned on diverse random tasks.
@@ -461,9 +499,12 @@ Honest list of what is inferred vs. proven:
 4. **Universal weight subspace is architecture-independent:** Tested on Pythia vs. Mamba (74% MPPC).
    Not yet tested on transformers vs. CNNs, or language vs. vision models.
 
-5. **The Grassmannian clustering prediction:** Whether d_G(same-task, diff-arch) << d_G(diff-task)
-   holds empirically is the critical unfalsified prediction. This is testable with SVD in 30 minutes.
-   If it fails, either the spiked covariance assumption breaks or the MP threshold is misidentified.
+5. **The cross-architecture Grassmannian clustering prediction:** D2C (2601.17441) confirms
+   that SVD features cluster LoRAs by task within the same base model. What is not yet tested:
+   whether Grassmannian distance (principal angles, not cosine similarity) clusters by task
+   ACROSS different architectures (LLaMA vs Mistral vs Mamba). This cross-architecture test
+   is the discriminating experiment. It requires only SVD, ~30 minutes on a CPU.
+   If it fails, the Grassmannian coordinates are architecture-specific, not task-universal.
 
-These five gaps are the places where the theory could break down. Gap 5 is the most important:
-it is the single experiment that either anchors the entire geometric picture or overturns it.
+These five gaps are the places where the theory could break down. Gap 5 is partially resolved:
+within-architecture clustering confirmed; cross-architecture clustering is the remaining experiment.

@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(graphify --help)",
+      "Bash(graphify query *)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify query \"weight-aware models reading their own weights frontier\" --budget 2500)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify explain \"W2T: LoRA Weights Already Know What They Can Do\")",
+      "Bash(PYTHONIOENCODING=utf-8 graphify query \"self-modifying weights recurrent weight networks weight introspection runtime\" --budget 2500)",
+      "WebSearch",
+      "WebFetch(domain:www.arxiv.org)",
+      "Bash(graphify add *)",
+      "Bash(graphify)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify path \"Task Residual Spectrum \\(TRS\\)\" \"Hallucination\")",
+      "Bash(PYTHONIOENCODING=utf-8 graphify path \"Universal Weight Subspace\" \"Scaling Laws\")",
+      "Bash(PYTHONIOENCODING=utf-8 graphify query \"what connects pretraining objective design with the d_task small intrinsic dimensionality observed in fine-tuning?\" --budget 2500)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify query \"what is in the corpus about emergent abilities scaling laws compute optimal phase transitions\" --budget 2000)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify query \"what is the relationship between the d_task intrinsic dimensionality and the model size N and dataset size D and compute budget\" --budget 1500)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify explain \"Cross-LoRA Transfer for Heterogeneous LLMs\")",
+      "Bash(graphify update *)",
+      "WebFetch(domain:weight-space-learning.github.io)",
+      "Bash(graphify cluster-only *)",
+      "Bash(PYTHONIOENCODING=utf-8 graphify query \"trajectory of weight updates fine-tuning checkpoints phases\" --budget 1500)",
+      "WebFetch(domain:arxiv.org)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:openreview.net)",
+      "PowerShell(graphify query *)",
+      "Bash(python *)",
+      "WebFetch(domain:geometricdeeplearning.com)",
+      "Bash(graphify path *)",
+      "Bash(graphify explain *)",
+      "Bash(curl -sL -o navon_dws_2301_12780.pdf \"https://arxiv.org/pdf/2301.12780\")",
+      "Bash(curl -sL -o zhou_nfn_2302_14040.pdf \"https://arxiv.org/pdf/2302.14040\")",
+      "Bash(curl -sL -o universal_neural_functionals_2402_05232.pdf \"https://arxiv.org/pdf/2402.05232\")",
+      "Bash(curl -sL -o lim_graph_metanetworks_2312_04501.pdf \"https://arxiv.org/pdf/2312.04501\")"
+    ]
+  }
+}

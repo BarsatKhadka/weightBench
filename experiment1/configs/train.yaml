@@ -1,0 +1,49 @@
+# Canonical training config for experiment1.
+# Must be identical across all (task, seed) runs so weight-space coordinates
+# are comparable across the pool. Override on the CLI only when ablating.
+
+model:
+  name_or_path: Qwen/Qwen2.5-7B
+  local_dir: models/Qwen2.5-7B       # populated by download_model.py
+  dtype: bfloat16
+  trust_remote_code: false
+
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  bias: none
+  target_modules:
+    - q_proj
+    - k_proj
+    - v_proj
+    - o_proj
+    - gate_proj
+    - up_proj
+    - down_proj
+
+train:
+  max_steps: 1000                    # per-task; tune per dataset size
+  per_device_batch_size: 4
+  grad_accum_steps: 4                # effective batch 16
+  learning_rate: 2.0e-4
+  lr_scheduler: cosine
+  warmup_ratio: 0.03
+  weight_decay: 0.0
+  max_seq_len: 1024
+  bf16: true
+  gradient_checkpointing: true
+  seed: 0                            # overridden by --seed CLI arg
+
+checkpoint:
+  save_every: 50                     # for E2 trajectory
+  save_total_limit: null             # keep all checkpoints
+  save_final: true
+
+data:
+  formatted_dir: data/formatted
+  output_root: adapters
+
+logging:
+  log_every: 10
+  report_to: none                    # set to "wandb" on HPC if desired

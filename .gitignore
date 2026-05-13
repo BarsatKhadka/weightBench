@@ -1,2 +1,30 @@
 .venv/
+__pycache__/
+*.pyc
+
+# Local Claude state
+.claude/scheduled_tasks.lock
+
+# Model weights / data / adapters — never commit these
 models/
+experiment1/models/
+experiment1/data/
+experiment1/adapters/
+experiment1/logs/
+dataset/raw/
+adapters/
+
+# Knowledge-graph cache and outputs — regenerable, large
+graphify-out/
+
+# Research PDFs — large binaries, kept locally only
+*.pdf
+
+# PEFT auto-generated "Model Card for Model ID" boilerplate inside LoRA pool
+# dirs. Lean checkpoints don't create them; standard PEFT save_pretrained
+# does. They pollute graphify with hundreds of duplicate concept nodes.
+**/pool/*/README.md
+**/pool_*/*/README.md
+**/pool_traj/*/README.md
+**/pool_dense/*/README.md
+**/checkpoints/**/README.md
