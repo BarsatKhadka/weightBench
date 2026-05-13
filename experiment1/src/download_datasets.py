@@ -16,19 +16,20 @@ from pathlib import Path
 
 from datasets import load_dataset
 
-# (task_id, hf_path, hf_config_or_None, trust_remote_code)
-# Some HF datasets ship with a loading script and require trust_remote_code=True.
+# (task_id, hf_path, hf_config_or_None, trust_remote_code, revision)
+# revision="refs/convert/parquet" pulls HF's auto-generated parquet mirror for
+# datasets that still ship a .py loader script (datasets>=4 dropped scripts).
 TASKS = [
-    ("boolq",         "google/boolq",                   None,             False),
-    ("piqa",          "ybisk/piqa",                     None,             True),
-    ("hellaswag",     "Rowan/hellaswag",                None,             True),
-    ("winogrande",    "allenai/winogrande",             "winogrande_xl",  True),
-    ("arc_easy",      "allenai/ai2_arc",                "ARC-Easy",       False),
-    ("arc_challenge", "allenai/ai2_arc",                "ARC-Challenge",  False),
-    ("openbookqa",    "allenai/openbookqa",             "main",           False),
-    ("siqa",          "allenai/social_i_qa",            None,             True),
-    ("gsm8k",         "openai/gsm8k",                   "main",           False),
-    ("mbpp",          "google-research-datasets/mbpp",  "full",           False),
+    ("boolq",         "google/boolq",                   None,             False, None),
+    ("piqa",          "ybisk/piqa",                     None,             False, "refs/convert/parquet"),
+    ("hellaswag",     "Rowan/hellaswag",                None,             True,  None),
+    ("winogrande",    "allenai/winogrande",             "winogrande_xl",  True,  None),
+    ("arc_easy",      "allenai/ai2_arc",                "ARC-Easy",       False, None),
+    ("arc_challenge", "allenai/ai2_arc",                "ARC-Challenge",  False, None),
+    ("openbookqa",    "allenai/openbookqa",             "main",           False, None),
+    ("siqa",          "allenai/social_i_qa",            None,             False, "refs/convert/parquet"),
+    ("gsm8k",         "openai/gsm8k",                   "main",           False, None),
+    ("mbpp",          "google-research-datasets/mbpp",  "full",           False, None),
 ]
 
 DEFAULT_OUT = Path(__file__).resolve().parents[1] / "data" / "raw"
@@ -54,16 +55,17 @@ def already_present(dest: Path) -> bool:
 
 
 def fetch_one(task_id: str, hf_path: str, hf_config: str | None,
-              trust_remote_code: bool, out_root: Path) -> tuple[bool, str]:
+              trust_remote_code: bool, revision: str | None,
+              out_root: Path) -> tuple[bool, str]:
     dest = out_root / task_id
     if already_present(dest):
         return True, f"already present at {dest}"
-    print(f"[fetch] {task_id}  ({hf_path}, config={hf_config}, trust={trust_remote_code})")
-    ds = load_dataset(
-        hf_path,
-        hf_config,
-        trust_remote_code=trust_remote_code,
-    )
+    print(f"[fetch] {task_id}  ({hf_path}, config={hf_config}, "
+          f"trust={trust_remote_code}, rev={revision})")
+    kwargs = {"trust_remote_code": trust_remote_code}
+    if revision is not None:
+        kwargs["revision"] = revision
+    ds = load_dataset(hf_path, hf_config, **kwargs)
     dest.parent.mkdir(parents=True, exist_ok=True)
     # Wipe partial leftovers so save_to_disk doesn't refuse.
     if dest.exists() and not already_present(dest):
@@ -85,7 +87,7 @@ def main() -> None:
     selected = set(args.only) if args.only else None
 
     results: list[tuple[str, bool, str]] = []
-    for task_id, hf_path, hf_config, trust in TASKS:
+    for task_id, hf_path, hf_config, trust, revision in TASKS:
         if selected and task_id not in selected:
             continue
         if args.retry:
@@ -94,7 +96,7 @@ def main() -> None:
                 import shutil
                 shutil.rmtree(dest)
         try:
-            ok, msg = fetch_one(task_id, hf_path, hf_config, trust, args.out)
+            ok, msg = fetch_one(task_id, hf_path, hf_config, trust, revision, args.out)
             results.append((task_id, ok, msg))
             print(f"  -> {msg}")
         except Exception as e:
