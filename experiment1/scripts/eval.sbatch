@@ -35,6 +35,8 @@ if [[ ! -d "${ADAPTER_DIR}" ]]; then
     exit 1
 fi
 
+export PYTHONUNBUFFERED=1
+
 echo "[eval] seed=${SEED} host=$(hostname)"
 nvidia-smi --query-gpu=name,memory.total --format=csv
 
