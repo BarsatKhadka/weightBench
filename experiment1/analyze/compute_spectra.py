@@ -68,7 +68,12 @@ def effective_rank(s: np.ndarray) -> float:
 
 
 def analyze_checkpoint(ckpt_dir: Path, seed: int, step: int) -> list[dict]:
-    """Run SVD on every LoRA layer at one checkpoint. Returns list of row dicts."""
+    """Run SVD on every LoRA layer at one checkpoint. Returns list of row dicts.
+
+    Uses QR+small-SVD trick: we only need singular values of dW = B @ A.
+    Since rank(dW) <= 16, SVD(R_B @ A) gives the same 16 singular values much faster
+    than SVD(B @ A) on the full (d_out, d_in) matrix.
+    """
     safetensors_path = ckpt_dir / "adapter_model.safetensors"
     if not safetensors_path.exists():
         return []
@@ -80,9 +85,9 @@ def analyze_checkpoint(ckpt_dir: Path, seed: int, step: int) -> list[dict]:
         if "A" not in ab or "B" not in ab:
             continue
         A, B = ab["A"], ab["B"]
-        dW = B @ A
-        s = np.linalg.svd(dW, full_matrices=False, compute_uv=False)
-        # only first 16 should be nonzero; trim
+        _, R_B = np.linalg.qr(B)                            # (16, 16)
+        M = R_B @ A                                          # (16, d_in)
+        s = np.linalg.svd(M, full_matrices=False, compute_uv=False)
         s16 = s[:16]
         frob = float(np.sqrt((s16 ** 2).sum()))
         row = {
@@ -131,19 +136,21 @@ def main() -> None:
     p.add_argument("--out", type=Path, default=EXP / "analyze" / "spectra.parquet")
     args = p.parse_args()
 
+    import time
     seeds = [int(s) for s in args.seeds.split(",")]
     all_rows: list[dict] = []
     for seed in seeds:
         seed_dir = args.adapters_root / f"{args.task}_seed{seed}"
         if not seed_dir.exists():
-            print(f"[skip] seed {seed}: {seed_dir} not found")
+            print(f"[skip] seed {seed}: {seed_dir} not found", flush=True)
             continue
         ckpts = iter_checkpoints(seed_dir)
-        print(f"[seed {seed}] {len(ckpts)} checkpoints found")
+        print(f"[seed {seed}] {len(ckpts)} checkpoints found", flush=True)
+        t0 = time.time()
         for step, ckpt_dir in ckpts:
             rows = analyze_checkpoint(ckpt_dir, seed, step)
-            print(f"  step {step:>5d}: {len(rows)} layers analyzed")
             all_rows.extend(rows)
+        print(f"[seed {seed}] all {len(ckpts)} ckpts done in {time.time() - t0:.1f}s", flush=True)
 
     if not all_rows:
         print("no rows produced; check paths")

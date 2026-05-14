@@ -49,7 +49,16 @@ def parse_layer_key(key: str) -> tuple[int, str, str, str] | None:
 
 
 def left_singular_vectors(ckpt_path: Path) -> dict[tuple[int, str, str], np.ndarray]:
-    """Return {(layer_idx, sublayer, module): U_dW (d_out, 16)} for one checkpoint."""
+    """Return {(layer_idx, sublayer, module): U_dW (d_out, 16)} for one checkpoint.
+
+    Uses the QR+small-SVD trick to avoid forming the full (d_out, d_in) dW:
+        B = Q_B @ R_B            (QR on (d_out, 16) — cheap)
+        M = R_B @ A              ((16, d_in) — small)
+        M = U_small @ σ @ Vᵀ     (SVD on (16, d_in) — fast)
+        U_full = Q_B @ U_small   (rank-16 left singular vectors of dW)
+
+    ~50-100× faster than np.linalg.svd(B @ A) for these shapes.
+    """
     sd = load_file(str(ckpt_path / "adapter_model.safetensors"))
     pairs: dict[tuple[int, str, str], dict] = {}
     for key, t in sd.items():
@@ -63,9 +72,12 @@ def left_singular_vectors(ckpt_path: Path) -> dict[tuple[int, str, str], np.ndar
     for k, ab in pairs.items():
         if "A" not in ab or "B" not in ab:
             continue
-        dW = ab["B"] @ ab["A"]
-        U, _, _ = np.linalg.svd(dW, full_matrices=False)
-        Us[k] = U[:, :16].astype("float32")  # keep only the rank-16 part
+        B, A = ab["B"], ab["A"]
+        Q_B, R_B = np.linalg.qr(B)            # (d_out, 16), (16, 16)
+        M = R_B @ A                            # (16, d_in)
+        U_small, _, _ = np.linalg.svd(M, full_matrices=False)  # U_small: (16, 16)
+        U_full = Q_B @ U_small                 # (d_out, 16) — same as SVD(B@A) up to sign
+        Us[k] = U_full.astype("float32")
     return Us
 
 
@@ -92,15 +104,19 @@ def main() -> None:
     seeds = [int(s) for s in args.seeds.split(",")]
 
     # Load left singular vectors for each seed's chosen checkpoint
-    print(f"loading {args.checkpoint} for {len(seeds)} seeds")
+    print(f"loading {args.checkpoint} for {len(seeds)} seeds", flush=True)
+    import time
     per_seed: dict[int, dict[tuple[int, str, str], np.ndarray]] = {}
     for seed in seeds:
         ckpt_dir = args.adapters_root / f"{args.task}_seed{seed}" / args.checkpoint
         if not ckpt_dir.exists():
-            print(f"  [skip] seed {seed}: {ckpt_dir} not found")
+            print(f"  [skip] seed {seed}: {ckpt_dir} not found", flush=True)
             continue
-        print(f"  loading seed {seed} from {ckpt_dir}")
+        t0 = time.time()
+        print(f"  [seed {seed}] loading + SVD on {ckpt_dir}", flush=True)
         per_seed[seed] = left_singular_vectors(ckpt_dir)
+        print(f"  [seed {seed}] done in {time.time() - t0:.1f}s "
+              f"({len(per_seed[seed])} layers)", flush=True)
 
     if len(per_seed) < 2:
         print("need at least 2 seeds to compute pairwise distances")
