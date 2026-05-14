@@ -29,9 +29,14 @@ mkdir -p logs
 
 SEED="${SLURM_ARRAY_TASK_ID:-0}"
 
+# Force unbuffered stdout so progress lines show up live in slurm logs
+# (without this, Python buffers and you see nothing until job end).
+export PYTHONUNBUFFERED=1
+export TRANSFORMERS_VERBOSITY=info
+
 echo "[start] $(date) task=hellaswag seed=${SEED} host=$(hostname)"
 nvidia-smi --query-gpu=name,memory.total,driver_version --format=csv
 
-python src/train_lora.py --task hellaswag --seed "${SEED}"
+python -u src/train_lora.py --task hellaswag --seed "${SEED}"
 
 echo "[done]  $(date)"
