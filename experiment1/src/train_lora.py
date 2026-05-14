@@ -67,19 +67,45 @@ def _read_jsonl(path: Path) -> list[dict]:
 
 
 def build_dataset(task: str, formatted_dir: Path, tokenizer, max_seq_len: int) -> Dataset:
+    """Tokenize with COMPLETION-ONLY LOSS.
+
+    Standard SFT practice: the loss should be computed only on the completion
+    tokens, not the prompt. We achieve this by setting labels to -100 (ignored
+    by cross-entropy) on prompt tokens, and to input_ids on completion tokens.
+
+    Without this, the loss is dominated by prompt-token prediction (which the
+    base model already does fine), and the LoRA's gradient signal on the actual
+    answer is tiny. Symptom: training loss barely drops over many steps.
+    """
     path = formatted_dir / f"{task}.jsonl"
     rows = _read_jsonl(path)
 
     def tokenize(ex: dict) -> dict:
-        text = ex["prompt"] + ex["completion"] + tokenizer.eos_token
-        toks = tokenizer(
-            text,
-            truncation=True,
-            max_length=max_seq_len,
-            padding=False,
-        )
-        toks["labels"] = toks["input_ids"].copy()
-        return toks
+        prompt_ids = tokenizer(ex["prompt"], add_special_tokens=False)["input_ids"]
+        completion_ids = tokenizer(
+            ex["completion"] + tokenizer.eos_token, add_special_tokens=False
+        )["input_ids"]
+
+        input_ids = prompt_ids + completion_ids
+        # Truncate from the right if too long; keep at least the completion.
+        if len(input_ids) > max_seq_len:
+            overflow = len(input_ids) - max_seq_len
+            # Prefer truncating prompt over completion.
+            if overflow < len(prompt_ids):
+                prompt_ids = prompt_ids[overflow:]
+                input_ids = prompt_ids + completion_ids
+            else:
+                input_ids = input_ids[-max_seq_len:]
+                prompt_ids = []  # everything left is completion or close to it
+
+        labels = [-100] * len(prompt_ids) + list(completion_ids)
+        assert len(labels) == len(input_ids), (len(labels), len(input_ids))
+
+        return {
+            "input_ids": input_ids,
+            "attention_mask": [1] * len(input_ids),
+            "labels": labels,
+        }
 
     ds = Dataset.from_list(rows).map(
         tokenize,
