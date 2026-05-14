@@ -40,14 +40,15 @@ def parse_run(run_dir: Path) -> list[dict]:
     name = run_dir.name
     seed = None
     step = None
-    is_base = name.endswith("_base")
+    is_base = "_base" in name
     if not is_base:
-        m_step = re.search(r"seed(\d+)_step(\d+)$", name)
+        # Allow optional trailing tag like "_v1_letterfmt"
+        m_step = re.search(r"seed(\d+)_step(\d+)", name)
         if m_step:
             seed = int(m_step.group(1))
             step = int(m_step.group(2))
         else:
-            m_seed = re.search(r"seed(\d+)$", name)
+            m_seed = re.search(r"seed(\d+)", name)
             seed = int(m_seed.group(1)) if m_seed else None
 
     rows: list[dict] = []
@@ -109,8 +110,13 @@ def main() -> None:
     if not headline.empty:
         print("Hellaswag acc_norm per model:")
         for _, row in headline.sort_values("model_id").iterrows():
-            tag = "[BASE]" if row["is_base"] else f"[seed{int(row['seed']):2d}]"
-            print(f"  {tag} {row['model_id']:30s} acc_norm = {row['value']:.4f}")
+            if row["is_base"]:
+                tag = "[BASE  ]"
+            elif row["seed"] is None or pd.isna(row["seed"]):
+                tag = "[?     ]"
+            else:
+                tag = f"[seed{int(row['seed']):2d}]"
+            print(f"  {tag} {row['model_id']:35s} acc_norm = {row['value']:.4f}")
 
 
 if __name__ == "__main__":
