@@ -30,13 +30,25 @@ def find_results_json(d: Path) -> list[Path]:
 
 
 def parse_run(run_dir: Path) -> list[dict]:
-    """Return list of rows from one model's eval. Each row = one metric of one task."""
-    name = run_dir.name  # "hellaswag_seed0" or "hellaswag_base"
+    """Return list of rows from one model's eval. Each row = one metric of one task.
+
+    Recognized directory name patterns:
+        hellaswag_base                 → base model, no LoRA
+        hellaswag_seed<N>              → final-adapter eval for one seed
+        hellaswag_seed<N>_step<S>      → mid-trajectory eval at step S, seed N
+    """
+    name = run_dir.name
     seed = None
+    step = None
     is_base = name.endswith("_base")
     if not is_base:
-        m = re.search(r"seed(\d+)$", name)
-        seed = int(m.group(1)) if m else None
+        m_step = re.search(r"seed(\d+)_step(\d+)$", name)
+        if m_step:
+            seed = int(m_step.group(1))
+            step = int(m_step.group(2))
+        else:
+            m_seed = re.search(r"seed(\d+)$", name)
+            seed = int(m_seed.group(1)) if m_seed else None
 
     rows: list[dict] = []
     for jpath in find_results_json(run_dir):
@@ -52,6 +64,7 @@ def parse_run(run_dir: Path) -> list[dict]:
                     "model_id": name,
                     "is_base": is_base,
                     "seed": seed,
+                    "step": step,
                     "task": task,
                     "metric": metric_name,
                     "value": float(value),
