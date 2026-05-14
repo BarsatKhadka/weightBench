@@ -39,13 +39,16 @@ def _fmt_piqa(ex: dict) -> dict:
 
 
 def _fmt_hellaswag(ex: dict) -> dict:
-    endings = ex["endings"]
-    body = "\n".join(f"{LETTERS[i]}. {e}" for i, e in enumerate(endings))
-    prompt = (
-        f"Context: {ex['ctx']}\n{body}\n"
-        f"Which ending is most likely? Answer with a letter:"
-    )
-    completion = f" {LETTERS[int(ex['label'])]}"
+    """Continuation format — matches how lm-evaluation-harness scores hellaswag.
+
+    lm_eval computes P(ending_i | context) for each candidate ending and picks
+    the highest. So we train on (context -> correct_ending) directly. NO multiple
+    choice menu in the prompt, NO letter prediction. This gives rich semantic
+    gradient AND aligns training with eval.
+    """
+    correct_ending = ex["endings"][int(ex["label"])]
+    prompt = f"{ex['activity_label']}: {ex['ctx']}"
+    completion = f" {correct_ending}"
     return {"prompt": prompt, "completion": completion}
 
 
